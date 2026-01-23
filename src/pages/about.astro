@@ -1,25 +1,69 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Section from "../components/Section.astro";
-import CTABlock from "../components/CTABlock.astro";
+import GoogleReviews from "../components/GoogleReviews.astro";
 import site from "../content/site.json";
+import WhyChooseGrid from "../components/WhyChooseGrid.astro";
+import googleReviews from "../content/google-reviews.json";
 
-const { pages, navigation } = site;
+const { pages } = site;
+const heroImage = "/images/about-hero.jpg";
 ---
-<BaseLayout title={pages.about.title} description={pages.about.body}>
-  <Section title={pages.about.title} body={pages.about.body}>
-    <div class="grid gap-4 sm:grid-cols-3">
-      {pages.about.values.map((value) => (
-        <div class="bg-fog border border-clay/70 rounded-2xl p-6 shadow-soft">
-          <p class="text-sm text-ink/70">{value}</p>
-        </div>
-      ))}
+<BaseLayout title="Why Choose Us" description={pages.about.body}>
+  <section
+    class="relative min-h-[320px] sm:min-h-[420px] flex items-center text-fog"
+    style={`background-image: url('${heroImage}'); background-size: cover; background-position: center;`}
+  >
+    <div class="absolute inset-0 bg-ink/55"></div>
+    <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <h1 class="text-4xl sm:text-5xl font-display font-bold text-fog text-left">Why Choose Us</h1>
     </div>
-  </Section>
-  <CTABlock
-    title={pages.contact.cta.title}
-    body={pages.contact.cta.body}
-    button={pages.contact.cta.button}
-    href={navigation.cta_primary.href}
-  />
+  </section>
+
+  <section class="py-12 sm:py-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid gap-10 lg:grid-cols-[220px_1fr] items-start">
+      <div class="flex flex-col gap-8 items-start">
+        <div class="flex flex-col items-center text-center gap-3">
+          <img src="/images/google-review-rating.webp" alt="Google 5-star rating" class="w-40 h-auto" loading="lazy" />
+        </div>
+        <div class="flex flex-col items-center text-center gap-3">
+          <img src="/images/locally-owned.webp" alt="Locally owned" class="w-24 h-24" loading="lazy" />
+        </div>
+      </div>
+      <div class="space-y-6 text-ink/80">
+        <p>
+          Sit & Git Portables is a locally owned, family-run business based in Viola, WI. Our mission is simple: deliver
+          clean units, clear communication, and dependable service for every event or job site. Whether you are managing a
+          construction site or hosting a special event, we make rentals easy and professional from first call to pickup.
+        </p>
+        <p>
+          Quality is at the core of everything we do, and it shows in our Google reviews. We offer regular portable
+          restrooms, ADA-accessible units, and portable handwashing stations, all cleaned and serviced with consistent
+          care. We also service personal portable restrooms and campers for local customers.
+        </p>
+        <p>
+          Serving Vernon, Richland, and Crawford counties means we can respond quickly and stay flexible. You will get
+          straightforward pricing, reliable delivery windows, and friendly support from a team that knows the area.
+        </p>
+        <p>
+          Need a quote or have an urgent request? Call or text us at (608) 570-9118 and we will help you with the right
+          setup for your site.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-12 sm:py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <WhyChooseGrid />
+    </div>
+  </section>
+  <section class="py-12 sm:py-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <GoogleReviews
+        title={pages.home.google_reviews.title}
+        summary={googleReviews.summary}
+        reviews={googleReviews.reviews}
+      />
+    </div>
+  </section>
 </BaseLayout>
