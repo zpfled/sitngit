@@ -1,0 +1,16 @@
+---
+const { title, body, button, href } = Astro.props;
+---
+<section class="py-10">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="bg-ink text-fog rounded-2xl p-8 sm:p-10 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between shadow-lift">
+      <div>
+        <h3 class="text-2xl font-display">{title}</h3>
+        <p class="text-fog/80 mt-2 max-w-xl">{body}</p>
+      </div>
+      <a href={href} class="inline-flex items-center justify-center px-5 py-3 rounded-full bg-fog text-ink font-semibold">
+        {button}
+      </a>
+    </div>
+  </div>
+</section>

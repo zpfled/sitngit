@@ -1,0 +1,47 @@
+{
+  "summary": {
+    "label": "Google Reviews",
+    "rating": 5,
+    "count": 6,
+    "cta_label": "Review us on Google",
+    "cta_href": "https://search.google.com/local/writereview?placeid=ChIJrU-osv6Ki6URmg_fVcsDANI"
+  },
+  "reviews": [
+    {
+      "name": "Garry Myers",
+      "initials": "GM",
+      "time": "7 months ago",
+      "rating": 5,
+      "text": "Excellent prices and customer service. Portajohns were also very clean and well maintained. Great business",
+      "url": "https://www.google.com/maps/contrib/111769245655939157148/reviews",
+      "avatar": "https://lh3.googleusercontent.com/a/ACg8ocJm93i-ABlsdjuxQPPiZYEwgEjx8s9u_MUYg01FCyIufN25Mw=s128-c0x00000000-cc-rp-mo"
+    },
+    {
+      "name": "Philip Marty",
+      "initials": "PM",
+      "time": "10 months ago",
+      "rating": 5,
+      "text": "Zach is very responsive and friendly, porta potties are clean and work well. Highly recommend",
+      "url": "https://www.google.com/maps/contrib/108205907177058101938/reviews",
+      "avatar": "https://lh3.googleusercontent.com/a/ACg8ocKV9WM1mKWq4iu5bHMftmCqKtwsg2or-NFASNMZ2QGu000UMQ=s128-c0x00000000-cc-rp-mo"
+    },
+    {
+      "name": "Barbara",
+      "initials": "B",
+      "time": "in the last week",
+      "rating": 5,
+      "text": "I am so very impressed with the service I receive from Sit & Git Portables.  Zach is very efficient at his job, always there when service is needed and an all around really nice person.  I will gladly continue working with this company.",
+      "url": "https://www.google.com/maps/contrib/112359749366521837107/reviews",
+      "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLxQ9Fxjyov-eHYOnDU_CAGlEBL68otG6B1IHJMWPu_-9DGlg=s128-c0x00000000-cc-rp-mo"
+    },
+    {
+      "name": "Aaron Monson",
+      "initials": "AM",
+      "time": "in the last week",
+      "rating": 5,
+      "text": "We rented 10 restrooms from Sit & Git when we were in a pinch for an event. Zach got us taken care of in a timely fashion with some clean restrooms!",
+      "url": "https://www.google.com/maps/contrib/110682679701592390759/reviews",
+      "avatar": "https://lh3.googleusercontent.com/a/ACg8ocKy54nrLjEc6eMSfiC0AX9XOzDL2T5OefZVVTRcm49mOYqraA=s128-c0x00000000-cc-rp-mo"
+    }
+  ]
+}

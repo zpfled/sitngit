@@ -1,0 +1,12 @@
+node_modules
+.astro
+.dist
+.DS_Store
+dist
+
+# Local lead storage
+/data/leads.json
+
+# Env
+.env
+.env.*

@@ -1,0 +1,30 @@
+---
+import site from "../content/site.json";
+const { items } = Astro.props;
+const { labels } = site;
+---
+<div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+  {items.map((item) => (
+    <article class="bg-fog border border-clay/70 rounded-2xl p-6 shadow-soft flex flex-col">
+      {item.image?.src && (
+        <div class="mb-4">
+          <img src={item.image.src} alt={item.image.alt ?? ""} class="w-full h-44 object-cover rounded-xl border border-clay/60" loading="lazy" />
+          {item.image.note && <p class="mt-2 text-xs text-ink/50">{item.image.note}</p>}
+        </div>
+      )}
+      <h3 class="text-xl font-display mb-3">{item.name}</h3>
+      <p class="text-sm text-ink/75 mb-4">{item.short}</p>
+      <ul class="text-sm text-ink/70 space-y-2 mb-6">
+        {item.bullets.map((bullet) => (
+          <li class="flex gap-2">
+            <span class="text-sage">•</span>
+            <span>{bullet}</span>
+          </li>
+        ))}
+      </ul>
+      <a href={`/services/${item.slug}`} class="mt-auto text-sm font-semibold text-river">
+        {labels.learn_more}
+      </a>
+    </article>
+  ))}
+</div>

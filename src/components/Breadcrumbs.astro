@@ -1,0 +1,20 @@
+---
+import site from "../content/site.json";
+const { items } = Astro.props;
+const { labels } = site;
+const base = [
+  { label: labels.home, href: "/" },
+  { label: labels.service_area, href: "/service-area" }
+];
+const crumbs = items ? base.concat(items) : base;
+---
+<nav aria-label="Breadcrumb" class="text-sm text-ink/70">
+  <ol class="flex flex-wrap gap-2">
+    {crumbs.map((item, index) => (
+      <li class="flex items-center gap-2">
+        {index > 0 && <span class="text-ink/40">/</span>}
+        <a href={item.href} class="hover:text-ink">{item.label}</a>
+      </li>
+    ))}
+  </ol>
+</nav>

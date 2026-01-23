@@ -1,0 +1,25 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Section from "../components/Section.astro";
+import CTABlock from "../components/CTABlock.astro";
+import site from "../content/site.json";
+
+const { pages, navigation } = site;
+---
+<BaseLayout title={pages.about.title} description={pages.about.body}>
+  <Section title={pages.about.title} body={pages.about.body}>
+    <div class="grid gap-4 sm:grid-cols-3">
+      {pages.about.values.map((value) => (
+        <div class="bg-fog border border-clay/70 rounded-2xl p-6 shadow-soft">
+          <p class="text-sm text-ink/70">{value}</p>
+        </div>
+      ))}
+    </div>
+  </Section>
+  <CTABlock
+    title={pages.contact.cta.title}
+    body={pages.contact.cta.body}
+    button={pages.contact.cta.button}
+    href={navigation.cta_primary.href}
+  />
+</BaseLayout>

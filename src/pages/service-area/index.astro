@@ -1,0 +1,29 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Section from "../../components/Section.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import CountyTownList from "../../components/CountyTownList.astro";
+import CTABlock from "../../components/CTABlock.astro";
+import FAQList from "../../components/FAQList.astro";
+import site from "../../content/site.json";
+
+const { pages, service_area, business, navigation, global_faq } = site;
+const introBody = `${pages.service_area.intro} ${business.service_radius_statement}`;
+---
+<BaseLayout title={pages.service_area.title} description={pages.service_area.intro}>
+  <Section title={pages.service_area.title} body={introBody}>
+    <Breadcrumbs />
+    <CountyTownList counties={service_area.counties} />
+  </Section>
+
+  <Section title={pages.service_area.faq_title}>
+    <FAQList items={global_faq} />
+  </Section>
+
+  <CTABlock
+    title={pages.service_area.cta.title}
+    body={pages.service_area.cta.body}
+    button={pages.service_area.cta.button}
+    href={navigation.cta_primary.href}
+  />
+</BaseLayout>

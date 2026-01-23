@@ -1,0 +1,399 @@
+{
+  "business": {
+    "name": "Sit & Git Portables",
+    "tagline": "Portable restroom rentals and weekly service across southwest Wisconsin.",
+    "phone_display": "(608) 570-9118",
+    "phone_tel": "+16085709118",
+    "email": "zach@sitandgit.com",
+    "service_radius_statement": "Sit & Git Portables proudly serves customers throughout the Driftless Area.",
+    "logo": {
+      "src": "/images/logo.png",
+      "alt": "Sit & Git Portables logo",
+      "note": "Replace with your logo. Ideal size 400x160, under 80KB."
+    },
+    "badge": {
+      "src": "/images/locally-owned.webp",
+      "alt": "Locally owned badge",
+      "note": "Replace with your badge. Ideal size 160x160, under 50KB."
+    }
+  },
+  "navigation": {
+    "primary": [
+      {"label": "Services", "href": "/services"},
+      {"label": "Service Area", "href": "/service-area"},
+      {"label": "FAQ", "href": "/faq"},
+      {"label": "About", "href": "/about"},
+      {"label": "Contact", "href": "/contact"}
+    ],
+    "cta_primary": {"label": "Get a Quote", "href": "/get-a-quote"},
+    "cta_secondary": {"label": "Call/Text", "href": "tel:+16085709118"}
+  },
+  "labels": {
+    "learn_more": "Learn more",
+    "view_service_area": "View service area",
+    "no_towns_note": "Contact us for nearby town coverage.",
+    "home": "Home",
+    "service_area": "Service area",
+    "email": "Email",
+    "footer_services": "Services",
+    "footer_service_area": "Service Area",
+    "rights_reserved": "All rights reserved.",
+    "superheader_call": "Call us"
+  },
+  "services": [
+    {
+      "slug": "portable-restrooms",
+      "name": "Portable Restrooms",
+      "short": "Clean, standard units for events, farms, and job sites with dependable weekly service.",
+      "image": {
+        "src": "/images/service-placeholder.svg",
+        "alt": "Portable restroom unit",
+        "note": "Replace with a real product photo. Ideal size 900x700, under 250KB."
+      },
+      "bullets": [
+        "Delivered level and ready to use with a stocked dispenser",
+        "Weekly servicing, pumping, and restocking options",
+        "Flexible placements for tight sites or backyard access"
+      ],
+      "faqs": [
+        {
+          "q": "What is included with a standard portable restroom?",
+          "a": "Each unit includes a locking door, seat, urinal, hand sanitizer, and a stocked paper holder."
+        },
+        {
+          "q": "Can you deliver to rural or gravel access?",
+          "a": "Yes. We regularly deliver to rural driveways and farm lanes as long as the truck has safe access."
+        }
+      ]
+    },
+    {
+      "slug": "ada-restrooms",
+      "name": "ADA / Wheelchair-Accessible Units",
+      "short": "Spacious, accessible units with handrails and ground-level entry for inclusive events and compliance.",
+      "image": {
+        "src": "/images/service-placeholder.svg",
+        "alt": "ADA portable restroom unit",
+        "note": "Replace with a real product photo. Ideal size 900x700, under 250KB."
+      },
+      "bullets": [
+        "Oversized interior with wide entry and grab bars",
+        "Placed close to entrances with level footing",
+        "Ideal for festivals, public events, and worksites"
+      ],
+      "faqs": [
+        {
+          "q": "How many ADA units do I need?",
+          "a": "It depends on attendance and event type. We can recommend a mix based on your crowd and layout."
+        },
+        {
+          "q": "Are ADA units serviced on the same schedule?",
+          "a": "Yes. They can be serviced weekly or on a custom schedule just like standard units."
+        }
+      ]
+    },
+    {
+      "slug": "handwashing-stations",
+      "name": "Handwashing Stations",
+      "short": "Standalone stations with fresh water, soap, and paper towels for better hygiene on site.",
+      "image": {
+        "src": "/images/service-placeholder.svg",
+        "alt": "Portable handwashing station",
+        "note": "Replace with a real product photo. Ideal size 900x700, under 250KB."
+      },
+      "bullets": [
+        "Foot-pump operation, no power required",
+        "Paired delivery with restroom rentals",
+        "Great for food service, schools, and public events"
+      ],
+      "faqs": [
+        {
+          "q": "Do the stations include soap and towels?",
+          "a": "Yes. We stock soap and paper towels and replenish during service visits."
+        },
+        {
+          "q": "Can I rent a station without restrooms?",
+          "a": "Yes. We can provide standalone handwashing units for short-term or seasonal needs."
+        }
+      ]
+    },
+    {
+      "slug": "event-rentals",
+      "name": "Event Rentals",
+      "short": "Short-term rentals for weddings, festivals, reunions, and outdoor gatherings.",
+      "image": {
+        "src": "/images/service-placeholder.svg",
+        "alt": "Event rental restroom setup",
+        "note": "Replace with a real event photo. Ideal size 900x700, under 250KB."
+      },
+      "bullets": [
+        "Delivery timing coordinated with event setup",
+        "Advice on unit counts and placement",
+        "Optional mid-event servicing for multi-day events"
+      ],
+      "faqs": [
+        {
+          "q": "How far in advance should I book?",
+          "a": "A few weeks is best for popular weekends, but we can often accommodate last-minute needs."
+        },
+        {
+          "q": "Do you handle pickup after the event?",
+          "a": "Yes. We schedule pickup based on your teardown timeline and site access."
+        }
+      ]
+    },
+    {
+      "slug": "construction-rentals",
+      "name": "Construction / Long-Term Rentals",
+      "short": "Reliable, consistent service for job sites and long-term placements.",
+      "image": {
+        "src": "/images/service-placeholder.svg",
+        "alt": "Construction site restroom unit",
+        "note": "Replace with a real jobsite photo. Ideal size 900x700, under 250KB."
+      },
+      "bullets": [
+        "Regular weekly service with clear scheduling",
+        "Flexible placement as the site changes",
+        "Compliance-ready options including ADA units"
+      ],
+      "faqs": [
+        {
+          "q": "Can you adjust service frequency?",
+          "a": "Yes. We can increase or decrease service based on crew size and use."
+        },
+        {
+          "q": "Do you provide long-term discounts?",
+          "a": "We offer simple, transparent pricing for ongoing rentals. Ask for a quote based on duration."
+        }
+      ]
+    }
+  ],
+  "service_area": {
+    "counties": [
+      {
+        "name": "Richland County",
+        "slug": "richland-county-wi",
+        "towns": [
+          {"name": "Richland Center", "slug": "richland-center-wi"}
+        ]
+      },
+      {
+        "name": "Vernon County",
+        "slug": "vernon-county-wi",
+        "towns": [
+          {"name": "Viroqua", "slug": "viroqua-wi"},
+          {"name": "Westby", "slug": "westby-wi"},
+          {"name": "Viola", "slug": "viola-wi"}
+        ]
+      },
+      {
+        "name": "Crawford County",
+        "slug": "crawford-county-wi",
+        "towns": []
+      }
+    ]
+  },
+  "global_faq": [
+    {
+      "q": "How soon can you deliver?",
+      "a": "Most deliveries can be scheduled within a few business days. For peak weekends, earlier requests get priority."
+    },
+    {
+      "q": "How often are units serviced?",
+      "a": "Weekly service is standard, but we can adjust based on volume, event size, or site requirements."
+    },
+    {
+      "q": "Do you provide ADA units?",
+      "a": "Yes. We offer ADA-compliant units with accessible entry and interior space."
+    },
+    {
+      "q": "What do you need to provide a quote?",
+      "a": "We ask for the address, dates, unit type, quantity, and any site notes like access or terrain."
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Megan R.",
+      "role": "Event coordinator",
+      "text": "Clear communication from delivery to pickup. The units were clean, and the schedule was exactly as promised."
+    }
+  ],
+  "pages": {
+    "home": {
+      "hero": {
+        "eyebrow": "Local portable restroom rentals",
+        "headline": "The Driftless Region's top portable restroom provider",
+        "subhead": "For construction sites, events, weddings & more",
+        "primary_cta": "Get a Quote",
+        "secondary_cta": "See Service Area",
+        "secondary_href": "/service-area",
+        "media": {
+          "src": "/images/home-hero.jpg",
+          "alt": "Portable restroom unit at a tidy outdoor site",
+          "note": "Replace with a real jobsite photo. Ideal size 1600x1200, under 350KB."
+        }
+      },
+      "google_reviews": {
+        "title": "What Our Customers Say"
+      },
+      "service_showcase": {
+        "title": "The Driftless Area's Best Porta-Potty & Sink Rental Provider",
+        "items": [
+          {
+            "title": "Portable Restroom Rental",
+            "body": "Clean, standard units with dependable weekly service for events, farms, and job sites.",
+            "button_label": "Learn More",
+            "button_href": "/services/portable-restrooms"
+          },
+          {
+            "title": "ADA / Accessible Units",
+            "body": "Spacious, wheelchair-accessible units with handrails and ground-level entry.",
+            "button_label": "Learn More",
+            "button_href": "/services/ada-restrooms"
+          },
+          {
+            "title": "Handwashing Stations",
+            "body": "Standalone stations with fresh water, soap, and paper towels for better hygiene.",
+            "button_label": "Learn More",
+            "button_href": "/services/handwashing-stations"
+          },
+          {
+            "title": "Event Rentals",
+            "body": "Short-term rentals for weddings, festivals, reunions, and outdoor gatherings.",
+            "button_label": "Learn More",
+            "button_href": "/services/event-rentals"
+          }
+        ]
+      },
+      "intro": {
+        "eyebrow": "Local, responsive service",
+        "title": "Simple rentals with clear expectations",
+        "body": "We deliver standard, ADA, and handwashing units with consistent servicing and easy communication. Whether you need a short-term event rental or a long-term placement, we keep it tidy and on schedule."
+      },
+      "service_teaser": {
+        "title": "Services built for real sites",
+        "body": "Choose the right mix of units for your event, farm, or job site. We help you plan quantities and placement."
+      },
+      "reviews": {
+        "title": "Recent customer feedback",
+        "body": "Replace this block with your preferred reviews widget or a short list of reviews.",
+        "note": "Recommended: 3 to 5 short reviews, each 1 to 2 sentences."
+      },
+      "why_choose": {
+        "title": "Why choose Sit & Git Portables?",
+        "body": "Clean units and responsive local service you can reach by phone or text.",
+        "items": [
+          "Sit & Git Portables provides high-quality, ultra-clean portable toilets and sinks. Our user-friendly equipment is the best you can find in the area. ",
+          "We deliver reliable equipment and consistent, high-quality service, ensuring a smooth and professional experience with every rental.",
+          "We are proud to be a locally-owned business that responds quickly to meet the needs of our neighbors in the Driftless Area"
+        ]
+      },
+      "service_area": {
+        "title": "Our Service Area",
+        "body": "Sit & Git Portables is based in southwest Wisconsin and serves customers throughout the Driftless Area. We cover nearby towns and rural sites across Richland, Vernon, and Crawford counties. If you are unsure about coverage, call or text and we will confirm service for your address.",
+        "cta_label": "Read More",
+        "cta_href": "/service-area"
+      },
+      "testimonials": {
+        "title": "What customers say"
+      }
+    },
+    "services": {
+      "title": "Portable restroom rental services",
+      "intro": "From backyard gatherings to multi-month builds, our rental options are designed around reliable delivery and consistent service.",
+      "cta": {
+        "title": "Not sure what you need?",
+        "body": "Tell us a few details and we will recommend the right mix of units.",
+        "button": "Request a Quote"
+      }
+    },
+    "service_detail": {
+      "cta": {
+        "title": "Ready to schedule delivery?",
+        "body": "We will confirm placement, timing, and service frequency before we deliver.",
+        "button": "Get a Quote"
+      }
+    },
+    "service_area": {
+      "title": "Service area for portable restroom rentals",
+      "intro": "We serve the Driftless Area with regular routes and flexible delivery windows. Typical coverage is 30 to 40 miles depending on the order.",
+      "faq_title": "Service area questions",
+      "cta": {
+        "title": "Planning an event or job site?",
+        "body": "We can help confirm placement, timing, and the right mix of units.",
+        "button": "Request a Quote"
+      }
+    },
+    "county": {
+      "heading_template": "Portable restroom rentals in {county}, WI",
+      "intro": "We deliver and service portable restrooms throughout {county} for events, construction, and seasonal needs.",
+      "uses": "Common requests include weddings, community festivals, and long-term construction job sites.",
+      "cta": {
+        "title": "Need units in this area?",
+        "body": "We will confirm delivery timing and access details before we arrive.",
+        "button": "Get a Quote"
+      }
+    },
+    "town": {
+      "heading_template": "Portable restroom rentals in {town}, WI",
+      "sentence_variants": [
+        "We provide dependable delivery and weekly service throughout {town} and the surrounding areas of {county}.",
+        "From weekend gatherings to long-running projects, we keep schedules clear and units clean in {town}.",
+        "Our routes through {county} make it easy to serve {town} with predictable, on-time service."
+      ],
+      "extra_sentence": "We coordinate delivery timing around site access and confirm placement before we arrive.",
+      "nearby_title": "Nearby service areas",
+      "cta": {
+        "title": "Need delivery in {town}?",
+        "body": "Tell us your dates and site location, and we will confirm the right setup.",
+        "button": "Request a Quote"
+      }
+    },
+    "faq": {
+      "title": "Portable restroom rental FAQ",
+      "intro": "Answers to the most common rental questions, delivery details, and service expectations."
+    },
+    "about": {
+      "title": "About Sit & Git Portables",
+      "body": "We are a local, owner-operated portable restroom company serving southwest Wisconsin. Our focus is clean units, dependable routes, and clear communication so you know what to expect from delivery through pickup.",
+      "values": [
+        "On-time delivery with clear scheduling",
+        "Thorough service and clean restrooms",
+        "Straightforward pricing and easy contact"
+      ]
+    },
+    "contact": {
+      "title": "Contact Sit & Git Portables",
+      "body": "Reach out for availability, scheduling questions, or a fast quote. We reply by call or text as quickly as possible.",
+      "hours": "Hours: Monday to Saturday, 7:00am to 6:00pm",
+      "cta": {
+        "title": "Ready to get started?",
+        "body": "Share a few details and we will follow up with availability and pricing.",
+        "button": "Get a Quote"
+      }
+    },
+    "quote": {
+      "title": "Get a quote",
+      "background_image": "/images/quote-bg.jpg",
+      "intro": "Tell us about your site and dates. We will confirm the right unit mix and follow up by phone or text.",
+      "success": "Thanks for the details. We will call or text shortly to confirm the next steps.",
+      "form": {
+        "turnstile_site_key": "",
+        "labels": {
+          "name": "Name",
+          "phone": "Phone",
+          "email": "Email",
+          "zip": "Zip code",
+          "services": "Services needed"
+        },
+        "placeholders": {
+          "name": "Full name",
+          "phone": "(608) 555-0123",
+          "email": "you@example.com",
+          "zip": "Zip code",
+          "services": "How can we help you?"
+        },
+        "submit": "Send request"
+      }
+    }
+  }
+}

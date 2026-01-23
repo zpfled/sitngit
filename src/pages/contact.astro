@@ -1,0 +1,31 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Section from "../components/Section.astro";
+import CTABlock from "../components/CTABlock.astro";
+import site from "../content/site.json";
+
+const { pages, business, navigation, labels } = site;
+---
+<BaseLayout title={pages.contact.title} description={pages.contact.body}>
+  <Section title={pages.contact.title} body={pages.contact.body}>
+    <div class="grid gap-6 sm:grid-cols-2">
+      <div class="bg-fog border border-clay/70 rounded-2xl p-6 shadow-soft">
+        <p class="text-sm font-semibold text-ink">{business.phone_display}</p>
+        <a href={`tel:${business.phone_tel}`} class="text-sm text-ink/70">{navigation.cta_secondary.label}</a>
+      </div>
+      <div class="bg-fog border border-clay/70 rounded-2xl p-6 shadow-soft">
+        <p class="text-sm font-semibold text-ink">{business.email}</p>
+        <a href={`mailto:${business.email}`} class="text-sm text-ink/70">{labels.email}</a>
+      </div>
+      <div class="bg-fog border border-clay/70 rounded-2xl p-6 shadow-soft">
+        <p class="text-sm font-semibold text-ink">{pages.contact.hours}</p>
+      </div>
+    </div>
+  </Section>
+  <CTABlock
+    title={pages.contact.cta.title}
+    body={pages.contact.cta.body}
+    button={pages.contact.cta.button}
+    href={navigation.cta_primary.href}
+  />
+</BaseLayout>

@@ -1,0 +1,23 @@
+---
+const { title, items } = Astro.props;
+---
+<section class="py-12 sm:py-16">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-2xl sm:text-3xl font-display text-center">{title}</h2>
+
+    <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      {items.map((item) => (
+        <article class="bg-sage text-fog rounded-2xl p-8 shadow-soft flex flex-col gap-6 min-h-[360px]">
+          <h3 class="text-2xl font-display text-ember leading-tight">{item.title}</h3>
+          <p class="text-sm text-fog/80 leading-relaxed">{item.body}</p>
+          <a
+            href={item.button_href}
+            class="mt-auto inline-flex items-center justify-center rounded-full bg-ember text-ink px-6 py-2 text-sm font-semibold shadow-soft hover:bg-ember/90"
+          >
+            {item.button_label}
+          </a>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

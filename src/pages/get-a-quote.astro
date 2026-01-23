@@ -1,0 +1,20 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Section from "../components/Section.astro";
+import QuoteForm from "../components/QuoteForm.astro";
+import site from "../content/site.json";
+
+const { pages } = site;
+const success = Astro.url.searchParams.get("success") === "1";
+---
+<BaseLayout title={pages.quote.title} description={pages.quote.intro}>
+  <Section title={pages.quote.title} body={pages.quote.intro}>
+    {success ? (
+      <div class="bg-fog border border-clay/70 rounded-2xl p-6 shadow-soft">
+        <p class="text-ink/80">{pages.quote.success}</p>
+      </div>
+    ) : (
+      <QuoteForm />
+    )}
+  </Section>
+</BaseLayout>

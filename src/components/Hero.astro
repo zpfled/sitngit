@@ -1,0 +1,33 @@
+---
+import site from "../content/site.json";
+const { eyebrow, headline, subhead, primaryCta, secondaryCta, secondaryHref, media } = Astro.props;
+const { navigation, labels } = site;
+const primaryLabel = primaryCta ?? navigation.cta_primary.label;
+const secondaryLabel = secondaryCta ?? labels.view_service_area;
+---
+<section class="relative overflow-visible">
+  {media?.src && (
+    <div class="absolute inset-0 h-full">
+      <img src={media.src} alt={media.alt ?? ""} class="h-full w-full object-cover" loading="eager" />
+    </div>
+  )}
+  <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10 lg:py-12">
+    <div class="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] items-start min-h-[230px] sm:min-h-[280px] lg:min-h-[320px]">
+      <div class="bg-ink text-fog rounded-2xl p-8 sm:p-10 shadow-lift max-w-xl translate-y-10 sm:translate-y-14 lg:translate-y-20">
+        {eyebrow && <p class="text-xs uppercase tracking-[0.35em] text-fog/70 mb-4">{eyebrow}</p>}
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl leading-tight font-display uppercase text-ember">
+          {headline}
+        </h1>
+        <p class="mt-4 text-lg text-fog/85">{subhead}</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href={navigation.cta_primary.href} class="px-6 py-3 rounded-xl bg-ember text-ink font-bold shadow-soft">
+            {primaryLabel}
+          </a>
+          <a href={secondaryHref ?? "/service-area"} class="px-6 py-3 rounded-xl border border-fog/40 text-fog font-semibold">
+            {secondaryLabel}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

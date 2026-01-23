@@ -1,0 +1,20 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Section from "../../components/Section.astro";
+import CardGrid from "../../components/CardGrid.astro";
+import CTABlock from "../../components/CTABlock.astro";
+import site from "../../content/site.json";
+
+const { pages, services, navigation } = site;
+---
+<BaseLayout title={pages.services.title} description={pages.services.intro}>
+  <Section title={pages.services.title} body={pages.services.intro}>
+    <CardGrid items={services} />
+  </Section>
+  <CTABlock
+    title={pages.services.cta.title}
+    body={pages.services.cta.body}
+    button={pages.services.cta.button}
+    href={navigation.cta_primary.href}
+  />
+</BaseLayout>

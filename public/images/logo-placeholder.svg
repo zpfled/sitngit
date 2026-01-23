@@ -1,0 +1,6 @@
+<svg width="400" height="160" viewBox="0 0 400 160" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="160" fill="#f2efe6" />
+  <rect x="16" y="16" width="368" height="128" rx="20" fill="#fbfaf7" stroke="#d9d2c4" stroke-width="3" />
+  <text x="40" y="80" font-family="Open Sans, sans-serif" font-size="28" fill="#214734">Logo placeholder</text>
+  <text x="40" y="115" font-family="Open Sans, sans-serif" font-size="16" fill="#4e6b58">Replace with your logo</text>
+</svg>

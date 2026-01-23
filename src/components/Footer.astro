@@ -1,0 +1,44 @@
+---
+import site from "../content/site.json";
+const { business, services, service_area, navigation, pages, labels } = site;
+---
+<footer class="bg-sand border-t border-clay/60 mt-16">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid gap-10 md:grid-cols-4">
+      <div class="space-y-4">
+        <p class="font-display text-lg text-ink">{business.name}</p>
+        <p class="text-sm text-ink/70">{business.tagline}</p>
+        <div class="space-y-2 text-sm">
+          <p><a href={`tel:${business.phone_tel}`} class="text-ink font-semibold">{business.phone_display}</a></p>
+          <p><a href={`mailto:${business.email}`} class="text-ink/70">{business.email}</a></p>
+        </div>
+      </div>
+      <div>
+        <p class="text-sm font-semibold text-ink mb-3">{labels.footer_services}</p>
+        <ul class="space-y-2 text-sm">
+          {services.map((service) => (
+            <li><a href={`/services/${service.slug}`} class="text-ink/70 hover:text-ink">{service.name}</a></li>
+          ))}
+        </ul>
+      </div>
+      <div>
+        <p class="text-sm font-semibold text-ink mb-3">{labels.footer_service_area}</p>
+        <ul class="space-y-2 text-sm">
+          {service_area.counties.map((county) => (
+            <li><a href={`/service-area/${county.slug}`} class="text-ink/70 hover:text-ink">{county.name}</a></li>
+          ))}
+        </ul>
+      </div>
+      <div class="space-y-3">
+        <p class="text-sm font-semibold text-ink">{pages.contact.cta.title}</p>
+        <p class="text-sm text-ink/70">{pages.contact.cta.body}</p>
+        <a href={navigation.cta_primary.href} class="inline-flex items-center justify-center px-4 py-2 rounded-full bg-ink text-fog text-sm font-semibold">
+          {pages.contact.cta.button}
+        </a>
+      </div>
+    </div>
+    <div class="mt-10 border-t border-clay/70 pt-6 text-xs text-ink/60">
+      <p>© {new Date().getFullYear()} {business.name}. {labels.rights_reserved}</p>
+    </div>
+  </div>
+</footer>

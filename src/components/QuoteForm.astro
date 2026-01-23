@@ -1,0 +1,41 @@
+---
+import site from "../content/site.json";
+const { form } = site.pages.quote;
+---
+<form name="quote" method="post" action="/get-a-quote?success=1" data-netlify="true" netlify-honeypot="bot-field" class="grid gap-6">
+  <input type="hidden" name="form-name" value="quote" />
+  <input type="text" name="bot-field" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true" />
+  <div class="grid gap-4 sm:grid-cols-2">
+    <label class="text-sm font-semibold text-ink">
+      {form.labels.name}
+      <input name="name" required placeholder={form.placeholders.name} class="mt-2 w-full rounded-lg border border-clay bg-fog px-3 py-2" />
+    </label>
+    <label class="text-sm font-semibold text-ink">
+      {form.labels.phone}
+      <input name="phone" required placeholder={form.placeholders.phone} class="mt-2 w-full rounded-lg border border-clay bg-fog px-3 py-2" />
+    </label>
+  </div>
+  <div class="grid gap-4 sm:grid-cols-2">
+    <label class="text-sm font-semibold text-ink">
+      {form.labels.email}
+      <input type="email" name="email" placeholder={form.placeholders.email} class="mt-2 w-full rounded-lg border border-clay bg-fog px-3 py-2" />
+    </label>
+    <label class="text-sm font-semibold text-ink">
+      {form.labels.zip}
+      <input name="zip" placeholder={form.placeholders.zip} class="mt-2 w-full rounded-lg border border-clay bg-fog px-3 py-2" />
+    </label>
+  </div>
+  <label class="text-sm font-semibold text-ink">
+    {form.labels.services}
+    <textarea name="services" required rows="4" placeholder={form.placeholders.services} class="mt-2 w-full rounded-lg border border-clay bg-fog px-3 py-2"></textarea>
+  </label>
+  {form.turnstile_site_key && (
+    <div>
+      <div class="cf-turnstile" data-sitekey={form.turnstile_site_key}></div>
+      <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    </div>
+  )}
+  <button type="submit" class="w-full sm:w-auto px-6 py-3 rounded-full bg-sage text-fog font-semibold shadow-soft">
+    {form.submit}
+  </button>
+</form>

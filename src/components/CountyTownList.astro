@@ -1,0 +1,25 @@
+---
+import site from "../content/site.json";
+const { counties } = Astro.props;
+const { labels } = site;
+---
+<div class="space-y-6">
+  {counties.map((county) => (
+    <div class="bg-fog border border-clay/70 rounded-2xl p-6 shadow-soft">
+      <h3 class="text-lg font-display mb-3">
+        <a href={`/service-area/${county.slug}`} class="text-ink hover:text-sage">{county.name}</a>
+      </h3>
+      {county.towns.length ? (
+        <ul class="flex flex-wrap gap-3 text-sm text-ink/70">
+          {county.towns.map((town) => (
+            <li>
+              <a href={`/service-area/${town.slug}`} class="hover:text-ink">{town.name}</a>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p class="text-sm text-ink/60">{labels.no_towns_note}</p>
+      )}
+    </div>
+  ))}
+</div>

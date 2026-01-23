@@ -1,0 +1,40 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Section from "../../components/Section.astro";
+import FAQList from "../../components/FAQList.astro";
+import CTABlock from "../../components/CTABlock.astro";
+import site from "../../content/site.json";
+
+export function getStaticPaths() {
+  return site.services.map((service) => ({
+    params: { slug: service.slug },
+    props: { service }
+  }));
+}
+
+const { service } = Astro.props;
+const { pages, navigation } = site;
+---
+<BaseLayout title={service.name} description={service.short}>
+  <Section title={service.name} body={service.short}>
+    <ul class="grid gap-3 sm:grid-cols-2 text-sm text-ink/75">
+      {service.bullets.map((bullet) => (
+        <li class="flex gap-2">
+          <span class="text-sage">•</span>
+          <span>{bullet}</span>
+        </li>
+      ))}
+    </ul>
+  </Section>
+
+  <Section title={pages.faq.title}>
+    <FAQList items={service.faqs} />
+  </Section>
+
+  <CTABlock
+    title={pages.service_detail.cta.title}
+    body={pages.service_detail.cta.body}
+    button={pages.service_detail.cta.button}
+    href={navigation.cta_primary.href}
+  />
+</BaseLayout>
