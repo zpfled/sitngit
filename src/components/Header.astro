@@ -21,7 +21,7 @@ const { navigation, business, labels } = site;
           <span class="font-display text-xl text-fog">{business.name}</span>
         )}
       </a>
-      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold">
+      <nav class="hidden md:flex items-center gap-8 text-base font-semibold">
         {navigation.primary.map((item) => (
           <a href={item.href} class="text-fog/80 hover:text-fog">{item.label}</a>
         ))}

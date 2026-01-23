@@ -20,8 +20,9 @@ npm run preview
 All site copy lives in `src/content/site.json`.
 - Business info, nav labels, services, service area data
 - Page headings, CTAs, FAQ text
-- Quote form labels and options
+- Quote form labels, placeholders, and Turnstile site key
 - Google reviews layout title
+- Quote section background image via `pages.quote.background_image`
 
 ## Components
 - Layout shell: `src/layouts/BaseLayout.astro`
@@ -32,6 +33,8 @@ All site copy lives in `src/content/site.json`.
 - Form route: `/get-a-quote`
 - Netlify Forms handles email notifications
 - Spam protection: Netlify honeypot
+- Optional Turnstile captcha: set `pages.quote.form.turnstile_site_key` in `src/content/site.json`
+  (requires a Cloudflare Turnstile site key)
 
 ## Google reviews (build-time fetch)
 Static reviews are stored in `src/content/google-reviews.json` and refreshed during `npm run build`.
@@ -48,6 +51,7 @@ Set these environment variables for the fetch script:
 ## Images
 - OG image placeholder: `public/images/og-default.svg` (replace with a 1200x630 image)
 - Hero panel text notes where to swap in a custom photo (ideal 1200x900, <300KB)
+- Quote section background: `public/images/quote-bg.jpg` (recommended ~2400px wide, compressed)
 
 ## Deploy
 ### Netlify
