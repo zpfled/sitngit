@@ -2,7 +2,7 @@
   "summary": {
     "label": "Google Reviews",
     "rating": 5,
-    "count": 6,
+    "count": 10,
     "cta_label": "Review us on Google",
     "cta_href": "https://search.google.com/local/writereview?placeid=ChIJrU-osv6Ki6URmg_fVcsDANI"
   },
@@ -26,22 +26,22 @@
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocKV9WM1mKWq4iu5bHMftmCqKtwsg2or-NFASNMZ2QGu000UMQ=s128-c0x00000000-cc-rp-mo"
     },
     {
-      "name": "Barbara",
-      "initials": "B",
+      "name": "Andy Pflederer",
+      "initials": "AP",
       "time": "in the last week",
       "rating": 5,
-      "text": "I am so very impressed with the service I receive from Sit & Git Portables.  Zach is very efficient at his job, always there when service is needed and an all around really nice person.  I will gladly continue working with this company.",
-      "url": "https://www.google.com/maps/contrib/112359749366521837107/reviews",
-      "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLxQ9Fxjyov-eHYOnDU_CAGlEBL68otG6B1IHJMWPu_-9DGlg=s128-c0x00000000-cc-rp-mo"
+      "text": "I’ve used Sit&Git toilets and have found them consistently clean and well maintained… a big contrast to other experiences!",
+      "url": "https://www.google.com/maps/contrib/109058625647155624537/reviews",
+      "avatar": "https://lh3.googleusercontent.com/a/ACg8ocItLLfqYhZbUVRh-PZIwYTmcvNJFEg2WsUgNIeIeM_6OMOgfw=s128-c0x00000000-cc-rp-mo"
     },
     {
-      "name": "Aaron Monson",
-      "initials": "AM",
+      "name": "Kira Kennedy",
+      "initials": "KK",
       "time": "in the last week",
       "rating": 5,
-      "text": "We rented 10 restrooms from Sit & Git when we were in a pinch for an event. Zach got us taken care of in a timely fashion with some clean restrooms!",
-      "url": "https://www.google.com/maps/contrib/110682679701592390759/reviews",
-      "avatar": "https://lh3.googleusercontent.com/a/ACg8ocKy54nrLjEc6eMSfiC0AX9XOzDL2T5OefZVVTRcm49mOYqraA=s128-c0x00000000-cc-rp-mo"
+      "text": "Zach is great and so professional to work with! We were in immediate need of a porta-potty for our soccer field, and he dropped one off promptly. The toilets are always clean and well stocked with toilet paper and hand sanitizer. Highly recommend!",
+      "url": "https://www.google.com/maps/contrib/100692768707125657926/reviews",
+      "avatar": "https://lh3.googleusercontent.com/a-/ALV-UjXl_-XXCCpENeJesj87h6bTr_XKe7rq0EOFwYVJYTYCE0U25Cs=s128-c0x00000000-cc-rp-mo"
     }
   ]
 }

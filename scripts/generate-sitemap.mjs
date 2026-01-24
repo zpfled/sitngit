@@ -1,9 +1,12 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
 import config from "../astro.config.mjs";
-import site from "../src/content/site.json" assert { type: "json" };
+import { readFile } from "node:fs/promises";
 
 const siteUrl = config.site ?? "https://sitandgit.com";
+const site = JSON.parse(
+  await readFile(new URL("../src/content/site.json", import.meta.url), "utf-8")
+);
 const outputPath = path.join(process.cwd(), "public", "sitemap.xml");
 
 const paths = new Set([
