@@ -5,6 +5,7 @@
     "phone_display": "(608) 570-9118",
     "phone_tel": "+16085709118",
     "email": "quotes@sitandgit.com",
+    "website": "https://www.sitandgit.com/",
     "service_radius_statement": "Sit & Git Portables proudly serves customers throughout the Driftless Area.",
     "logo": {
       "src": "/images/logo.png",
@@ -19,14 +20,35 @@
   },
   "navigation": {
     "primary": [
-      {"label": "Services", "href": "/services"},
-      {"label": "Service Area", "href": "/service-area"},
-      {"label": "FAQ", "href": "/faq"},
-      {"label": "About", "href": "/about"},
-      {"label": "Contact", "href": "/contact"}
+      {
+        "label": "Services",
+        "href": "/services"
+      },
+      {
+        "label": "Service Area",
+        "href": "/service-area"
+      },
+      {
+        "label": "FAQ",
+        "href": "/faq"
+      },
+      {
+        "label": "About",
+        "href": "/about"
+      },
+      {
+        "label": "Contact",
+        "href": "/contact"
+      }
     ],
-    "cta_primary": {"label": "Get a Quote", "href": "/get-a-quote"},
-    "cta_secondary": {"label": "Call/Text", "href": "tel:+16085709118"}
+    "cta_primary": {
+      "label": "Get a Quote",
+      "href": "/get-a-quote"
+    },
+    "cta_secondary": {
+      "label": "Call/Text",
+      "href": "tel:+16085709118"
+    }
   },
   "labels": {
     "learn_more": "Learn more",
@@ -400,7 +422,7 @@
   ],
   "service_area": {
     "description_short": "Sit & Git Portables provides portable restroom rentals and service across southwest Wisconsin with consistent routes and local delivery.",
-    "radius_statement": "We typically serve within 30-40 miles depending on the order.",
+    "radius_statement": "We serve customers throughout Vernon, Richland and Crawford counties.",
     "hero_paragraphs": [
       "Sit & Git Portables serves customers across southwest Wisconsin with a local, dependable approach. With routes centered in the Driftless Area, we deliver portable restrooms and service them on schedule throughout Vernon, Richland, and Crawford counties. Local routes shorten delivery time, keep service windows predictable, and make it easier to respond when plans change.",
       "We support both busy job sites and smaller rural events, offering the same level of care whether you need a short-term rental or a longer placement.",
@@ -411,34 +433,82 @@
         "name": "Vernon County",
         "slug": "vernon-county-wi",
         "towns": [
-          {"name": "Viroqua", "slug": "viroqua-wi"},
-          {"name": "Westby", "slug": "westby-wi"},
-          {"name": "Coon Valley", "slug": "coon-valley-wi"},
-          {"name": "Chaseburg", "slug": "chaseburg-wi"},
-          {"name": "De Soto", "slug": "de-soto-wi"},
-          {"name": "Readstown", "slug": "readstown-wi"},
-          {"name": "La Farge", "slug": "la-farge-wi"},
-          {"name": "Hillsboro", "slug": "hillsboro-wi"},
-          {"name": "Cashton", "slug": "cashton-wi"}
+          {
+            "name": "Viroqua",
+            "slug": "viroqua-wi"
+          },
+          {
+            "name": "Westby",
+            "slug": "westby-wi"
+          },
+          {
+            "name": "Coon Valley",
+            "slug": "coon-valley-wi"
+          },
+          {
+            "name": "Chaseburg",
+            "slug": "chaseburg-wi"
+          },
+          {
+            "name": "De Soto",
+            "slug": "de-soto-wi"
+          },
+          {
+            "name": "Readstown",
+            "slug": "readstown-wi"
+          },
+          {
+            "name": "La Farge",
+            "slug": "la-farge-wi"
+          },
+          {
+            "name": "Hillsboro",
+            "slug": "hillsboro-wi"
+          },
+          {
+            "name": "Cashton",
+            "slug": "cashton-wi"
+          }
         ]
       },
       {
         "name": "Richland County",
         "slug": "richland-county-wi",
         "towns": [
-          {"name": "Richland Center", "slug": "richland-center-wi"},
-          {"name": "Ithaca", "slug": "ithaca-wi"},
-          {"name": "Boaz", "slug": "boaz-wi"},
-          {"name": "Viola", "slug": "viola-wi"},
-          {"name": "Muscoda", "slug": "muscoda-wi"}
+          {
+            "name": "Richland Center",
+            "slug": "richland-center-wi"
+          },
+          {
+            "name": "Ithaca",
+            "slug": "ithaca-wi"
+          },
+          {
+            "name": "Boaz",
+            "slug": "boaz-wi"
+          },
+          {
+            "name": "Viola",
+            "slug": "viola-wi"
+          },
+          {
+            "name": "Muscoda",
+            "slug": "muscoda-wi"
+          }
         ]
       },
       {
         "name": "Crawford County",
         "slug": "crawford-county-wi",
         "towns": [
-          {"name": "Soldiers Grove", "slug": "soldiers-grove-wi"},
-          {"name": "Gays Mills", "slug": "gays-mills-wi"}
+          {
+            "name": "Soldiers Grove",
+            "slug": "soldiers-grove-wi"
+          },
+          {
+            "name": "Gays Mills",
+            "slug": "gays-mills-wi"
+          }
         ]
       }
     ]
@@ -449,9 +519,8 @@
       "meta_description": "Portable toilet rentals serving Vernon County, WI. Clean, reliable units for events, construction, and job sites. Local service you can count on.",
       "h1": "Portable Toilet Rentals in Vernon County, Wisconsin",
       "intro_paragraphs": [
-        "Sit & Git Portables provides portable toilet rentals throughout Vernon County with dependable local delivery and scheduled servicing. We support job sites, events, farms, and rural properties across Vernon County, keeping units clean and service windows predictable.",
-        "As a local operator, we plan routes efficiently and can respond quickly when plans change. Whether the rental is short-term or long-term, our focus in Vernon County is straightforward: reliable delivery, routine maintenance, and clear communication from start to finish.",
-        "We are used to rural access and site-specific placement, and we adjust service cadence based on real usage so units stay ready throughout the rental."
+        "Sit & Git Portables provides portable toilet rentals throughout Vernon County with dependable local delivery and scheduled servicing. We serve job sites, events, and rural properties across Vernon County with clean units and clear scheduling.",
+        "Our routes cover Vernon, Richland, and Crawford counties, and Vernon County is part of our regular service area. Whether you need short-term coverage for an event or longer placement for a job site, we coordinate delivery, placement, and servicing to fit your schedule."
       ],
       "services_title": "Portable Restroom Options Available in Vernon County",
       "services_list": [
@@ -461,16 +530,15 @@
         "Short-term and long-term rentals",
         "Scheduled servicing and maintenance"
       ],
-      "services_note": "In Vernon County, deliveries and service visits are planned locally so schedules stay consistent and access is handled correctly.",
+      "services_note": "In Vernon County, deliveries and service visits are planned locally to keep schedules consistent and access handled correctly.",
       "use_cases_title": "Common Uses for Portable Toilets in Vernon County",
       "use_cases": [
-        "Community events like the Viroqua Farmers Market, political rallies, and rodeos often require reliable short-term restroom setups.",
-        "Weddings and private outdoor gatherings need clean units delivered and serviced on a predictable schedule.",
-        "Educational and agricultural events, including Restoration Agriculture workshops, benefit from on-site sanitation without disrupting the site.",
-        "Construction and remodeling projects rely on consistent weekly servicing to keep crews productive."
+        "Construction and remodeling projects across Vernon County rely on steady weekly service to keep crews productive.",
+        "Festivals and community gatherings in Vernon County benefit from clean, short-term restroom setups with clear delivery and pickup windows.",
+        "Small businesses and seasonal operations in Vernon County use portable restrooms and handwashing stations to support staff and visitors."
       ],
       "logistics_title": "Serving Vernon County and Nearby Areas",
-      "logistics_body": "We regularly deliver to rural properties in Vernon County, including gravel drives and farm lanes. Seasonal ground conditions are accounted for during scheduling so placement is safe and service visits stay reliable. Local route planning helps us coordinate delivery windows that fit your site and minimize disruption.",
+      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we’ll work with you to confirm a safe access route or adjust service timing as needed. If you’re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
       "faq_title": "Portable Toilet Rental FAQs for Vernon County, WI",
       "faqs": [
         {
@@ -494,8 +562,14 @@
       "cta_body": "If you need portable toilets in Vernon County, we will confirm availability, delivery timing, and service cadence based on your dates and location.",
       "cta_button": "Request a Quote",
       "also_serving": [
-        {"label": "Richland County, WI", "href": "/service-area/richland-county-wi"},
-        {"label": "Crawford County, WI", "href": "/service-area/crawford-county-wi"}
+        {
+          "label": "Richland County, WI",
+          "href": "/service-area/richland-county-wi"
+        },
+        {
+          "label": "Crawford County, WI",
+          "href": "/service-area/crawford-county-wi"
+        }
       ]
     },
     "richland-county-wi": {
@@ -503,9 +577,8 @@
       "meta_description": "Portable toilet rentals serving Richland County, WI. Clean, reliable units for events, construction, and job sites. Local service you can count on.",
       "h1": "Portable Toilet Rentals in Richland County, Wisconsin",
       "intro_paragraphs": [
-        "Sit & Git Portables provides portable toilet rentals throughout Richland County with dependable local delivery and scheduled servicing. We support job sites, events, and rural properties across Richland County, keeping units clean and service windows predictable.",
-        "As a local operator, we plan routes efficiently and can respond quickly when plans change. Whether the rental is short-term or long-term, our focus in Richland County is straightforward: reliable delivery, routine maintenance, and clear communication from start to finish.",
-        "We are used to rural access and site-specific placement, and we adjust service cadence based on real usage so units stay ready throughout the rental."
+        "Sit & Git Portables provides portable toilet rentals throughout Richland County with dependable local delivery and scheduled servicing. We serve job sites, events, and rural properties across Richland County with clean units and clear scheduling.",
+        "Our routes cover Vernon, Richland, and Crawford counties, and Richland County is part of our regular service area. Whether you need short-term coverage for an event or longer placement for a job site, we coordinate delivery, placement, and servicing to fit your schedule."
       ],
       "services_title": "Portable Restroom Options Available in Richland County",
       "services_list": [
@@ -515,16 +588,15 @@
         "Short-term and long-term rentals",
         "Scheduled servicing and maintenance"
       ],
-      "services_note": "In Richland County, deliveries and service visits are planned locally so schedules stay consistent and access is handled correctly.",
+      "services_note": "In Richland County, deliveries and service visits are planned locally to keep schedules consistent and access handled correctly.",
       "use_cases_title": "Common Uses for Portable Toilets in Richland County",
       "use_cases": [
-        "School athletic fields and school construction projects need consistent weekly service for crews and attendees.",
-        "Community events like Driftless Curiosity benefit from clean, dependable units delivered on time.",
-        "Car shows such as Fire in the Hills require short-term rentals with clear placement and pickup windows.",
-        "Construction and remodeling projects rely on predictable service schedules to keep crews productive."
+        "Construction and remodeling projects across Richland County rely on steady weekly service to keep crews productive.",
+        "Festivals and community gatherings in Richland County benefit from clean, short-term restroom setups with clear delivery and pickup windows.",
+        "Small businesses and seasonal operations in Richland County use portable restrooms and handwashing stations to support staff and visitors."
       ],
       "logistics_title": "Serving Richland County and Nearby Areas",
-      "logistics_body": "We regularly deliver to rural properties in Richland County, including gravel roads and tighter access points. Seasonal ground conditions are considered during scheduling so placement is safe and service visits stay reliable. Local route planning helps us coordinate delivery windows that fit your site and minimize disruption.",
+      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we’ll work with you to confirm a safe access route or adjust service timing as needed. If you’re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
       "faq_title": "Portable Toilet Rental FAQs for Richland County, WI",
       "faqs": [
         {
@@ -558,8 +630,14 @@
         }
       ],
       "also_serving": [
-        {"label": "Vernon County, WI", "href": "/service-area/vernon-county-wi"},
-        {"label": "Crawford County, WI", "href": "/service-area/crawford-county-wi"}
+        {
+          "label": "Vernon County, WI",
+          "href": "/service-area/vernon-county-wi"
+        },
+        {
+          "label": "Crawford County, WI",
+          "href": "/service-area/crawford-county-wi"
+        }
       ]
     },
     "crawford-county-wi": {
@@ -567,9 +645,8 @@
       "meta_description": "Portable toilet rentals serving Crawford County, WI. Clean, reliable units for events, construction, and job sites. Local service you can count on.",
       "h1": "Portable Toilet Rentals in Crawford County, Wisconsin",
       "intro_paragraphs": [
-        "Sit & Git Portables provides portable toilet rentals throughout Crawford County with dependable local delivery and scheduled servicing. We support job sites, events, and rural properties across Crawford County, keeping units clean and service windows predictable.",
-        "As a local operator, we plan routes efficiently and can respond quickly when plans change. Whether the rental is short-term or long-term, our focus in Crawford County is straightforward: reliable delivery, routine maintenance, and clear communication from start to finish.",
-        "We are used to rural access and site-specific placement, and we adjust service cadence based on real usage so units stay ready throughout the rental."
+        "Sit & Git Portables provides portable toilet rentals throughout Crawford County with dependable local delivery and scheduled servicing. We serve job sites, events, and rural properties across Crawford County with clean units and clear scheduling.",
+        "Our routes cover Vernon, Richland, and Crawford counties, and Crawford County is part of our regular service area. Whether you need short-term coverage for an event or longer placement for a job site, we coordinate delivery, placement, and servicing to fit your schedule."
       ],
       "services_title": "Portable Restroom Options Available in Crawford County",
       "services_list": [
@@ -579,16 +656,15 @@
         "Short-term and long-term rentals",
         "Scheduled servicing and maintenance"
       ],
-      "services_note": "In Crawford County, deliveries and service visits are planned locally so schedules stay consistent and access is handled correctly.",
+      "services_note": "In Crawford County, deliveries and service visits are planned locally to keep schedules consistent and access handled correctly.",
       "use_cases_title": "Common Uses for Portable Toilets in Crawford County",
       "use_cases": [
-        "Community events like the Driftless Area Art Festival need clean, short-term restroom setups with clear pickup timing.",
-        "Agricultural or seasonal work requires on-site sanitation for longer periods.",
-        "Construction and remodeling projects depend on consistent service to support crews.",
-        "Parks and recreational areas benefit from dependable units during high-traffic seasons."
+        "Construction and remodeling projects across Crawford County rely on steady weekly service to keep crews productive.",
+        "Festivals and community gatherings in Crawford County benefit from clean, short-term restroom setups with clear delivery and pickup windows.",
+        "Small businesses and seasonal operations in Crawford County use portable restrooms and handwashing stations to support staff and visitors."
       ],
       "logistics_title": "Serving Crawford County and Nearby Areas",
-      "logistics_body": "We regularly deliver to rural properties in Crawford County, including gravel roads and tighter access points. Seasonal ground conditions are considered during scheduling so placement is safe and service visits stay reliable. Local route planning helps us coordinate delivery windows that fit your site and minimize disruption.",
+      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we’ll work with you to confirm a safe access route or adjust service timing as needed. If you’re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
       "faq_title": "Portable Toilet Rental FAQs for Crawford County, WI",
       "faqs": [
         {
@@ -612,8 +688,14 @@
       "cta_body": "If you need portable toilets in Crawford County, we will confirm availability, delivery timing, and service cadence based on your dates and location.",
       "cta_button": "Request a Quote",
       "also_serving": [
-        {"label": "Vernon County, WI", "href": "/service-area/vernon-county-wi"},
-        {"label": "Richland County, WI", "href": "/service-area/richland-county-wi"}
+        {
+          "label": "Vernon County, WI",
+          "href": "/service-area/vernon-county-wi"
+        },
+        {
+          "label": "Richland County, WI",
+          "href": "/service-area/richland-county-wi"
+        }
       ]
     },
     "viroqua-wi": {
@@ -621,9 +703,8 @@
       "meta_description": "Portable toilet rentals serving Viroqua, WI. Clean, reliable units for events, construction, and job sites. Local service you can count on.",
       "h1": "Portable Toilet Rentals in Viroqua, Wisconsin",
       "intro_paragraphs": [
-        "Sit & Git Portables provides portable toilet rentals in Viroqua with dependable local delivery and scheduled servicing. We serve construction sites, events, and rural properties around Viroqua, keeping units clean and service windows predictable.",
-        "As a local operator, we plan routes efficiently and coordinate placements that fit site access. Whether the rental is short-term or long-term, our focus in Viroqua is straightforward: reliable delivery, routine maintenance, and clear communication from start to finish.",
-        "We adjust service cadence based on actual usage so units stay ready throughout the rental."
+        "Sit & Git Portables provides portable toilet rentals in Viroqua with dependable local delivery and scheduled servicing. We serve Viroqua and nearby rural areas with clean units, clear scheduling, and consistent maintenance.",
+        "Our routes cover Vernon, Richland, and Crawford counties, and Viroqua is part of our regular service area. Whether you need short-term coverage for an event or longer placement for a job site, we coordinate delivery, placement, and servicing to fit your schedule."
       ],
       "services_title": "Portable Restroom Options Available in Viroqua",
       "services_list": [
@@ -633,16 +714,15 @@
         "Short-term and long-term rentals",
         "Scheduled servicing and maintenance"
       ],
-      "services_note": "In Viroqua, deliveries and service visits are planned locally so schedules stay consistent and access is handled correctly.",
+      "services_note": "In Viroqua, deliveries and service visits are planned locally to keep schedules consistent and access handled correctly.",
       "use_cases_title": "Common Uses for Portable Toilets in Viroqua",
       "use_cases": [
-        "Construction projects such as the Main St Apartments build need reliable weekly servicing to keep crews productive.",
-        "School athletics like Viroqua High School football, baseball, softball, track, and cross-country require clean units during practices and events.",
-        "Community gatherings like the Live in Viroqua concert series need short-term rentals with clear delivery and pickup windows.",
-        "Festivals such as Wild West Days benefit from dependable units placed for easy guest access."
+        "Construction and remodeling projects in Viroqua rely on steady service to keep crews productive.",
+        "Events and private gatherings in Viroqua need clean, short-term restroom setups with clear delivery and pickup windows.",
+        "Schools, parks, and public spaces in Viroqua benefit from reliable units during practices, games, and seasonal traffic."
       ],
       "logistics_title": "Serving Viroqua and Nearby Areas",
-      "logistics_body": "We regularly deliver to rural properties near Viroqua, including gravel drives and tighter access points. Seasonal ground conditions are considered during scheduling so placement is safe and service visits stay reliable. Local route planning helps us coordinate delivery windows that fit your site and minimize disruption.",
+      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we’ll work with you to confirm a safe access route or adjust service timing as needed. If you’re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
       "faq_title": "Portable Toilet Rental FAQs for Viroqua, WI",
       "faqs": [
         {
@@ -666,10 +746,22 @@
       "cta_body": "If you need portable toilets in Viroqua, we will confirm availability, delivery timing, and service cadence based on your dates and location.",
       "cta_button": "Request a Quote",
       "also_serving": [
-        {"label": "Westby, WI", "href": "/service-area/westby-wi"},
-        {"label": "Coon Valley, WI", "href": "/service-area/coon-valley-wi"},
-        {"label": "Chaseburg, WI", "href": "/service-area/chaseburg-wi"},
-        {"label": "De Soto, WI", "href": "/service-area/de-soto-wi"}
+        {
+          "label": "Westby, WI",
+          "href": "/service-area/westby-wi"
+        },
+        {
+          "label": "Coon Valley, WI",
+          "href": "/service-area/coon-valley-wi"
+        },
+        {
+          "label": "Chaseburg, WI",
+          "href": "/service-area/chaseburg-wi"
+        },
+        {
+          "label": "De Soto, WI",
+          "href": "/service-area/de-soto-wi"
+        }
       ]
     },
     "westby-wi": {
@@ -677,9 +769,8 @@
       "meta_description": "Portable toilet rentals serving Westby, WI. Clean, reliable units for events, construction, and job sites. Local service you can count on.",
       "h1": "Portable Toilet Rentals in Westby, Wisconsin",
       "intro_paragraphs": [
-        "Sit & Git Portables provides portable toilet rentals in Westby with dependable local delivery and scheduled servicing. We support construction sites, farms, events, and rural properties around Westby, keeping units clean and service windows predictable.",
-        "As a local operator, we plan routes efficiently and coordinate placements that fit site access. Whether the rental is short-term or long-term, our focus in Westby is straightforward: reliable delivery, routine maintenance, and clear communication from start to finish.",
-        "We adjust service cadence based on actual usage so units stay ready throughout the rental."
+        "Sit & Git Portables provides portable toilet rentals in Westby with dependable local delivery and scheduled servicing. We serve Westby and nearby rural areas with clean units, clear scheduling, and consistent maintenance.",
+        "Our routes cover Vernon, Richland, and Crawford counties, and Westby is part of our regular service area. Whether you need short-term coverage for an event or longer placement for a job site, we coordinate delivery, placement, and servicing to fit your schedule."
       ],
       "services_title": "Portable Restroom Options Available in Westby",
       "services_list": [
@@ -692,13 +783,12 @@
       "services_note": "In Westby, deliveries and service visits are planned locally to keep schedules consistent and access handled correctly.",
       "use_cases_title": "Common Uses for Portable Toilets in Westby",
       "use_cases": [
-        "Construction and remodeling projects that need steady weekly servicing for crews.",
-        "Agricultural or seasonal work where on-site sanitation is needed for longer periods.",
-        "Community events and fundraisers that require short-term rentals with clear pickup timing.",
-        "Private outdoor gatherings where clean, accessible units are a priority."
+        "Construction and remodeling projects in Westby rely on steady service to keep crews productive.",
+        "Events and private gatherings in Westby need clean, short-term restroom setups with clear delivery and pickup windows.",
+        "Schools, parks, and public spaces in Westby benefit from reliable units during practices, games, and seasonal traffic."
       ],
       "logistics_title": "Serving Westby and Nearby Areas",
-      "logistics_body": "We regularly deliver to rural properties near Westby, including gravel drives and tighter access points. Seasonal ground conditions are considered during scheduling so placement is safe and service visits stay reliable. Local route planning helps us coordinate delivery windows that fit your site and minimize disruption.",
+      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we’ll work with you to confirm a safe access route or adjust service timing as needed. If you’re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
       "faq_title": "Portable Toilet Rental FAQs for Westby, WI",
       "faqs": [
         {
@@ -722,10 +812,22 @@
       "cta_body": "If you need portable toilets in Westby, we will confirm availability, delivery timing, and service cadence based on your dates and location.",
       "cta_button": "Request a Quote",
       "also_serving": [
-        {"label": "Viroqua, WI", "href": "/service-area/viroqua-wi"},
-        {"label": "Coon Valley, WI", "href": "/service-area/coon-valley-wi"},
-        {"label": "Chaseburg, WI", "href": "/service-area/chaseburg-wi"},
-        {"label": "Readstown, WI", "href": "/service-area/readstown-wi"}
+        {
+          "label": "Viroqua, WI",
+          "href": "/service-area/viroqua-wi"
+        },
+        {
+          "label": "Coon Valley, WI",
+          "href": "/service-area/coon-valley-wi"
+        },
+        {
+          "label": "Chaseburg, WI",
+          "href": "/service-area/chaseburg-wi"
+        },
+        {
+          "label": "Readstown, WI",
+          "href": "/service-area/readstown-wi"
+        }
       ]
     },
     "coon-valley-wi": {
@@ -733,9 +835,8 @@
       "meta_description": "Portable toilet rentals serving Coon Valley, WI. Clean, reliable units for events, construction, and job sites. Local service you can count on.",
       "h1": "Portable Toilet Rentals in Coon Valley, Wisconsin",
       "intro_paragraphs": [
-        "Sit & Git Portables provides portable toilet rentals in Coon Valley with dependable local delivery and scheduled servicing. We serve construction sites, farms, events, and rural properties around Coon Valley, keeping units clean and service windows predictable.",
-        "As a local operator, we plan routes efficiently and coordinate placements that fit site access. Whether the rental is short-term or long-term, our focus in Coon Valley is straightforward: reliable delivery, routine maintenance, and clear communication from start to finish.",
-        "We adjust service cadence based on actual usage so units stay ready throughout the rental."
+        "Sit & Git Portables provides portable toilet rentals in Coon Valley with dependable local delivery and scheduled servicing. We serve Coon Valley and nearby rural areas with clean units, clear scheduling, and consistent maintenance.",
+        "Our routes cover Vernon, Richland, and Crawford counties, and Coon Valley is part of our regular service area. Whether you need short-term coverage for an event or longer placement for a job site, we coordinate delivery, placement, and servicing to fit your schedule."
       ],
       "services_title": "Portable Restroom Options Available in Coon Valley",
       "services_list": [
@@ -748,13 +849,12 @@
       "services_note": "In Coon Valley, deliveries and service visits are planned locally to keep schedules consistent and access handled correctly.",
       "use_cases_title": "Common Uses for Portable Toilets in Coon Valley",
       "use_cases": [
-        "Construction and remodeling projects that need steady weekly servicing for crews.",
-        "Agricultural or seasonal work where on-site sanitation is needed for longer periods.",
-        "Parks, trails, or recreational areas that see seasonal traffic.",
-        "Private outdoor gatherings where clean, accessible units are a priority."
+        "Construction and remodeling projects in Coon Valley rely on steady service to keep crews productive.",
+        "Events and private gatherings in Coon Valley need clean, short-term restroom setups with clear delivery and pickup windows.",
+        "Schools, parks, and public spaces in Coon Valley benefit from reliable units during practices, games, and seasonal traffic."
       ],
       "logistics_title": "Serving Coon Valley and Nearby Areas",
-      "logistics_body": "We regularly deliver to rural properties near Coon Valley, including gravel roads and tighter access points. Seasonal ground conditions are considered during scheduling so placement is safe and service visits stay reliable. Local route planning helps us coordinate delivery windows that fit your site and minimize disruption.",
+      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we’ll work with you to confirm a safe access route or adjust service timing as needed. If you’re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
       "faq_title": "Portable Toilet Rental FAQs for Coon Valley, WI",
       "faqs": [
         {
@@ -778,10 +878,22 @@
       "cta_body": "If you need portable toilets in Coon Valley, we will confirm availability, delivery timing, and service cadence based on your dates and location.",
       "cta_button": "Request a Quote",
       "also_serving": [
-        {"label": "Viroqua, WI", "href": "/service-area/viroqua-wi"},
-        {"label": "Westby, WI", "href": "/service-area/westby-wi"},
-        {"label": "Chaseburg, WI", "href": "/service-area/chaseburg-wi"},
-        {"label": "Readstown, WI", "href": "/service-area/readstown-wi"}
+        {
+          "label": "Viroqua, WI",
+          "href": "/service-area/viroqua-wi"
+        },
+        {
+          "label": "Westby, WI",
+          "href": "/service-area/westby-wi"
+        },
+        {
+          "label": "Chaseburg, WI",
+          "href": "/service-area/chaseburg-wi"
+        },
+        {
+          "label": "Readstown, WI",
+          "href": "/service-area/readstown-wi"
+        }
       ]
     },
     "chaseburg-wi": {
@@ -789,9 +901,8 @@
       "meta_description": "Portable toilet rentals serving Chaseburg, WI. Clean, reliable units for events, construction, and job sites. Local service you can count on.",
       "h1": "Portable Toilet Rentals in Chaseburg, Wisconsin",
       "intro_paragraphs": [
-        "Sit & Git Portables provides portable toilet rentals in Chaseburg with dependable local delivery and scheduled servicing. We support construction sites, farms, events, and rural properties around Chaseburg, keeping units clean and service windows predictable.",
-        "As a local operator, we plan routes efficiently and coordinate placements that fit site access. Whether the rental is short-term or long-term, our focus in Chaseburg is straightforward: reliable delivery, routine maintenance, and clear communication from start to finish.",
-        "We adjust service cadence based on actual usage so units stay ready throughout the rental."
+        "Sit & Git Portables provides portable toilet rentals in Chaseburg with dependable local delivery and scheduled servicing. We serve Chaseburg and nearby rural areas with clean units, clear scheduling, and consistent maintenance.",
+        "Our routes cover Vernon, Richland, and Crawford counties, and Chaseburg is part of our regular service area. Whether you need short-term coverage for an event or longer placement for a job site, we coordinate delivery, placement, and servicing to fit your schedule."
       ],
       "services_title": "Portable Restroom Options Available in Chaseburg",
       "services_list": [
@@ -804,13 +915,12 @@
       "services_note": "In Chaseburg, deliveries and service visits are planned locally to keep schedules consistent and access handled correctly.",
       "use_cases_title": "Common Uses for Portable Toilets in Chaseburg",
       "use_cases": [
-        "Construction and remodeling projects that need steady weekly servicing for crews.",
-        "Agricultural or seasonal work where on-site sanitation is needed for longer periods.",
-        "Parks, trails, or recreational areas that see seasonal traffic.",
-        "Private outdoor gatherings where clean, accessible units are a priority."
+        "Construction and remodeling projects in Chaseburg rely on steady service to keep crews productive.",
+        "Events and private gatherings in Chaseburg need clean, short-term restroom setups with clear delivery and pickup windows.",
+        "Schools, parks, and public spaces in Chaseburg benefit from reliable units during practices, games, and seasonal traffic."
       ],
       "logistics_title": "Serving Chaseburg and Nearby Areas",
-      "logistics_body": "We regularly deliver to rural properties near Chaseburg, including gravel roads and tighter access points. Seasonal ground conditions are considered during scheduling so placement is safe and service visits stay reliable. Local route planning helps us coordinate delivery windows that fit your site and minimize disruption.",
+      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we’ll work with you to confirm a safe access route or adjust service timing as needed. If you’re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
       "faq_title": "Portable Toilet Rental FAQs for Chaseburg, WI",
       "faqs": [
         {
@@ -834,10 +944,22 @@
       "cta_body": "If you need portable toilets in Chaseburg, we will confirm availability, delivery timing, and service cadence based on your dates and location.",
       "cta_button": "Request a Quote",
       "also_serving": [
-        {"label": "Viroqua, WI", "href": "/service-area/viroqua-wi"},
-        {"label": "Westby, WI", "href": "/service-area/westby-wi"},
-        {"label": "Coon Valley, WI", "href": "/service-area/coon-valley-wi"},
-        {"label": "De Soto, WI", "href": "/service-area/de-soto-wi"}
+        {
+          "label": "Viroqua, WI",
+          "href": "/service-area/viroqua-wi"
+        },
+        {
+          "label": "Westby, WI",
+          "href": "/service-area/westby-wi"
+        },
+        {
+          "label": "Coon Valley, WI",
+          "href": "/service-area/coon-valley-wi"
+        },
+        {
+          "label": "De Soto, WI",
+          "href": "/service-area/de-soto-wi"
+        }
       ]
     },
     "de-soto-wi": {
@@ -845,9 +967,8 @@
       "meta_description": "Portable toilet rentals serving De Soto, WI. Clean, reliable units for events, construction, and job sites. Local service you can count on.",
       "h1": "Portable Toilet Rentals in De Soto, Wisconsin",
       "intro_paragraphs": [
-        "Sit & Git Portables provides portable toilet rentals in De Soto with dependable local delivery and scheduled servicing. We support construction sites, farms, events, and rural properties around De Soto, keeping units clean and service windows predictable.",
-        "As a local operator, we plan routes efficiently and coordinate placements that fit site access. Whether the rental is short-term or long-term, our focus in De Soto is straightforward: reliable delivery, routine maintenance, and clear communication from start to finish.",
-        "We adjust service cadence based on actual usage so units stay ready throughout the rental."
+        "Sit & Git Portables provides portable toilet rentals in De Soto with dependable local delivery and scheduled servicing. We serve De Soto and nearby rural areas with clean units, clear scheduling, and consistent maintenance.",
+        "Our routes cover Vernon, Richland, and Crawford counties, and De Soto is part of our regular service area. Whether you need short-term coverage for an event or longer placement for a job site, we coordinate delivery, placement, and servicing to fit your schedule."
       ],
       "services_title": "Portable Restroom Options Available in De Soto",
       "services_list": [
@@ -860,13 +981,12 @@
       "services_note": "In De Soto, deliveries and service visits are planned locally to keep schedules consistent and access handled correctly.",
       "use_cases_title": "Common Uses for Portable Toilets in De Soto",
       "use_cases": [
-        "Construction and remodeling projects that need steady weekly servicing for crews.",
-        "Agricultural or seasonal work where on-site sanitation is needed for longer periods.",
-        "Parks, trails, or recreational areas that see seasonal traffic.",
-        "Private outdoor gatherings where clean, accessible units are a priority."
+        "Construction and remodeling projects in De Soto rely on steady service to keep crews productive.",
+        "Events and private gatherings in De Soto need clean, short-term restroom setups with clear delivery and pickup windows.",
+        "Schools, parks, and public spaces in De Soto benefit from reliable units during practices, games, and seasonal traffic."
       ],
       "logistics_title": "Serving De Soto and Nearby Areas",
-      "logistics_body": "We regularly deliver to rural properties near De Soto, including gravel roads and tighter access points. Seasonal ground conditions are considered during scheduling so placement is safe and service visits stay reliable. Local route planning helps us coordinate delivery windows that fit your site and minimize disruption.",
+      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we’ll work with you to confirm a safe access route or adjust service timing as needed. If you’re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
       "faq_title": "Portable Toilet Rental FAQs for De Soto, WI",
       "faqs": [
         {
@@ -890,10 +1010,22 @@
       "cta_body": "If you need portable toilets in De Soto, we will confirm availability, delivery timing, and service cadence based on your dates and location.",
       "cta_button": "Request a Quote",
       "also_serving": [
-        {"label": "Viroqua, WI", "href": "/service-area/viroqua-wi"},
-        {"label": "Westby, WI", "href": "/service-area/westby-wi"},
-        {"label": "Chaseburg, WI", "href": "/service-area/chaseburg-wi"},
-        {"label": "Readstown, WI", "href": "/service-area/readstown-wi"}
+        {
+          "label": "Viroqua, WI",
+          "href": "/service-area/viroqua-wi"
+        },
+        {
+          "label": "Westby, WI",
+          "href": "/service-area/westby-wi"
+        },
+        {
+          "label": "Chaseburg, WI",
+          "href": "/service-area/chaseburg-wi"
+        },
+        {
+          "label": "Readstown, WI",
+          "href": "/service-area/readstown-wi"
+        }
       ]
     },
     "readstown-wi": {
@@ -901,9 +1033,8 @@
       "meta_description": "Portable toilet rentals serving Readstown, WI. Clean, reliable units for events, construction, and job sites. Local service you can count on.",
       "h1": "Portable Toilet Rentals in Readstown, Wisconsin",
       "intro_paragraphs": [
-        "Sit & Git Portables provides portable toilet rentals in Readstown with dependable local delivery and scheduled servicing. We support construction sites, farms, events, and rural properties around Readstown, keeping units clean and service windows predictable.",
-        "As a local operator, we plan routes efficiently and coordinate placements that fit site access. Whether the rental is short-term or long-term, our focus in Readstown is straightforward: reliable delivery, routine maintenance, and clear communication from start to finish.",
-        "We adjust service cadence based on actual usage so units stay ready throughout the rental."
+        "Sit & Git Portables provides portable toilet rentals in Readstown with dependable local delivery and scheduled servicing. We serve Readstown and nearby rural areas with clean units, clear scheduling, and consistent maintenance.",
+        "Our routes cover Vernon, Richland, and Crawford counties, and Readstown is part of our regular service area. Whether you need short-term coverage for an event or longer placement for a job site, we coordinate delivery, placement, and servicing to fit your schedule."
       ],
       "services_title": "Portable Restroom Options Available in Readstown",
       "services_list": [
@@ -916,13 +1047,12 @@
       "services_note": "In Readstown, deliveries and service visits are planned locally to keep schedules consistent and access handled correctly.",
       "use_cases_title": "Common Uses for Portable Toilets in Readstown",
       "use_cases": [
-        "Construction and remodeling projects that need steady weekly servicing for crews.",
-        "Agricultural or seasonal work where on-site sanitation is needed for longer periods.",
-        "Parks, trails, or recreational areas that see seasonal traffic.",
-        "Private outdoor gatherings where clean, accessible units are a priority."
+        "Construction and remodeling projects in Readstown rely on steady service to keep crews productive.",
+        "Events and private gatherings in Readstown need clean, short-term restroom setups with clear delivery and pickup windows.",
+        "Schools, parks, and public spaces in Readstown benefit from reliable units during practices, games, and seasonal traffic."
       ],
       "logistics_title": "Serving Readstown and Nearby Areas",
-      "logistics_body": "We regularly deliver to rural properties near Readstown, including gravel roads and tighter access points. Seasonal ground conditions are considered during scheduling so placement is safe and service visits stay reliable. Local route planning helps us coordinate delivery windows that fit your site and minimize disruption.",
+      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we’ll work with you to confirm a safe access route or adjust service timing as needed. If you’re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
       "faq_title": "Portable Toilet Rental FAQs for Readstown, WI",
       "faqs": [
         {
@@ -946,10 +1076,22 @@
       "cta_body": "If you need portable toilets in Readstown, we will confirm availability, delivery timing, and service cadence based on your dates and location.",
       "cta_button": "Request a Quote",
       "also_serving": [
-        {"label": "Viroqua, WI", "href": "/service-area/viroqua-wi"},
-        {"label": "Westby, WI", "href": "/service-area/westby-wi"},
-        {"label": "Coon Valley, WI", "href": "/service-area/coon-valley-wi"},
-        {"label": "La Farge, WI", "href": "/service-area/la-farge-wi"}
+        {
+          "label": "Viroqua, WI",
+          "href": "/service-area/viroqua-wi"
+        },
+        {
+          "label": "Westby, WI",
+          "href": "/service-area/westby-wi"
+        },
+        {
+          "label": "Coon Valley, WI",
+          "href": "/service-area/coon-valley-wi"
+        },
+        {
+          "label": "La Farge, WI",
+          "href": "/service-area/la-farge-wi"
+        }
       ]
     },
     "la-farge-wi": {
@@ -957,9 +1099,8 @@
       "meta_description": "Portable toilet rentals serving La Farge, WI. Clean, reliable units for events, construction, and job sites. Local service you can count on.",
       "h1": "Portable Toilet Rentals in La Farge, Wisconsin",
       "intro_paragraphs": [
-        "Sit & Git Portables provides portable toilet rentals in La Farge with dependable local delivery and scheduled servicing. We serve construction sites, events, farms, and rural properties around La Farge, keeping units clean and service windows predictable.",
-        "As a local operator, we plan routes efficiently and coordinate placements that fit site access. Whether the rental is short-term or long-term, our focus in La Farge is straightforward: reliable delivery, routine maintenance, and clear communication from start to finish.",
-        "We adjust service cadence based on actual usage so units stay ready throughout the rental."
+        "Sit & Git Portables provides portable toilet rentals in La Farge with dependable local delivery and scheduled servicing. We serve La Farge and nearby rural areas with clean units, clear scheduling, and consistent maintenance.",
+        "Our routes cover Vernon, Richland, and Crawford counties, and La Farge is part of our regular service area. Whether you need short-term coverage for an event or longer placement for a job site, we coordinate delivery, placement, and servicing to fit your schedule."
       ],
       "services_title": "Portable Restroom Options Available in La Farge",
       "services_list": [
@@ -972,13 +1113,12 @@
       "services_note": "In La Farge, deliveries and service visits are planned locally to keep schedules consistent and access handled correctly.",
       "use_cases_title": "Common Uses for Portable Toilets in La Farge",
       "use_cases": [
-        "Home construction sites benefit from steady weekly service to keep crews productive.",
-        "Frisbee golf tournaments need clean, short-term restroom setups for participants and spectators.",
-        "Agricultural or seasonal work requires on-site sanitation for longer periods.",
-        "Private outdoor gatherings benefit from clean, accessible units delivered on time."
+        "Construction and remodeling projects in La Farge rely on steady service to keep crews productive.",
+        "Events and private gatherings in La Farge need clean, short-term restroom setups with clear delivery and pickup windows.",
+        "Schools, parks, and public spaces in La Farge benefit from reliable units during practices, games, and seasonal traffic."
       ],
       "logistics_title": "Serving La Farge and Nearby Areas",
-      "logistics_body": "We regularly deliver to rural properties near La Farge, including gravel roads and tighter access points. Seasonal ground conditions are considered during scheduling so placement is safe and service visits stay reliable. Local route planning helps us coordinate delivery windows that fit your site and minimize disruption.",
+      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we’ll work with you to confirm a safe access route or adjust service timing as needed. If you’re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
       "faq_title": "Portable Toilet Rental FAQs for La Farge, WI",
       "faqs": [
         {
@@ -1002,10 +1142,22 @@
       "cta_body": "If you need portable toilets in La Farge, we will confirm availability, delivery timing, and service cadence based on your dates and location.",
       "cta_button": "Request a Quote",
       "also_serving": [
-        {"label": "Readstown, WI", "href": "/service-area/readstown-wi"},
-        {"label": "Hillsboro, WI", "href": "/service-area/hillsboro-wi"},
-        {"label": "Cashton, WI", "href": "/service-area/cashton-wi"},
-        {"label": "Viroqua, WI", "href": "/service-area/viroqua-wi"}
+        {
+          "label": "Readstown, WI",
+          "href": "/service-area/readstown-wi"
+        },
+        {
+          "label": "Hillsboro, WI",
+          "href": "/service-area/hillsboro-wi"
+        },
+        {
+          "label": "Cashton, WI",
+          "href": "/service-area/cashton-wi"
+        },
+        {
+          "label": "Viroqua, WI",
+          "href": "/service-area/viroqua-wi"
+        }
       ]
     },
     "hillsboro-wi": {
@@ -1013,9 +1165,8 @@
       "meta_description": "Portable toilet rentals serving Hillsboro, WI. Clean, reliable units for events, construction, and job sites. Local service you can count on.",
       "h1": "Portable Toilet Rentals in Hillsboro, Wisconsin",
       "intro_paragraphs": [
-        "Sit & Git Portables provides portable toilet rentals in Hillsboro with dependable local delivery and scheduled servicing. We support construction sites, farms, events, and rural properties around Hillsboro, keeping units clean and service windows predictable.",
-        "As a local operator, we plan routes efficiently and coordinate placements that fit site access. Whether the rental is short-term or long-term, our focus in Hillsboro is straightforward: reliable delivery, routine maintenance, and clear communication from start to finish.",
-        "We adjust service cadence based on actual usage so units stay ready throughout the rental."
+        "Sit & Git Portables provides portable toilet rentals in Hillsboro with dependable local delivery and scheduled servicing. We serve Hillsboro and nearby rural areas with clean units, clear scheduling, and consistent maintenance.",
+        "Our routes cover Vernon, Richland, and Crawford counties, and Hillsboro is part of our regular service area. Whether you need short-term coverage for an event or longer placement for a job site, we coordinate delivery, placement, and servicing to fit your schedule."
       ],
       "services_title": "Portable Restroom Options Available in Hillsboro",
       "services_list": [
@@ -1028,13 +1179,12 @@
       "services_note": "In Hillsboro, deliveries and service visits are planned locally to keep schedules consistent and access handled correctly.",
       "use_cases_title": "Common Uses for Portable Toilets in Hillsboro",
       "use_cases": [
-        "Construction and remodeling projects that need steady weekly servicing for crews.",
-        "Agricultural or seasonal work where on-site sanitation is needed for longer periods.",
-        "Parks, trails, or recreational areas that see seasonal traffic.",
-        "Private outdoor gatherings where clean, accessible units are a priority."
+        "Construction and remodeling projects in Hillsboro rely on steady service to keep crews productive.",
+        "Events and private gatherings in Hillsboro need clean, short-term restroom setups with clear delivery and pickup windows.",
+        "Schools, parks, and public spaces in Hillsboro benefit from reliable units during practices, games, and seasonal traffic."
       ],
       "logistics_title": "Serving Hillsboro and Nearby Areas",
-      "logistics_body": "We regularly deliver to rural properties near Hillsboro, including gravel roads and tighter access points. Seasonal ground conditions are considered during scheduling so placement is safe and service visits stay reliable. Local route planning helps us coordinate delivery windows that fit your site and minimize disruption.",
+      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we’ll work with you to confirm a safe access route or adjust service timing as needed. If you’re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
       "faq_title": "Portable Toilet Rental FAQs for Hillsboro, WI",
       "faqs": [
         {
@@ -1058,10 +1208,22 @@
       "cta_body": "If you need portable toilets in Hillsboro, we will confirm availability, delivery timing, and service cadence based on your dates and location.",
       "cta_button": "Request a Quote",
       "also_serving": [
-        {"label": "La Farge, WI", "href": "/service-area/la-farge-wi"},
-        {"label": "Cashton, WI", "href": "/service-area/cashton-wi"},
-        {"label": "Readstown, WI", "href": "/service-area/readstown-wi"},
-        {"label": "Westby, WI", "href": "/service-area/westby-wi"}
+        {
+          "label": "La Farge, WI",
+          "href": "/service-area/la-farge-wi"
+        },
+        {
+          "label": "Cashton, WI",
+          "href": "/service-area/cashton-wi"
+        },
+        {
+          "label": "Readstown, WI",
+          "href": "/service-area/readstown-wi"
+        },
+        {
+          "label": "Westby, WI",
+          "href": "/service-area/westby-wi"
+        }
       ]
     },
     "cashton-wi": {
@@ -1069,9 +1231,8 @@
       "meta_description": "Portable toilet rentals serving Cashton, WI. Clean, reliable units for events, construction, and job sites. Local service you can count on.",
       "h1": "Portable Toilet Rentals in Cashton, Wisconsin",
       "intro_paragraphs": [
-        "Sit & Git Portables provides portable toilet rentals in Cashton with dependable local delivery and scheduled servicing. We serve construction sites, events, farms, and rural properties around Cashton, keeping units clean and service windows predictable.",
-        "As a local operator, we plan routes efficiently and coordinate placements that fit site access. Whether the rental is short-term or long-term, our focus in Cashton is straightforward: reliable delivery, routine maintenance, and clear communication from start to finish.",
-        "We adjust service cadence based on actual usage so units stay ready throughout the rental."
+        "Sit & Git Portables provides portable toilet rentals in Cashton with dependable local delivery and scheduled servicing. We serve Cashton and nearby rural areas with clean units, clear scheduling, and consistent maintenance.",
+        "Our routes cover Vernon, Richland, and Crawford counties, and Cashton is part of our regular service area. Whether you need short-term coverage for an event or longer placement for a job site, we coordinate delivery, placement, and servicing to fit your schedule."
       ],
       "services_title": "Portable Restroom Options Available in Cashton",
       "services_list": [
@@ -1084,13 +1245,12 @@
       "services_note": "In Cashton, deliveries and service visits are planned locally to keep schedules consistent and access handled correctly.",
       "use_cases_title": "Common Uses for Portable Toilets in Cashton",
       "use_cases": [
-        "Company gatherings such as Organic Valley events benefit from clean, short-term restroom setups.",
-        "Agricultural or seasonal work requires on-site sanitation for longer periods.",
-        "Construction and remodeling projects depend on consistent service schedules to support crews.",
-        "Private outdoor gatherings need dependable units delivered and serviced on time."
+        "Construction and remodeling projects in Cashton rely on steady service to keep crews productive.",
+        "Events and private gatherings in Cashton need clean, short-term restroom setups with clear delivery and pickup windows.",
+        "Schools, parks, and public spaces in Cashton benefit from reliable units during practices, games, and seasonal traffic."
       ],
       "logistics_title": "Serving Cashton and Nearby Areas",
-      "logistics_body": "We regularly deliver to rural properties near Cashton, including gravel roads and tighter access points. Seasonal ground conditions are considered during scheduling so placement is safe and service visits stay reliable. Local route planning helps us coordinate delivery windows that fit your site and minimize disruption.",
+      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we’ll work with you to confirm a safe access route or adjust service timing as needed. If you’re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
       "faq_title": "Portable Toilet Rental FAQs for Cashton, WI",
       "faqs": [
         {
@@ -1114,10 +1274,22 @@
       "cta_body": "If you need portable toilets in Cashton, we will confirm availability, delivery timing, and service cadence based on your dates and location.",
       "cta_button": "Request a Quote",
       "also_serving": [
-        {"label": "Hillsboro, WI", "href": "/service-area/hillsboro-wi"},
-        {"label": "La Farge, WI", "href": "/service-area/la-farge-wi"},
-        {"label": "Readstown, WI", "href": "/service-area/readstown-wi"},
-        {"label": "Viroqua, WI", "href": "/service-area/viroqua-wi"}
+        {
+          "label": "Hillsboro, WI",
+          "href": "/service-area/hillsboro-wi"
+        },
+        {
+          "label": "La Farge, WI",
+          "href": "/service-area/la-farge-wi"
+        },
+        {
+          "label": "Readstown, WI",
+          "href": "/service-area/readstown-wi"
+        },
+        {
+          "label": "Viroqua, WI",
+          "href": "/service-area/viroqua-wi"
+        }
       ]
     },
     "richland-center-wi": {
@@ -1125,9 +1297,8 @@
       "meta_description": "Portable toilet rentals serving Richland Center, WI. Clean, reliable units for events, construction, and job sites. Local service you can count on.",
       "h1": "Portable Toilet Rentals in Richland Center, Wisconsin",
       "intro_paragraphs": [
-        "Sit & Git Portables provides portable toilet rentals in Richland Center with dependable local delivery and scheduled servicing. We support construction sites, events, and rural properties around Richland Center, keeping units clean and service windows predictable.",
-        "As a local operator, we plan routes efficiently and coordinate placements that fit site access. Whether the rental is short-term or long-term, our focus in Richland Center is straightforward: reliable delivery, routine maintenance, and clear communication from start to finish.",
-        "We adjust service cadence based on actual usage so units stay ready throughout the rental."
+        "Sit & Git Portables provides portable toilet rentals in Richland Center with dependable local delivery and scheduled servicing. We serve Richland Center and nearby rural areas with clean units, clear scheduling, and consistent maintenance.",
+        "Our routes cover Vernon, Richland, and Crawford counties, and Richland Center is part of our regular service area. Whether you need short-term coverage for an event or longer placement for a job site, we coordinate delivery, placement, and servicing to fit your schedule."
       ],
       "services_title": "Portable Restroom Options Available in Richland Center",
       "services_list": [
@@ -1140,13 +1311,12 @@
       "services_note": "In Richland Center, deliveries and service visits are planned locally to keep schedules consistent and access handled correctly.",
       "use_cases_title": "Common Uses for Portable Toilets in Richland Center",
       "use_cases": [
-        "School construction projects in Richland Center rely on consistent weekly service for crews.",
-        "Athletic practice fields and school events need clean units available on a predictable schedule.",
-        "Home construction sites benefit from dependable servicing to keep crews productive.",
-        "Private parties and outdoor gatherings require short-term rentals with clear delivery and pickup windows."
+        "Construction and remodeling projects in Richland Center rely on steady service to keep crews productive.",
+        "Events and private gatherings in Richland Center need clean, short-term restroom setups with clear delivery and pickup windows.",
+        "Schools, parks, and public spaces in Richland Center benefit from reliable units during practices, games, and seasonal traffic."
       ],
       "logistics_title": "Serving Richland Center and Nearby Areas",
-      "logistics_body": "We regularly deliver to rural properties near Richland Center, including gravel roads and tighter access points. Seasonal ground conditions are considered during scheduling so placement is safe and service visits stay reliable. Local route planning helps us coordinate delivery windows that fit your site and minimize disruption.",
+      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we’ll work with you to confirm a safe access route or adjust service timing as needed. If you’re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
       "faq_title": "Portable Toilet Rental FAQs for Richland Center, WI",
       "faqs": [
         {
@@ -1170,10 +1340,22 @@
       "cta_body": "If you need portable toilets in Richland Center, we will confirm availability, delivery timing, and service cadence based on your dates and location.",
       "cta_button": "Request a Quote",
       "also_serving": [
-        {"label": "Ithaca, WI", "href": "/service-area/ithaca-wi"},
-        {"label": "Boaz, WI", "href": "/service-area/boaz-wi"},
-        {"label": "Viola, WI", "href": "/service-area/viola-wi"},
-        {"label": "Muscoda, WI", "href": "/service-area/muscoda-wi"}
+        {
+          "label": "Ithaca, WI",
+          "href": "/service-area/ithaca-wi"
+        },
+        {
+          "label": "Boaz, WI",
+          "href": "/service-area/boaz-wi"
+        },
+        {
+          "label": "Viola, WI",
+          "href": "/service-area/viola-wi"
+        },
+        {
+          "label": "Muscoda, WI",
+          "href": "/service-area/muscoda-wi"
+        }
       ]
     },
     "ithaca-wi": {
@@ -1181,9 +1363,8 @@
       "meta_description": "Portable toilet rentals serving Ithaca, WI. Clean, reliable units for events, construction, and job sites. Local service you can count on.",
       "h1": "Portable Toilet Rentals in Ithaca, Wisconsin",
       "intro_paragraphs": [
-        "Sit & Git Portables provides portable toilet rentals in Ithaca with dependable local delivery and scheduled servicing. We support construction sites, farms, events, and rural properties around Ithaca, keeping units clean and service windows predictable.",
-        "As a local operator, we plan routes efficiently and coordinate placements that fit site access. Whether the rental is short-term or long-term, our focus in Ithaca is straightforward: reliable delivery, routine maintenance, and clear communication from start to finish.",
-        "We adjust service cadence based on actual usage so units stay ready throughout the rental."
+        "Sit & Git Portables provides portable toilet rentals in Ithaca with dependable local delivery and scheduled servicing. We serve Ithaca and nearby rural areas with clean units, clear scheduling, and consistent maintenance.",
+        "Our routes cover Vernon, Richland, and Crawford counties, and Ithaca is part of our regular service area. Whether you need short-term coverage for an event or longer placement for a job site, we coordinate delivery, placement, and servicing to fit your schedule."
       ],
       "services_title": "Portable Restroom Options Available in Ithaca",
       "services_list": [
@@ -1196,13 +1377,12 @@
       "services_note": "In Ithaca, deliveries and service visits are planned locally to keep schedules consistent and access handled correctly.",
       "use_cases_title": "Common Uses for Portable Toilets in Ithaca",
       "use_cases": [
-        "Construction and remodeling projects that need steady weekly servicing for crews.",
-        "Agricultural or seasonal work where on-site sanitation is needed for longer periods.",
-        "Parks, trails, or recreational areas that see seasonal traffic.",
-        "Private outdoor gatherings where clean, accessible units are a priority."
+        "Construction and remodeling projects in Ithaca rely on steady service to keep crews productive.",
+        "Events and private gatherings in Ithaca need clean, short-term restroom setups with clear delivery and pickup windows.",
+        "Schools, parks, and public spaces in Ithaca benefit from reliable units during practices, games, and seasonal traffic."
       ],
       "logistics_title": "Serving Ithaca and Nearby Areas",
-      "logistics_body": "We regularly deliver to rural properties near Ithaca, including gravel roads and tighter access points. Seasonal ground conditions are considered during scheduling so placement is safe and service visits stay reliable. Local route planning helps us coordinate delivery windows that fit your site and minimize disruption.",
+      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we’ll work with you to confirm a safe access route or adjust service timing as needed. If you’re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
       "faq_title": "Portable Toilet Rental FAQs for Ithaca, WI",
       "faqs": [
         {
@@ -1226,10 +1406,22 @@
       "cta_body": "If you need portable toilets in Ithaca, we will confirm availability, delivery timing, and service cadence based on your dates and location.",
       "cta_button": "Request a Quote",
       "also_serving": [
-        {"label": "Richland Center, WI", "href": "/service-area/richland-center-wi"},
-        {"label": "Boaz, WI", "href": "/service-area/boaz-wi"},
-        {"label": "Viola, WI", "href": "/service-area/viola-wi"},
-        {"label": "Muscoda, WI", "href": "/service-area/muscoda-wi"}
+        {
+          "label": "Richland Center, WI",
+          "href": "/service-area/richland-center-wi"
+        },
+        {
+          "label": "Boaz, WI",
+          "href": "/service-area/boaz-wi"
+        },
+        {
+          "label": "Viola, WI",
+          "href": "/service-area/viola-wi"
+        },
+        {
+          "label": "Muscoda, WI",
+          "href": "/service-area/muscoda-wi"
+        }
       ]
     },
     "boaz-wi": {
@@ -1237,9 +1429,8 @@
       "meta_description": "Portable toilet rentals serving Boaz, WI. Clean, reliable units for events, construction, and job sites. Local service you can count on.",
       "h1": "Portable Toilet Rentals in Boaz, Wisconsin",
       "intro_paragraphs": [
-        "Sit & Git Portables provides portable toilet rentals in Boaz with dependable local delivery and scheduled servicing. We support construction sites, farms, events, and rural properties around Boaz, keeping units clean and service windows predictable.",
-        "As a local operator, we plan routes efficiently and coordinate placements that fit site access. Whether the rental is short-term or long-term, our focus in Boaz is straightforward: reliable delivery, routine maintenance, and clear communication from start to finish.",
-        "We adjust service cadence based on actual usage so units stay ready throughout the rental."
+        "Sit & Git Portables provides portable toilet rentals in Boaz with dependable local delivery and scheduled servicing. We serve Boaz and nearby rural areas with clean units, clear scheduling, and consistent maintenance.",
+        "Our routes cover Vernon, Richland, and Crawford counties, and Boaz is part of our regular service area. Whether you need short-term coverage for an event or longer placement for a job site, we coordinate delivery, placement, and servicing to fit your schedule."
       ],
       "services_title": "Portable Restroom Options Available in Boaz",
       "services_list": [
@@ -1252,13 +1443,12 @@
       "services_note": "In Boaz, deliveries and service visits are planned locally to keep schedules consistent and access handled correctly.",
       "use_cases_title": "Common Uses for Portable Toilets in Boaz",
       "use_cases": [
-        "Construction and remodeling projects that need steady weekly servicing for crews.",
-        "Agricultural or seasonal work where on-site sanitation is needed for longer periods.",
-        "Parks, trails, or recreational areas that see seasonal traffic.",
-        "Private outdoor gatherings where clean, accessible units are a priority."
+        "Construction and remodeling projects in Boaz rely on steady service to keep crews productive.",
+        "Events and private gatherings in Boaz need clean, short-term restroom setups with clear delivery and pickup windows.",
+        "Schools, parks, and public spaces in Boaz benefit from reliable units during practices, games, and seasonal traffic."
       ],
       "logistics_title": "Serving Boaz and Nearby Areas",
-      "logistics_body": "We regularly deliver to rural properties near Boaz, including gravel roads and tighter access points. Seasonal ground conditions are considered during scheduling so placement is safe and service visits stay reliable. Local route planning helps us coordinate delivery windows that fit your site and minimize disruption.",
+      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we’ll work with you to confirm a safe access route or adjust service timing as needed. If you’re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
       "faq_title": "Portable Toilet Rental FAQs for Boaz, WI",
       "faqs": [
         {
@@ -1282,10 +1472,22 @@
       "cta_body": "If you need portable toilets in Boaz, we will confirm availability, delivery timing, and service cadence based on your dates and location.",
       "cta_button": "Request a Quote",
       "also_serving": [
-        {"label": "Richland Center, WI", "href": "/service-area/richland-center-wi"},
-        {"label": "Ithaca, WI", "href": "/service-area/ithaca-wi"},
-        {"label": "Viola, WI", "href": "/service-area/viola-wi"},
-        {"label": "Muscoda, WI", "href": "/service-area/muscoda-wi"}
+        {
+          "label": "Richland Center, WI",
+          "href": "/service-area/richland-center-wi"
+        },
+        {
+          "label": "Ithaca, WI",
+          "href": "/service-area/ithaca-wi"
+        },
+        {
+          "label": "Viola, WI",
+          "href": "/service-area/viola-wi"
+        },
+        {
+          "label": "Muscoda, WI",
+          "href": "/service-area/muscoda-wi"
+        }
       ]
     },
     "viola-wi": {
@@ -1293,9 +1495,8 @@
       "meta_description": "Portable toilet rentals serving Viola, WI. Clean, reliable units for events, construction, and job sites. Local service you can count on.",
       "h1": "Portable Toilet Rentals in Viola, Wisconsin",
       "intro_paragraphs": [
-        "Sit & Git Portables provides portable toilet rentals in Viola with dependable local delivery and scheduled servicing. We support construction sites, events, and rural properties around Viola, keeping units clean and service windows predictable.",
-        "As a local operator, we plan routes efficiently and coordinate placements that fit site access. Whether the rental is short-term or long-term, our focus in Viola is straightforward: reliable delivery, routine maintenance, and clear communication from start to finish.",
-        "We adjust service cadence based on actual usage so units stay ready throughout the rental."
+        "Sit & Git Portables provides portable toilet rentals in Viola with dependable local delivery and scheduled servicing. We serve Viola and nearby rural areas with clean units, clear scheduling, and consistent maintenance.",
+        "Our routes cover Vernon, Richland, and Crawford counties, and Viola is part of our regular service area. Whether you need short-term coverage for an event or longer placement for a job site, we coordinate delivery, placement, and servicing to fit your schedule."
       ],
       "services_title": "Portable Restroom Options Available in Viola",
       "services_list": [
@@ -1308,13 +1509,12 @@
       "services_note": "In Viola, deliveries and service visits are planned locally to keep schedules consistent and access handled correctly.",
       "use_cases_title": "Common Uses for Portable Toilets in Viola",
       "use_cases": [
-        "Athletic events at Kickapoo Area School, including football, cross-country, track, baseball, and softball, need clean units during practices and games.",
-        "Camp sites rely on dependable service for weekend and seasonal use.",
-        "Hunting cabins and rural properties benefit from on-site sanitation during busy seasons.",
-        "Community gatherings and private outdoor events need short-term rentals with clear delivery windows."
+        "Construction and remodeling projects in Viola rely on steady service to keep crews productive.",
+        "Events and private gatherings in Viola need clean, short-term restroom setups with clear delivery and pickup windows.",
+        "Schools, parks, and public spaces in Viola benefit from reliable units during practices, games, and seasonal traffic."
       ],
       "logistics_title": "Serving Viola and Nearby Areas",
-      "logistics_body": "We regularly deliver to rural properties near Viola, including gravel roads and tighter access points. Seasonal ground conditions are considered during scheduling so placement is safe and service visits stay reliable. Local route planning helps us coordinate delivery windows that fit your site and minimize disruption.",
+      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we’ll work with you to confirm a safe access route or adjust service timing as needed. If you’re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
       "faq_title": "Portable Toilet Rental FAQs for Viola, WI",
       "faqs": [
         {
@@ -1338,10 +1538,22 @@
       "cta_body": "If you need portable toilets in Viola, we will confirm availability, delivery timing, and service cadence based on your dates and location.",
       "cta_button": "Request a Quote",
       "also_serving": [
-        {"label": "Richland Center, WI", "href": "/service-area/richland-center-wi"},
-        {"label": "Ithaca, WI", "href": "/service-area/ithaca-wi"},
-        {"label": "Boaz, WI", "href": "/service-area/boaz-wi"},
-        {"label": "Muscoda, WI", "href": "/service-area/muscoda-wi"}
+        {
+          "label": "Richland Center, WI",
+          "href": "/service-area/richland-center-wi"
+        },
+        {
+          "label": "Ithaca, WI",
+          "href": "/service-area/ithaca-wi"
+        },
+        {
+          "label": "Boaz, WI",
+          "href": "/service-area/boaz-wi"
+        },
+        {
+          "label": "Muscoda, WI",
+          "href": "/service-area/muscoda-wi"
+        }
       ]
     },
     "muscoda-wi": {
@@ -1349,9 +1561,8 @@
       "meta_description": "Portable toilet rentals serving Muscoda, WI. Clean, reliable units for events, construction, and job sites. Local service you can count on.",
       "h1": "Portable Toilet Rentals in Muscoda, Wisconsin",
       "intro_paragraphs": [
-        "Sit & Git Portables provides portable toilet rentals in Muscoda with dependable local delivery and scheduled servicing. We support construction sites, farms, events, and rural properties around Muscoda, keeping units clean and service windows predictable.",
-        "As a local operator, we plan routes efficiently and coordinate placements that fit site access. Whether the rental is short-term or long-term, our focus in Muscoda is straightforward: reliable delivery, routine maintenance, and clear communication from start to finish.",
-        "We adjust service cadence based on actual usage so units stay ready throughout the rental."
+        "Sit & Git Portables provides portable toilet rentals in Muscoda with dependable local delivery and scheduled servicing. We serve Muscoda and nearby rural areas with clean units, clear scheduling, and consistent maintenance.",
+        "Our routes cover Vernon, Richland, and Crawford counties, and Muscoda is part of our regular service area. Whether you need short-term coverage for an event or longer placement for a job site, we coordinate delivery, placement, and servicing to fit your schedule."
       ],
       "services_title": "Portable Restroom Options Available in Muscoda",
       "services_list": [
@@ -1364,13 +1575,12 @@
       "services_note": "In Muscoda, deliveries and service visits are planned locally to keep schedules consistent and access handled correctly.",
       "use_cases_title": "Common Uses for Portable Toilets in Muscoda",
       "use_cases": [
-        "Construction and remodeling projects that need steady weekly servicing for crews.",
-        "Agricultural or seasonal work where on-site sanitation is needed for longer periods.",
-        "Parks, trails, or recreational areas that see seasonal traffic.",
-        "Private outdoor gatherings where clean, accessible units are a priority."
+        "Construction and remodeling projects in Muscoda rely on steady service to keep crews productive.",
+        "Events and private gatherings in Muscoda need clean, short-term restroom setups with clear delivery and pickup windows.",
+        "Schools, parks, and public spaces in Muscoda benefit from reliable units during practices, games, and seasonal traffic."
       ],
       "logistics_title": "Serving Muscoda and Nearby Areas",
-      "logistics_body": "We regularly deliver to rural properties near Muscoda, including gravel roads and tighter access points. Seasonal ground conditions are considered during scheduling so placement is safe and service visits stay reliable. Local route planning helps us coordinate delivery windows that fit your site and minimize disruption.",
+      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we’ll work with you to confirm a safe access route or adjust service timing as needed. If you’re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
       "faq_title": "Portable Toilet Rental FAQs for Muscoda, WI",
       "faqs": [
         {
@@ -1394,10 +1604,22 @@
       "cta_body": "If you need portable toilets in Muscoda, we will confirm availability, delivery timing, and service cadence based on your dates and location.",
       "cta_button": "Request a Quote",
       "also_serving": [
-        {"label": "Richland Center, WI", "href": "/service-area/richland-center-wi"},
-        {"label": "Ithaca, WI", "href": "/service-area/ithaca-wi"},
-        {"label": "Boaz, WI", "href": "/service-area/boaz-wi"},
-        {"label": "Viola, WI", "href": "/service-area/viola-wi"}
+        {
+          "label": "Richland Center, WI",
+          "href": "/service-area/richland-center-wi"
+        },
+        {
+          "label": "Ithaca, WI",
+          "href": "/service-area/ithaca-wi"
+        },
+        {
+          "label": "Boaz, WI",
+          "href": "/service-area/boaz-wi"
+        },
+        {
+          "label": "Viola, WI",
+          "href": "/service-area/viola-wi"
+        }
       ]
     },
     "soldiers-grove-wi": {
@@ -1405,9 +1627,8 @@
       "meta_description": "Portable toilet rentals serving Soldiers Grove, WI. Clean, reliable units for events, construction, and job sites. Local service you can count on.",
       "h1": "Portable Toilet Rentals in Soldiers Grove, Wisconsin",
       "intro_paragraphs": [
-        "Sit & Git Portables provides portable toilet rentals in Soldiers Grove with dependable local delivery and scheduled servicing. We support construction sites, events, and rural properties around Soldiers Grove, keeping units clean and service windows predictable.",
-        "As a local operator, we plan routes efficiently and coordinate placements that fit site access. Whether the rental is short-term or long-term, our focus in Soldiers Grove is straightforward: reliable delivery, routine maintenance, and clear communication from start to finish.",
-        "We adjust service cadence based on actual usage so units stay ready throughout the rental."
+        "Sit & Git Portables provides portable toilet rentals in Soldiers Grove with dependable local delivery and scheduled servicing. We serve Soldiers Grove and nearby rural areas with clean units, clear scheduling, and consistent maintenance.",
+        "Our routes cover Vernon, Richland, and Crawford counties, and Soldiers Grove is part of our regular service area. Whether you need short-term coverage for an event or longer placement for a job site, we coordinate delivery, placement, and servicing to fit your schedule."
       ],
       "services_title": "Portable Restroom Options Available in Soldiers Grove",
       "services_list": [
@@ -1420,13 +1641,12 @@
       "services_note": "In Soldiers Grove, deliveries and service visits are planned locally to keep schedules consistent and access handled correctly.",
       "use_cases_title": "Common Uses for Portable Toilets in Soldiers Grove",
       "use_cases": [
-        "Community events like the Driftless Area Art Festival need clean, short-term restroom setups with clear pickup timing.",
-        "Agricultural or seasonal work requires on-site sanitation for longer periods.",
-        "Construction and remodeling projects depend on consistent service to support crews.",
-        "Parks and recreational areas benefit from dependable units during high-traffic seasons."
+        "Construction and remodeling projects in Soldiers Grove rely on steady service to keep crews productive.",
+        "Events and private gatherings in Soldiers Grove need clean, short-term restroom setups with clear delivery and pickup windows.",
+        "Schools, parks, and public spaces in Soldiers Grove benefit from reliable units during practices, games, and seasonal traffic."
       ],
       "logistics_title": "Serving Soldiers Grove and Nearby Areas",
-      "logistics_body": "We regularly deliver to rural properties near Soldiers Grove, including gravel roads and tighter access points. Seasonal ground conditions are considered during scheduling so placement is safe and service visits stay reliable. Local route planning helps us coordinate delivery windows that fit your site and minimize disruption.",
+      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we’ll work with you to confirm a safe access route or adjust service timing as needed. If you’re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
       "faq_title": "Portable Toilet Rental FAQs for Soldiers Grove, WI",
       "faqs": [
         {
@@ -1450,10 +1670,22 @@
       "cta_body": "If you need portable toilets in Soldiers Grove, we will confirm availability, delivery timing, and service cadence based on your dates and location.",
       "cta_button": "Request a Quote",
       "also_serving": [
-        {"label": "Gays Mills, WI", "href": "/service-area/gays-mills-wi"},
-        {"label": "Muscoda, WI", "href": "/service-area/muscoda-wi"},
-        {"label": "Viola, WI", "href": "/service-area/viola-wi"},
-        {"label": "Richland Center, WI", "href": "/service-area/richland-center-wi"}
+        {
+          "label": "Gays Mills, WI",
+          "href": "/service-area/gays-mills-wi"
+        },
+        {
+          "label": "Muscoda, WI",
+          "href": "/service-area/muscoda-wi"
+        },
+        {
+          "label": "Viola, WI",
+          "href": "/service-area/viola-wi"
+        },
+        {
+          "label": "Richland Center, WI",
+          "href": "/service-area/richland-center-wi"
+        }
       ]
     },
     "gays-mills-wi": {
@@ -1461,9 +1693,8 @@
       "meta_description": "Portable toilet rentals serving Gays Mills, WI. Clean, reliable units for events, construction, and job sites. Local service you can count on.",
       "h1": "Portable Toilet Rentals in Gays Mills, Wisconsin",
       "intro_paragraphs": [
-        "Sit & Git Portables provides portable toilet rentals in Gays Mills with dependable local delivery and scheduled servicing. We support rural properties, cabins, job sites, and events around Gays Mills, keeping units clean and service windows predictable.",
-        "As a local operator, we plan routes efficiently and coordinate placements that fit site access. Whether the rental is short-term or long-term, our focus in Gays Mills is straightforward: reliable delivery, routine maintenance, and clear communication from start to finish.",
-        "We adjust service cadence based on actual usage so units stay ready throughout the rental."
+        "Sit & Git Portables provides portable toilet rentals in Gays Mills with dependable local delivery and scheduled servicing. We serve Gays Mills and nearby rural areas with clean units, clear scheduling, and consistent maintenance.",
+        "Our routes cover Vernon, Richland, and Crawford counties, and Gays Mills is part of our regular service area. Whether you need short-term coverage for an event or longer placement for a job site, we coordinate delivery, placement, and servicing to fit your schedule."
       ],
       "services_title": "Portable Restroom Options Available in Gays Mills",
       "services_list": [
@@ -1476,13 +1707,12 @@
       "services_note": "In Gays Mills, deliveries and service visits are planned locally to keep schedules consistent and access handled correctly.",
       "use_cases_title": "Common Uses for Portable Toilets in Gays Mills",
       "use_cases": [
-        "Hunting cabins in the Gays Mills area often need dependable units with routine service.",
-        "Privately owned toilets in rural locations benefit from scheduled pumping and maintenance.",
-        "Agricultural or seasonal work requires on-site sanitation for longer periods.",
-        "Construction and remodeling projects depend on consistent service to support crews."
+        "Construction and remodeling projects in Gays Mills rely on steady service to keep crews productive.",
+        "Events and private gatherings in Gays Mills need clean, short-term restroom setups with clear delivery and pickup windows.",
+        "Schools, parks, and public spaces in Gays Mills benefit from reliable units during practices, games, and seasonal traffic."
       ],
       "logistics_title": "Serving Gays Mills and Nearby Areas",
-      "logistics_body": "We regularly deliver to rural properties near Gays Mills, including gravel roads and tighter access points. Seasonal ground conditions are considered during scheduling so placement is safe and service visits stay reliable. Local route planning helps us coordinate delivery windows that fit your site and minimize disruption.",
+      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we’ll work with you to confirm a safe access route or adjust service timing as needed. If you’re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
       "faq_title": "Portable Toilet Rental FAQs for Gays Mills, WI",
       "faqs": [
         {
@@ -1506,10 +1736,22 @@
       "cta_body": "If you need portable toilets in Gays Mills, we will confirm availability, delivery timing, and service cadence based on your dates and location.",
       "cta_button": "Request a Quote",
       "also_serving": [
-        {"label": "Soldiers Grove, WI", "href": "/service-area/soldiers-grove-wi"},
-        {"label": "Muscoda, WI", "href": "/service-area/muscoda-wi"},
-        {"label": "Viola, WI", "href": "/service-area/viola-wi"},
-        {"label": "Richland Center, WI", "href": "/service-area/richland-center-wi"}
+        {
+          "label": "Soldiers Grove, WI",
+          "href": "/service-area/soldiers-grove-wi"
+        },
+        {
+          "label": "Muscoda, WI",
+          "href": "/service-area/muscoda-wi"
+        },
+        {
+          "label": "Viola, WI",
+          "href": "/service-area/viola-wi"
+        },
+        {
+          "label": "Richland Center, WI",
+          "href": "/service-area/richland-center-wi"
+        }
       ]
     }
   },
@@ -1525,10 +1767,6 @@
     {
       "q": "Does someone need to be present for delivery or pickup?",
       "a": "No. We just need clear access for the truck and any gate codes or placement instructions ahead of time."
-    },
-    {
-      "q": "What is a damage waiver?",
-      "a": "A damage waiver limits liability for accidental damage, weather, or vandalism. It is optional and can be added to your rental."
     },
     {
       "q": "When will the restrooms be serviced?",
@@ -1729,7 +1967,7 @@
     "contact": {
       "title": "Contact Sit & Git Portables",
       "body": "Reach out for availability, scheduling questions, or a fast quote. We reply by call or text as quickly as possible.",
-      "hours": "Hours: Monday to Friday, 8:00am to 6:00pm",
+      "hours": "Hours: Monday to Saturday, 8:00am to 5:00pm. Sunday closed.",
       "cta": {
         "title": "Ready to get started?",
         "body": "Share a few details and we will follow up with availability and pricing.",
@@ -1796,8 +2034,15 @@
           "Long-term rentals",
           "Service only"
         ],
-        "state_options": ["Wisconsin", "Iowa", "Minnesota", "Illinois"],
-        "duration_options": ["Under 7 days", "1 to 2 months", "3 to 5 months", "6 to 12 months"],
+        "state_options": [
+          "Wisconsin"
+        ],
+        "duration_options": [
+          "Under 7 days",
+          "1 to 2 months",
+          "3 to 5 months",
+          "6 to 12 months"
+        ],
         "submit": "Submit"
       }
     }

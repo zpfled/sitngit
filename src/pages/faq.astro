@@ -8,8 +8,14 @@ import site from "../content/site.json";
 const { pages, global_faq } = site;
 ---
 <BaseLayout title={pages.faq.title} description={pages.faq.intro}>
-  <Section title={pages.faq.title} body={pages.faq.intro}>
-    <FAQList items={global_faq} />
-  </Section>
+  <section class="py-12 sm:py-16">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-3xl sm:text-4xl font-display text-ink">{pages.faq.title}</h1>
+      <p class="mt-4 text-ink/75">{pages.faq.intro}</p>
+      <div class="mt-8">
+        <FAQList items={global_faq} />
+      </div>
+    </div>
+  </section>
   <QuoteSection />
 </BaseLayout>
