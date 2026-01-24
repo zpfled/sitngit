@@ -2,7 +2,7 @@
 import site from "../content/site.json";
 const { form } = site.pages.quote;
 ---
-<form name="quote" method="post" action="/get-a-quote?success=1" data-netlify="true" netlify-honeypot="bot-field" class="grid gap-6">
+<form name="quote" method="post" action="/thank-you" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="bot-field" class="grid gap-6">
   <input type="hidden" name="form-name" value="quote" />
   <input type="text" name="bot-field" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true" />
   <div class="grid gap-4 sm:grid-cols-2">
@@ -35,6 +35,7 @@ const { form } = site.pages.quote;
       <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
     </div>
   )}
+  <div data-netlify-recaptcha="true"></div>
   <button type="submit" class="w-full sm:w-auto px-6 py-3 rounded-full bg-sage text-fog font-semibold shadow-soft">
     {form.submit}
   </button>

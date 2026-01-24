@@ -2,19 +2,14 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Section from "../components/Section.astro";
 import FAQList from "../components/FAQList.astro";
-import CTABlock from "../components/CTABlock.astro";
+import QuoteSection from "../components/QuoteSection.astro";
 import site from "../content/site.json";
 
-const { pages, global_faq, navigation } = site;
+const { pages, global_faq } = site;
 ---
 <BaseLayout title={pages.faq.title} description={pages.faq.intro}>
   <Section title={pages.faq.title} body={pages.faq.intro}>
     <FAQList items={global_faq} />
   </Section>
-  <CTABlock
-    title={pages.services.cta.title}
-    body={pages.services.cta.body}
-    button={pages.services.cta.button}
-    href={navigation.cta_primary.href}
-  />
+  <QuoteSection />
 </BaseLayout>

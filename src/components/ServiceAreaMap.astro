@@ -3,7 +3,7 @@ import serviceAreaUrl from "../content/service-area.geojson?url";
 
 const { fullBleed = false } = Astro.props;
 const wrapperClass = fullBleed
-  ? "bg-fog overflow-hidden"
+  ? "overflow-hidden"
   : "bg-fog border border-clay/70 rounded-2xl overflow-hidden shadow-soft";
 ---
 <div class={wrapperClass}>
@@ -12,5 +12,10 @@ const wrapperClass = fullBleed
     class="w-full h-[320px] sm:h-[360px] lg:h-[400px]"
     data-geojson-url={serviceAreaUrl}
   ></div>
+  <noscript>
+    <p class="px-6 py-4 text-sm text-ink/70">
+      Map loading requires JavaScript. Use the county list below to confirm coverage.
+    </p>
+  </noscript>
 </div>
 <script src="/scripts/service-area-map.js" defer></script>

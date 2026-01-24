@@ -1,20 +1,24 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Section from "../components/Section.astro";
-import QuoteForm from "../components/QuoteForm.astro";
+import QuoteFormExtended from "../components/QuoteFormExtended.astro";
 import site from "../content/site.json";
 
-const { pages } = site;
-const success = Astro.url.searchParams.get("success") === "1";
+const { pages, business } = site;
 ---
 <BaseLayout title={pages.quote.title} description={pages.quote.intro}>
-  <Section title={pages.quote.title} body={pages.quote.intro}>
-    {success ? (
-      <div class="bg-fog border border-clay/70 rounded-2xl p-6 shadow-soft">
-        <p class="text-ink/80">{pages.quote.success}</p>
+  <section class="py-12 sm:py-16">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-3xl sm:text-4xl font-display text-ink">{pages.quote.title}</h1>
+      <p class="mt-4 text-ink/75">
+        {pages.quote.lede}{" "}
+        <a href={`tel:${business.phone_tel}`} class="text-ink font-semibold hover:text-sage">
+          {business.phone_display}
+        </a>
+        .
+      </p>
+      <div class="mt-8">
+        <QuoteFormExtended />
       </div>
-    ) : (
-      <QuoteForm />
-    )}
-  </Section>
+    </div>
+  </section>
 </BaseLayout>

@@ -1,8 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import Section from "../../components/Section.astro";
 import FAQList from "../../components/FAQList.astro";
-import CTABlock from "../../components/CTABlock.astro";
 import site from "../../content/site.json";
 
 export function getStaticPaths() {
@@ -13,28 +11,119 @@ export function getStaticPaths() {
 }
 
 const { service } = Astro.props;
-const { pages, navigation } = site;
+const { pages, business, navigation } = site;
+const metaTitle = service.meta_title ?? service.name;
+const metaDescription = service.meta_description ?? service.short;
 ---
-<BaseLayout title={service.name} description={service.short}>
-  <Section title={service.name} body={service.short}>
-    <ul class="grid gap-3 sm:grid-cols-2 text-sm text-ink/75">
-      {service.bullets.map((bullet) => (
-        <li class="flex gap-2">
-          <span class="text-sage">•</span>
-          <span>{bullet}</span>
-        </li>
+<BaseLayout title={metaTitle} description={metaDescription}>
+  <section class="py-12 sm:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl sm:text-5xl font-display text-ink">{service.name}</h1>
+      {service.hero_subhead && (
+        <p class="mt-4 text-base sm:text-lg text-ink/80 max-w-2xl">
+          {service.hero_subhead}
+        </p>
+      )}
+    </div>
+  </section>
+
+  <section class="pb-12 sm:pb-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6 text-ink/80">
+      {service.overview?.map((paragraph) => (
+        <p class="max-w-3xl">{paragraph}</p>
       ))}
-    </ul>
-  </Section>
+    </div>
+  </section>
 
-  <Section title={pages.faq.title}>
-    <FAQList items={service.faqs} />
-  </Section>
+  {service.transition && (
+    <section class="pb-10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p class="text-sm uppercase tracking-[0.2em] text-moss/80">
+          {service.transition}
+        </p>
+      </div>
+    </section>
+  )}
 
-  <CTABlock
-    title={pages.service_detail.cta.title}
-    body={pages.service_detail.cta.body}
-    button={pages.service_detail.cta.button}
-    href={navigation.cta_primary.href}
-  />
+  {service.product && (
+    <section class="pb-12 sm:pb-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] items-start bg-fog border border-clay/70 rounded-2xl p-6 sm:p-8 shadow-soft">
+          {(service.product?.image?.src || service.image?.src) && (
+            <img
+              src={service.product?.image?.src ?? service.image?.src}
+              alt={service.product?.image?.alt ?? service.image?.alt ?? ""}
+              class="w-full h-64 sm:h-72 object-contain bg-white rounded-xl border border-clay/60"
+              loading="lazy"
+            />
+          )}
+          <div class="space-y-4">
+            <h2 class="text-2xl sm:text-3xl font-display text-ink">{service.product.title}</h2>
+            {service.product.description && (
+              <p class="text-sm text-ink/75">{service.product.description}</p>
+            )}
+            {service.product.features?.length > 0 && (
+              <div>
+                <p class="text-sm font-semibold text-ink uppercase tracking-[0.18em]">Features</p>
+                <ul class="mt-3 space-y-2 text-sm text-ink/70">
+                  {service.product.features.map((feature) => (
+                    <li class="flex gap-2">
+                      <span class="text-sage">•</span>
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    </section>
+  )}
+
+  <section class="pb-12 sm:pb-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-sand border border-clay/60 rounded-2xl p-6 sm:p-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+          <h2 class="text-2xl font-display text-ink">{pages.service_detail.cta.title}</h2>
+          <p class="mt-2 text-sm text-ink/70">{pages.service_detail.cta.body}</p>
+        </div>
+        <div class="flex flex-col items-start sm:items-end gap-2">
+          <a href={navigation.cta_primary.href} class="inline-flex items-center justify-center px-5 py-3 rounded-full bg-ink text-fog text-sm font-semibold">
+            {pages.service_detail.cta.button}
+          </a>
+          <a href={`tel:${business.phone_tel}`} class="text-sm font-semibold text-ink">
+            {business.phone_display}
+          </a>
+        </div>
+      </div>
+      <div class="mt-6 flex flex-wrap gap-4 text-sm text-ink/70">
+        <a href="/service-area" class="underline underline-offset-4 hover:text-ink">View service area</a>
+        {[
+          { slug: "portable-restrooms", label: "Portable restrooms" },
+          { slug: "ada-restrooms", label: "ADA units" },
+          { slug: "handwashing-stations", label: "Handwashing stations" },
+          { slug: "event-rentals", label: "Event rentals" },
+          { slug: "construction-rentals", label: "Construction rentals" }
+        ]
+          .filter((item) => item.slug !== service.slug)
+          .map((item) => (
+            <a href={`/services/${item.slug}`} class="underline underline-offset-4 hover:text-ink">
+              {item.label}
+            </a>
+          ))}
+      </div>
+    </div>
+  </section>
+
+  {service.faqs?.length > 0 && (
+    <section class="pb-12 sm:pb-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl sm:text-3xl font-display text-ink">{pages.faq.title}</h2>
+        <div class="mt-6">
+          <FAQList items={service.faqs} />
+        </div>
+      </div>
+    </section>
+  )}
 </BaseLayout>

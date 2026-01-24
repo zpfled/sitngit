@@ -1,13 +1,16 @@
 ---
 import site from "../content/site.json";
-const { counties } = Astro.props;
+const { counties, surroundingNote } = Astro.props;
 const { labels } = site;
 ---
 <div class="space-y-6">
   {counties.map((county) => (
     <div class="bg-fog border border-clay/70 rounded-2xl p-6 shadow-soft">
-      <h3 class="text-lg font-display mb-3">
+      <h3 class="text-lg font-display mb-3 flex flex-wrap items-baseline gap-x-2">
         <a href={`/service-area/${county.slug}`} class="text-ink hover:text-sage">{county.name}</a>
+        {surroundingNote && (
+          <span class="text-xs font-sans text-ink/50">{surroundingNote}</span>
+        )}
       </h3>
       {county.towns.length ? (
         <ul class="flex flex-wrap gap-3 text-sm text-ink/70">

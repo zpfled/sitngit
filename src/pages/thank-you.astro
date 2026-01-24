@@ -1,0 +1,40 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import site from "../content/site.json";
+
+const { pages, business } = site;
+const heroImage = pages.home.hero.media;
+---
+<BaseLayout title="Thank you" description={pages.quote.success}>
+  <section class="relative overflow-hidden py-20 sm:py-24 min-h-[360px] sm:min-h-[420px] lg:min-h-[480px]">
+    {heroImage?.src && (
+      <div class="absolute inset-0">
+        <img src={heroImage.src} alt={heroImage.alt ?? ""} class="h-full w-full object-cover" loading="eager" />
+      </div>
+    )}
+    <div class="absolute inset-0 bg-ink/55"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
+      <div class="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] items-center w-full">
+        <h1 class="text-4xl sm:text-5xl font-display font-bold text-fog">Thank you!</h1>
+        <div class="bg-fog/95 border border-clay/60 rounded-2xl p-6 shadow-lift">
+          <p class="text-ink/80">
+            {pages.quote.success}{" "}
+            <span class="text-ink/70">
+              If this is an emergency, call us at{" "}
+              <a href={`tel:${business.phone_tel}`} class="font-semibold text-ink hover:text-sage">
+                {business.phone_display}
+              </a>
+              .
+            </span>
+          </p>
+          <a
+            href="/"
+            class="mt-4 inline-flex items-center justify-center px-5 py-2 rounded-full bg-ink text-fog text-sm font-semibold shadow-soft hover:bg-ink/90"
+          >
+            Back to Home
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

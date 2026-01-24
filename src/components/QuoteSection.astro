@@ -1,0 +1,31 @@
+---
+import QuoteForm from "./QuoteForm.astro";
+import site from "../content/site.json";
+
+const { pages } = site;
+const quoteBackground = pages.quote?.background_image ?? "/images/quote-bg.jpg";
+---
+<section
+  class="relative overflow-hidden py-16 sm:py-20"
+  style={`background-image: url('${quoteBackground}'); background-size: 100% auto; background-repeat: no-repeat; background-position: center top;`}
+>
+  <div class="absolute inset-0 bg-ink/55"></div>
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] items-center">
+      <div class="bg-fog/95 rounded-2xl shadow-lift p-6 sm:p-8">
+        <h3 class="text-2xl font-display text-ink text-center">Get a Quote</h3>
+        <div class="mt-6">
+          <QuoteForm />
+        </div>
+      </div>
+      <div class="text-fog">
+        <h2 class="text-4xl sm:text-5xl font-display font-bold text-fog">
+          Contact Us
+        </h2>
+        <p class="mt-4 text-base sm:text-lg text-fog/85 max-w-xl">
+          Request a quote today for portable restroom rental or service!
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

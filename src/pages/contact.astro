@@ -1,31 +1,49 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Section from "../components/Section.astro";
-import CTABlock from "../components/CTABlock.astro";
+import QuoteFormExtended from "../components/QuoteFormExtended.astro";
 import site from "../content/site.json";
 
 const { pages, business, navigation, labels } = site;
 ---
 <BaseLayout title={pages.contact.title} description={pages.contact.body}>
-  <Section title={pages.contact.title} body={pages.contact.body}>
-    <div class="grid gap-6 sm:grid-cols-2">
-      <div class="bg-fog border border-clay/70 rounded-2xl p-6 shadow-soft">
-        <p class="text-sm font-semibold text-ink">{business.phone_display}</p>
-        <a href={`tel:${business.phone_tel}`} class="text-sm text-ink/70">{navigation.cta_secondary.label}</a>
-      </div>
-      <div class="bg-fog border border-clay/70 rounded-2xl p-6 shadow-soft">
-        <p class="text-sm font-semibold text-ink">{business.email}</p>
-        <a href={`mailto:${business.email}`} class="text-sm text-ink/70">{labels.email}</a>
-      </div>
-      <div class="bg-fog border border-clay/70 rounded-2xl p-6 shadow-soft">
-        <p class="text-sm font-semibold text-ink">{pages.contact.hours}</p>
+  <section class="pt-12 sm:pt-16 pb-6 sm:pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-3xl sm:text-4xl font-display text-ink">{pages.contact.title}</h1>
+      <p class="mt-4 text-ink/75">{pages.contact.body}</p>
+    </div>
+  </section>
+
+  <section class="pt-6 sm:pt-8 pb-12 sm:pb-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-10 lg:grid-cols-[0.7fr_1.3fr] items-start">
+        <div class="bg-fog border border-clay/70 rounded-2xl p-6 sm:p-8 shadow-soft space-y-6">
+          <div>
+            <p class="text-xs uppercase tracking-[0.2em] text-moss mb-2">Hours</p>
+            <p class="text-sm text-ink/80">{pages.contact.hours}</p>
+          </div>
+          <div>
+            <p class="text-xs uppercase tracking-[0.2em] text-moss mb-2">Phone</p>
+            <a href={`tel:${business.phone_tel}`} class="text-sm font-semibold text-ink hover:text-sage">
+              {business.phone_display}
+            </a>
+            <p class="text-sm text-ink/60">{navigation.cta_secondary.label}</p>
+          </div>
+          <div>
+            <p class="text-xs uppercase tracking-[0.2em] text-moss mb-2">Email</p>
+            <a href={`mailto:${business.email}`} class="text-sm font-semibold text-ink hover:text-sage">
+              {business.email}
+            </a>
+            <p class="text-sm text-ink/60">{labels.email}</p>
+          </div>
+        </div>
+        <div class="bg-fog border border-clay/70 rounded-2xl p-6 sm:p-8 shadow-soft">
+          <h2 class="text-2xl font-display text-ink">{pages.contact.cta.title}</h2>
+          <p class="mt-3 text-sm text-ink/70">{pages.contact.cta.body}</p>
+          <div class="mt-6">
+            <QuoteFormExtended buttonFullWidth={false} />
+          </div>
+        </div>
       </div>
     </div>
-  </Section>
-  <CTABlock
-    title={pages.contact.cta.title}
-    body={pages.contact.cta.body}
-    button={pages.contact.cta.button}
-    href={navigation.cta_primary.href}
-  />
+  </section>
 </BaseLayout>

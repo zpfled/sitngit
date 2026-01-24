@@ -5,13 +5,12 @@ import GoogleReviews from "../components/GoogleReviews.astro";
 import ServiceShowcase from "../components/ServiceShowcase.astro";
 import ServiceAreaMap from "../components/ServiceAreaMap.astro";
 import Section from "../components/Section.astro";
-import QuoteForm from "../components/QuoteForm.astro";
+import QuoteSection from "../components/QuoteSection.astro";
 import WhyChooseGrid from "../components/WhyChooseGrid.astro";
 import site from "../content/site.json";
 import googleReviews from "../content/google-reviews.json";
 
 const { pages, service_area, global_faq, navigation } = site;
-const quoteBackground = pages.quote?.background_image ?? "/images/quote-bg.jpg";
 
 ---
 <BaseLayout title={site.business.name} description={site.business.tagline}>
@@ -38,7 +37,7 @@ const quoteBackground = pages.quote?.background_image ?? "/images/quote-bg.jpg";
   />
 
   <section class="py-12 sm:py-16 overflow-x-hidden">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid gap-8 lg:gap-0 lg:grid-cols-[1.15fr_0.85fr] items-stretch">
         <div class="lg:ml-[calc(50%-50vw)] lg:w-[calc(100%+50vw-50%)]">
           <ServiceAreaMap fullBleed />
@@ -63,7 +62,7 @@ const quoteBackground = pages.quote?.background_image ?? "/images/quote-bg.jpg";
   </section>
 
   <section class="py-12 sm:py-16">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-2xl sm:text-3xl font-display text-ink text-center">
         {pages.home.why_choose.title}
       </h2>
@@ -76,28 +75,5 @@ const quoteBackground = pages.quote?.background_image ?? "/images/quote-bg.jpg";
     </div>
   </section>
 
-  <section
-    class="relative overflow-hidden py-16 sm:py-20"
-    style={`background-image: url('${quoteBackground}'); background-size: 100% auto; background-repeat: no-repeat; background-position: center top;`}
-  >
-    <div class="absolute inset-0 bg-ink/55"></div>
-    <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] items-center">
-        <div class="bg-fog/95 rounded-2xl shadow-lift p-6 sm:p-8">
-          <h3 class="text-2xl font-display text-ink text-center">Get a Quote</h3>
-          <div class="mt-6">
-            <QuoteForm />
-          </div>
-        </div>
-        <div class="text-fog">
-          <h2 class="text-4xl sm:text-5xl font-display font-bold text-fog">
-            Contact Us
-          </h2>
-          <p class="mt-4 text-base sm:text-lg text-fog/85 max-w-xl">
-            Request a quote today for portable restroom rental or service!
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
+  <QuoteSection />
 </BaseLayout>

@@ -106,8 +106,29 @@ function initServiceAreaMap() {
   });
 }
 
+function lazyLoadServiceAreaMap() {
+  const mapElement = document.getElementById("service-area-map");
+  if (!mapElement || mapElement.dataset.mapInitialized === "true") return;
+
+  if (!("IntersectionObserver" in window)) {
+    initServiceAreaMap();
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      if (!entries.some((entry) => entry.isIntersecting)) return;
+      observer.disconnect();
+      initServiceAreaMap();
+    },
+    { rootMargin: "200px 0px" }
+  );
+
+  observer.observe(mapElement);
+}
+
 if (document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded", initServiceAreaMap, { once: true });
+  document.addEventListener("DOMContentLoaded", lazyLoadServiceAreaMap, { once: true });
 } else {
-  initServiceAreaMap();
+  lazyLoadServiceAreaMap();
 }

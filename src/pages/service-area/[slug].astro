@@ -1,95 +1,113 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import Section from "../../components/Section.astro";
-import CTABlock from "../../components/CTABlock.astro";
 import FAQList from "../../components/FAQList.astro";
-import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import CTABlock from "../../components/CTABlock.astro";
 import site from "../../content/site.json";
 
-const counties = site.service_area.counties;
-const towns = counties.flatMap((county) =>
-  county.towns.map((town) => ({ ...town, county }))
-);
-
 export function getStaticPaths() {
+  const counties = site.service_area.counties;
+  const towns = counties.flatMap((county) =>
+    county.towns.map((town) => ({ ...town, county }))
+  );
+
   const countyPaths = counties.map((county) => ({
-    params: { slug: county.slug },
-    props: { type: "county", county }
+    params: { slug: county.slug }
   }));
 
-  const townPaths = towns.map((town, index) => ({
-    params: { slug: town.slug },
-    props: { type: "town", town, county: town.county, townIndex: index }
+  const townPaths = towns.map((town) => ({
+    params: { slug: town.slug }
   }));
 
   return [...countyPaths, ...townPaths];
 }
 
-const { type, county, town, townIndex } = Astro.props;
-const { pages, navigation, global_faq } = site;
-
-const countyHeading = pages.county.heading_template.replace("{county}", county?.name ?? "");
-const countyIntro = pages.county.intro.replace("{county}", county?.name ?? "");
-const townHeading = pages.town.heading_template.replace("{town}", town?.name ?? "");
-
-const sentenceVariants = pages.town.sentence_variants;
-const firstSentence = sentenceVariants[townIndex % sentenceVariants.length];
-const secondSentence = sentenceVariants[(townIndex + 1) % sentenceVariants.length];
-const formattedFirst = firstSentence
-  ?.replaceAll("{town}", town?.name ?? "")
-  ?.replaceAll("{county}", county?.name ?? "");
-const formattedSecond = secondSentence
-  ?.replaceAll("{town}", town?.name ?? "")
-  ?.replaceAll("{county}", county?.name ?? "");
-
-const nearby = towns
-  .filter((item) => item.slug !== town?.slug)
-  .slice(0, 6);
+const slug = Astro.params.slug;
+const page = site.service_area_pages?.[slug];
+const { navigation } = site;
 ---
-<BaseLayout title={type === "county" ? countyHeading : townHeading} description={type === "county" ? pages.county.intro : formattedFirst}>
-  <Section>
-    <Breadcrumbs items={[{ label: type === "county" ? county.name : town.name, href: `/service-area/${type === "county" ? county.slug : town.slug}` }]} />
-    <h1 class="mt-4 text-3xl sm:text-4xl font-display">{type === "county" ? countyHeading : townHeading}</h1>
-  </Section>
-
-  {type === "county" ? (
-    <Section body={`${countyIntro} ${pages.county.uses}`}>
-      {county.towns.length ? (
-        <div class="flex flex-wrap gap-3 text-sm text-ink/70">
-          {county.towns.map((countyTown) => (
-            <a href={`/service-area/${countyTown.slug}`} class="hover:text-ink">{countyTown.name}</a>
-          ))}
-        </div>
-      ) : (
-        <p class="text-sm text-ink/70">{site.labels.no_towns_note}</p>
-      )}
-    </Section>
-  ) : (
-    <Section>
-      <div class="space-y-4 max-w-3xl text-ink/75">
-        <p>{formattedFirst}</p>
-        <p>{formattedSecond}</p>
-        <p>{pages.town.extra_sentence}</p>
+<BaseLayout title={page?.title_tag ?? site.pages.service_area.meta_title} description={page?.meta_description ?? site.pages.service_area.meta_description}>
+  <section class="py-12 sm:py-16">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-3xl sm:text-4xl font-display text-ink">{page?.h1 ?? "Service Area"}</h1>
+      <div class="mt-4 space-y-4 text-ink/75">
+        {page?.intro_paragraphs?.map((paragraph) => (
+          <p>{paragraph}</p>
+        ))}
       </div>
-      <div class="mt-8">
-        <h3 class="text-lg font-display">{pages.town.nearby_title}</h3>
-        <div class="mt-3 flex flex-wrap gap-3 text-sm text-ink/70">
-          {nearby.map((nearbyTown) => (
-            <a href={`/service-area/${nearbyTown.slug}`} class="hover:text-ink">{nearbyTown.name}</a>
-          ))}
-        </div>
-      </div>
-    </Section>
-  )}
+    </div>
+  </section>
 
-  <Section title={pages.service_area.faq_title}>
-    <FAQList items={global_faq} />
-  </Section>
+  {page?.images?.length ? (
+    <section class="py-8 sm:py-12">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid gap-6 md:grid-cols-2">
+        {page.images.map((image) => (
+          <figure class="bg-fog border border-clay/70 rounded-2xl overflow-hidden shadow-soft">
+            <img src={image.src} alt={image.alt ?? ""} class="w-full h-64 object-cover" loading="lazy" />
+            {image.note && <figcaption class="px-4 py-3 text-xs text-ink/60">{image.note}</figcaption>}
+          </figure>
+        ))}
+      </div>
+    </section>
+  ) : null}
+
+  <section class="py-8 sm:py-12">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-3xl font-display text-ink">{page?.services_title}</h2>
+      <ul class="mt-4 space-y-2 text-ink/75 list-disc list-inside">
+        {page?.services_list?.map((item) => (
+          <li>{item}</li>
+        ))}
+      </ul>
+      {page?.services_note && <p class="mt-4 text-ink/70">{page.services_note}</p>}
+    </div>
+  </section>
+
+  <section class="py-8 sm:py-12">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-3xl font-display text-ink">{page?.use_cases_title}</h2>
+      <div class="mt-4 space-y-3 text-ink/75">
+        {page?.use_cases?.map((item) => (
+          <p>{item}</p>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-8 sm:py-12">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-3xl font-display text-ink">{page?.logistics_title}</h2>
+      <p class="mt-4 text-ink/75">{page?.logistics_body}</p>
+    </div>
+  </section>
+
+  <section class="py-8 sm:py-12">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-3xl font-display text-ink">{page?.faq_title}</h2>
+      <div class="mt-6">
+        <FAQList items={page?.faqs ?? []} />
+      </div>
+    </div>
+  </section>
 
   <CTABlock
-    title={type === "county" ? pages.county.cta.title : pages.town.cta.title.replace("{town}", town?.name ?? "")}
-    body={type === "county" ? pages.county.cta.body : pages.town.cta.body}
-    button={type === "county" ? pages.county.cta.button : pages.town.cta.button}
+    title={page?.cta_title ?? "Request a Quote"}
+    body={page?.cta_body ?? "Tell us your dates and location, and we will confirm availability."}
+    button={page?.cta_button ?? "Request a Quote"}
     href={navigation.cta_primary.href}
   />
+
+  {page?.also_serving?.length ? (
+    <section class="py-8 sm:py-12">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-ink/70 text-sm">
+        <p class="font-semibold text-ink">Also serving:</p>
+        <div class="mt-2 flex flex-wrap gap-2">
+          {page.also_serving.map((link, index) => (
+            <a href={link.href} class="hover:text-ink">
+              {link.label}{index < page.also_serving.length - 1 ? " · " : ""}
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  ) : null}
 </BaseLayout>
