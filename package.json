@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "build": "npm run build:reviews && astro build",
+    "build": "npm run build:reviews && npm run build:sitemap && astro build",
     "build:reviews": "node scripts/fetch-google-reviews.mjs",
+    "build:sitemap": "node scripts/generate-sitemap.mjs",
     "find-place-id": "node scripts/find-place-id.mjs",
     "preview": "astro preview",
     "astro": "astro"
