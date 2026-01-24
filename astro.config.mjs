@@ -5,6 +5,6 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
   site: "https://sitandgit.com",
   integrations: [tailwind(), sitemap()],
-  output: "hybrid",
+  output: "static",
   trailingSlash: "never"
 });
