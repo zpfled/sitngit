@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.sitandgit.com/sitemap.xml
+Sitemap: https://sitandgit.com/sitemap.xml
