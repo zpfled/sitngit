@@ -5,7 +5,7 @@ const { form_extended: form } = site.pages.quote;
 const { buttonFullWidth = true } = Astro.props;
 const buttonClass = buttonFullWidth
   ? "w-full sm:w-auto px-6 py-3 rounded-full bg-sage text-fog font-semibold shadow-soft"
-  : "px-6 py-3 rounded-full bg-sage text-fog font-semibold shadow-soft";
+  : "px-6 py-3 rounded-full bg-sage text-fog font-semibold shadow-soft justify-self-start";
 ---
 <form name="quote" method="post" action="/thank-you/" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="bot-field" class="grid gap-6">
   <input type="hidden" name="form-name" value="quote" />
