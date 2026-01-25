@@ -2002,27 +2002,19 @@
         "section_contact": "Contact Information",
         "section_project": "Project Information",
         "labels": {
-          "first_name": "First name",
-          "last_name": "Last name",
+          "name": "Name",
           "email": "Email",
-          "confirm_email": "Confirm email",
           "phone": "Phone",
-          "state": "State",
-          "company": "Company name",
           "zip": "Delivery zip code",
           "services": "Products/services needed",
           "start_date": "Start date",
-          "end_date": "End date",
           "duration": "Rental duration",
           "notes": "Special notes"
         },
         "placeholders": {
-          "first_name": "First name",
-          "last_name": "Last name",
+          "name": "Full name",
           "email": "you@example.com",
-          "confirm_email": "Confirm email",
           "phone": "(608) 555-0123",
-          "company": "Company name",
           "zip": "Zip code",
           "notes": "Tell us about access, placement, or site details."
         },
@@ -2033,9 +2025,6 @@
           "Event rentals",
           "Long-term rentals",
           "Service only"
-        ],
-        "state_options": [
-          "Wisconsin"
         ],
         "duration_options": [
           "Under 7 days",

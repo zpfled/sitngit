@@ -7,51 +7,24 @@ const buttonClass = buttonFullWidth
   ? "w-full sm:w-auto px-6 py-3 rounded-full bg-sage text-fog font-semibold shadow-soft"
   : "px-6 py-3 rounded-full bg-sage text-fog font-semibold shadow-soft";
 ---
-<form name="quote" method="post" action="/thank-you" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="bot-field" class="grid gap-6">
+<form name="quote" method="post" action="/thank-you/" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="bot-field" class="grid gap-6">
   <input type="hidden" name="form-name" value="quote" />
   <input type="text" name="bot-field" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true" />
 
-  <div class="space-y-4">
+  <div class="space-y-3">
     <p class="text-sm font-semibold text-ink">{form.section_contact}</p>
-    <div class="grid gap-4 sm:grid-cols-2">
+    <div class="grid gap-3 sm:grid-cols-2">
       <label class="text-sm font-semibold text-ink">
-        {form.labels.first_name}
-        <input name="first-name" required placeholder={form.placeholders.first_name} class="mt-2 w-full rounded-lg border border-clay bg-fog px-3 py-2" />
+        {form.labels.name}
+        <input name="name" required placeholder={form.placeholders.name} class="mt-2 w-full rounded-lg border border-clay bg-fog px-3 py-2" />
       </label>
-      <label class="text-sm font-semibold text-ink">
-        {form.labels.last_name}
-        <input name="last-name" required placeholder={form.placeholders.last_name} class="mt-2 w-full rounded-lg border border-clay bg-fog px-3 py-2" />
-      </label>
-    </div>
-    <div class="grid gap-4 sm:grid-cols-2">
-      <label class="text-sm font-semibold text-ink">
-        {form.labels.email}
-        <input type="email" name="email" required placeholder={form.placeholders.email} class="mt-2 w-full rounded-lg border border-clay bg-fog px-3 py-2" />
-      </label>
-      <label class="text-sm font-semibold text-ink">
-        {form.labels.confirm_email}
-        <input type="email" name="confirm-email" required placeholder={form.placeholders.confirm_email} class="mt-2 w-full rounded-lg border border-clay bg-fog px-3 py-2" />
-      </label>
-    </div>
-    <div class="grid gap-4 sm:grid-cols-2">
       <label class="text-sm font-semibold text-ink">
         {form.labels.phone}
         <input name="phone" required placeholder={form.placeholders.phone} class="mt-2 w-full rounded-lg border border-clay bg-fog px-3 py-2" />
       </label>
       <label class="text-sm font-semibold text-ink">
-        {form.labels.state}
-        <select name="state" class="mt-2 w-full rounded-lg border border-clay bg-fog px-3 py-2">
-          <option value="">Select state</option>
-          {form.state_options.map((state) => (
-            <option value={state}>{state}</option>
-          ))}
-        </select>
-      </label>
-    </div>
-    <div class="grid gap-4 sm:grid-cols-2">
-      <label class="text-sm font-semibold text-ink">
-        {form.labels.company}
-        <input name="company" placeholder={form.placeholders.company} class="mt-2 w-full rounded-lg border border-clay bg-fog px-3 py-2" />
+        {form.labels.email}
+        <input type="email" name="email" required placeholder={form.placeholders.email} class="mt-2 w-full rounded-lg border border-clay bg-fog px-3 py-2" />
       </label>
       <label class="text-sm font-semibold text-ink">
         {form.labels.zip}
@@ -60,7 +33,7 @@ const buttonClass = buttonFullWidth
     </div>
   </div>
 
-  <div class="space-y-4">
+  <div class="space-y-3">
     <p class="text-sm font-semibold text-ink">{form.section_project}</p>
     <div>
       <p class="text-xs uppercase tracking-[0.2em] text-moss mb-3">{form.labels.services}</p>
@@ -73,25 +46,21 @@ const buttonClass = buttonFullWidth
         ))}
       </div>
     </div>
-    <div class="grid gap-4 sm:grid-cols-2">
+    <div class="grid gap-3 sm:grid-cols-2">
       <label class="text-sm font-semibold text-ink">
         {form.labels.start_date}
         <input type="date" name="start-date" class="mt-2 w-full rounded-lg border border-clay bg-fog px-3 py-2" />
       </label>
       <label class="text-sm font-semibold text-ink">
-        {form.labels.end_date}
-        <input type="date" name="end-date" class="mt-2 w-full rounded-lg border border-clay bg-fog px-3 py-2" />
+        {form.labels.duration}
+        <select name="rental-duration" class="mt-2 w-full rounded-lg border border-clay bg-fog px-3 py-2">
+          <option value="">Please select</option>
+          {form.duration_options.map((duration) => (
+            <option value={duration}>{duration}</option>
+          ))}
+        </select>
       </label>
     </div>
-    <label class="text-sm font-semibold text-ink">
-      {form.labels.duration}
-      <select name="rental-duration" class="mt-2 w-full rounded-lg border border-clay bg-fog px-3 py-2">
-        <option value="">Please select</option>
-        {form.duration_options.map((duration) => (
-          <option value={duration}>{duration}</option>
-        ))}
-      </select>
-    </label>
     <label class="text-sm font-semibold text-ink">
       {form.labels.notes}
       <textarea name="notes" rows="5" placeholder={form.placeholders.notes} class="mt-2 w-full rounded-lg border border-clay bg-fog px-3 py-2"></textarea>
