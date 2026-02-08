@@ -1,6 +1,6 @@
 ---
 import site from "../content/site.json";
-const { eyebrow, headline, subhead, primaryCta, secondaryCta, secondaryHref, media } = Astro.props;
+const { eyebrow, headline, subhead, trustStrip, primaryCta, secondaryCta, secondaryHref, media } = Astro.props;
 const { navigation, labels } = site;
 const primaryLabel = primaryCta ?? navigation.cta_primary.label;
 const secondaryLabel = secondaryCta ?? labels.view_service_area;
@@ -19,6 +19,9 @@ const secondaryLabel = secondaryCta ?? labels.view_service_area;
           {headline}
         </h1>
         <p class="mt-4 text-lg text-fog/85">{subhead}</p>
+        {trustStrip && (
+          <p class="mt-3 text-sm font-semibold text-fog/80">{trustStrip}</p>
+        )}
         <div class="mt-6 flex flex-wrap gap-3">
           <a href={navigation.cta_primary.href} class="px-6 py-3 rounded-xl bg-ember text-ink font-bold shadow-soft">
             {primaryLabel}
