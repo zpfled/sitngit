@@ -72,3 +72,20 @@ const buttonClass = buttonFullWidth
     {form.submit}
   </button>
 </form>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const type = params.get("type");
+  const map = {
+    event: "Event rentals",
+    "long-term": "Long-term rentals",
+    longterm: "Long-term rentals"
+  };
+  const target = map[type];
+  if (target) {
+    document.querySelectorAll('input[name="services[]"]').forEach((input) => {
+      if (input.value === target) {
+        input.checked = true;
+      }
+    });
+  }
+</script>

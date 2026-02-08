@@ -1980,6 +1980,14 @@
       "background_image": "/images/quote-bg.jpg",
       "intro": "Request a formal quote for portable restroom rentals in southwest Wisconsin.",
       "lede": "Want a formal quote for portable sanitation equipment rental? Fill out and submit the form below and a representative will respond soon. You may also give us a call at",
+      "cta_event": {
+        "label": "Event Rental Quote",
+        "href": "/get-a-quote?type=event"
+      },
+      "cta_long_term": {
+        "label": "Long-Term Rental Quote",
+        "href": "/get-a-quote?type=long-term"
+      },
       "success": "Thanks for reaching out! We've received your message and will follow up as soon as possible during normal business hours. If you need immediate assistance, please call (608) 570-9118.",
       "form": {
         "turnstile_site_key": "",

@@ -5,7 +5,7 @@ import site from "../content/site.json";
 const { pages, business } = site;
 const heroImage = pages.home.hero.media;
 ---
-<BaseLayout title="Thank you" description={pages.quote.success}>
+<BaseLayout title="Thank you" description={pages.quote.success} noindex={true}>
   <section class="relative overflow-hidden py-20 sm:py-24 min-h-[360px] sm:min-h-[420px] lg:min-h-[480px]">
     {heroImage?.src && (
       <div class="absolute inset-0">

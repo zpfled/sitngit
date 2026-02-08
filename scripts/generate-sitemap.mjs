@@ -16,8 +16,7 @@ const paths = new Set([
   "/faq",
   "/get-a-quote",
   "/service-area",
-  "/services",
-  "/thank-you"
+  "/services"
 ]);
 
 site.services?.forEach((service) => {
