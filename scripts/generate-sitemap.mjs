@@ -23,8 +23,17 @@ site.services?.forEach((service) => {
   if (service?.slug) paths.add(`/services/${service.slug}`);
 });
 
+const townSlugs = new Set(
+  (site.service_area?.counties ?? []).flatMap((county) =>
+    (county.towns ?? []).map((town) => town.slug)
+  )
+);
+const indexableTownSlugs = new Set(["viroqua-wi", "richland-center-wi"]);
+
 Object.keys(site.service_area_pages ?? {}).forEach((slug) => {
-  paths.add(`/service-area/${slug}`);
+  if (!townSlugs.has(slug) || indexableTownSlugs.has(slug)) {
+    paths.add(`/service-area/${slug}`);
+  }
 });
 
 const urls = Array.from(paths)

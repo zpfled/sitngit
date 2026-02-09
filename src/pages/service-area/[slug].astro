@@ -24,8 +24,18 @@ export function getStaticPaths() {
 const slug = Astro.params.slug;
 const page = site.service_area_pages?.[slug];
 const { navigation } = site;
+const townSlugs = new Set(
+  site.service_area.counties.flatMap((county) => county.towns.map((town) => town.slug))
+);
+const indexableTownSlugs = new Set(["viroqua-wi", "richland-center-wi"]);
+const isTownPage = townSlugs.has(slug);
+const allowIndex = !isTownPage || indexableTownSlugs.has(slug);
 ---
-<BaseLayout title={page?.title_tag ?? site.pages.service_area.meta_title} description={page?.meta_description ?? site.pages.service_area.meta_description}>
+<BaseLayout
+  title={page?.title_tag ?? site.pages.service_area.meta_title}
+  description={page?.meta_description ?? site.pages.service_area.meta_description}
+  noindex={!allowIndex}
+>
   <section class="py-12 sm:py-16">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
       <h1 class="text-3xl sm:text-4xl font-display text-ink">{page?.h1 ?? "Service Area"}</h1>
