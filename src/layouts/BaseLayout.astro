@@ -5,7 +5,7 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { buildLocalBusinessSchema, buildWebsiteSchema, buildSchemaIds } from "../lib/schema";
 
-const { title, description, canonical, noindex = false } = Astro.props;
+const { title, description, canonical, noindex = false, googleSiteVerification } = Astro.props;
 const siteName = site.business.name;
 const titleHasSiteName = typeof title === "string" && title.includes(siteName);
 const pageTitle = title
@@ -46,6 +46,9 @@ const isNetlifyHost = deployHost.endsWith("netlify.app");
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:image" content={ogImage} />
     <meta name="twitter:card" content="summary_large_image" />
+    {googleSiteVerification && (
+      <meta name="google-site-verification" content={googleSiteVerification} />
+    )}
     <script type="application/ld+json" set:html={JSON.stringify(businessSchema)}></script>
     <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)}></script>
     <slot name="head" />
