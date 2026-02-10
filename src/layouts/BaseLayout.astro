@@ -3,6 +3,7 @@ import "../styles/global.css";
 import site from "../content/site.json";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import { buildLocalBusinessSchema, buildWebsiteSchema, buildSchemaIds } from "../lib/schema";
 
 const { title, description, canonical, noindex = false } = Astro.props;
 const siteName = site.business.name;
@@ -13,70 +14,10 @@ const pageTitle = title
 const pageDescription = description ?? site.business.tagline;
 const canonicalBase = "https://sitandgit.com";
 const canonicalUrl = canonical ?? new URL(Astro.url.pathname, canonicalBase).toString();
-const ogImage = `${Astro.site ?? ""}/images/og-default.svg`;
-const serviceAreas = (site.service_area?.counties ?? []).map((county) => `${county.name}, WI`);
-const businessAddress = site.business.address ?? {
-  street: "16511 Ash Ridge Drive",
-  city: "Viola",
-  state: "WI",
-  zip: "54664",
-  country: "US"
-};
-const businessSchema = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  name: site.business.name,
-  url: site.business.website ?? "https://sitandgit.com",
-  telephone: site.business.phone_tel,
-  image: `${Astro.site ?? ""}${site.business.logo?.src ?? "/images/logo.png"}`,
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: businessAddress.street,
-    addressLocality: businessAddress.city,
-    addressRegion: businessAddress.state,
-    postalCode: businessAddress.zip,
-    addressCountry: businessAddress.country
-  },
-  sameAs: [
-    "https://www.facebook.com/profile.php?id=61587805803084",
-    "https://www.google.com/maps?cid=15132098919818792858"
-  ],
-  priceRange: "$90-$150 per unit",
-  areaServed: serviceAreas.map((area) => ({ "@type": "AdministrativeArea", name: area })),
-  openingHoursSpecification: [
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-      opens: "08:00",
-      closes: "17:00"
-    }
-  ],
-  serviceType: "Portable restroom rentals"
-};
-const websiteSchema = {
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  name: siteName,
-  url: site.business.website ?? canonicalBase
-};
-const serviceTypes = [
-  "Portable restroom rentals",
-  "Wheelchair-accessible portable restroom rentals",
-  "Handwash station rentals",
-  "Portable toilet servicing"
-];
-const serviceSchemas = serviceTypes.map((serviceType) => ({
-  "@context": "https://schema.org",
-  "@type": "Service",
-  serviceType,
-  provider: {
-    "@type": "LocalBusiness",
-    name: site.business.name,
-    telephone: site.business.phone_tel,
-    url: site.business.website ?? "https://sitandgit.com"
-  },
-  areaServed: serviceAreas.map((area) => ({ "@type": "AdministrativeArea", name: area }))
-}));
+const ogImage = `${canonicalBase}/images/og-default.svg`;
+const { localBusinessId, websiteId } = buildSchemaIds(canonicalBase);
+const businessSchema = buildLocalBusinessSchema(site, canonicalBase);
+const websiteSchema = buildWebsiteSchema(site, canonicalBase, localBusinessId, websiteId);
 const deployUrl = process.env.URL ?? "";
 let deployHost = "";
 try {
@@ -106,9 +47,7 @@ const isNetlifyHost = deployHost.endsWith("netlify.app");
     <meta name="twitter:card" content="summary_large_image" />
     <script type="application/ld+json" set:html={JSON.stringify(businessSchema)}></script>
     <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)}></script>
-    {serviceSchemas.map((schema) => (
-      <script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
-    ))}
+    <slot name="head" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"

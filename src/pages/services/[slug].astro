@@ -2,6 +2,7 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import FAQList from "../../components/FAQList.astro";
 import site from "../../content/site.json";
+import { buildServiceSchema, buildSchemaIds } from "../../lib/schema";
 
 export function getStaticPaths() {
   return site.services.map((service) => ({
@@ -14,8 +15,20 @@ const { service } = Astro.props;
 const { pages, business, navigation } = site;
 const metaTitle = service.meta_title ?? service.name;
 const metaDescription = service.meta_description ?? service.short;
+const serviceAreas = (site.service_area?.counties ?? []).map((county) => `${county.name}, WI`);
+const { localBusinessId } = buildSchemaIds("https://sitandgit.com");
+const serviceSchema = buildServiceSchema({
+  serviceSlug: service.slug,
+  serviceAreas,
+  localBusinessId
+});
 ---
 <BaseLayout title={metaTitle} description={metaDescription}>
+  {serviceSchema && (
+    <Fragment slot="head">
+      <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)}></script>
+    </Fragment>
+  )}
   <section class="py-12 sm:py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h1 class="text-4xl sm:text-5xl font-display text-ink">{service.name}</h1>
