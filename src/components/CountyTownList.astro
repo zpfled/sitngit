@@ -7,7 +7,7 @@ const { labels } = site;
   {counties.map((county) => (
     <div class="bg-fog border border-clay/70 rounded-2xl p-6 shadow-soft">
       <h3 class="text-lg font-display mb-3 flex flex-wrap items-baseline gap-x-2">
-        <a href={`/service-area/${county.slug}`} class="text-ink hover:text-sage">{county.name}</a>
+        <a href={`/service-area/${county.slug}/`} class="text-ink hover:text-sage">{county.name}</a>
         {surroundingNote && (
           <span class="text-xs font-sans text-ink/50">{surroundingNote}</span>
         )}
@@ -16,7 +16,7 @@ const { labels } = site;
         <ul class="flex flex-wrap gap-3 text-sm text-ink/70">
           {county.towns.map((town) => (
             <li>
-              <a href={`/service-area/${town.slug}`} class="hover:text-ink">{town.name}</a>
+              <a href={`/service-area/${town.slug}/`} class="hover:text-ink">{town.name}</a>
             </li>
           ))}
         </ul>

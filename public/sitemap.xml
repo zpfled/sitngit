@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://sitandgit.com/</loc></url>
-  <url><loc>https://sitandgit.com/about</loc></url>
-  <url><loc>https://sitandgit.com/contact</loc></url>
-  <url><loc>https://sitandgit.com/faq</loc></url>
-  <url><loc>https://sitandgit.com/get-a-quote</loc></url>
-  <url><loc>https://sitandgit.com/service-area</loc></url>
-  <url><loc>https://sitandgit.com/service-area/crawford-county-wi</loc></url>
-  <url><loc>https://sitandgit.com/service-area/richland-center-wi</loc></url>
-  <url><loc>https://sitandgit.com/service-area/richland-county-wi</loc></url>
-  <url><loc>https://sitandgit.com/service-area/vernon-county-wi</loc></url>
-  <url><loc>https://sitandgit.com/service-area/viroqua-wi</loc></url>
-  <url><loc>https://sitandgit.com/services</loc></url>
-  <url><loc>https://sitandgit.com/services/ada-restrooms</loc></url>
-  <url><loc>https://sitandgit.com/services/construction-rentals</loc></url>
-  <url><loc>https://sitandgit.com/services/event-rentals</loc></url>
-  <url><loc>https://sitandgit.com/services/handwashing-stations</loc></url>
-  <url><loc>https://sitandgit.com/services/portable-restrooms</loc></url>
-  <url><loc>https://sitandgit.com/services/toilet-servicing</loc></url>
+  <url><loc>https://sitandgit.com/about/</loc></url>
+  <url><loc>https://sitandgit.com/faq/</loc></url>
+  <url><loc>https://sitandgit.com/service-area/</loc></url>
+  <url><loc>https://sitandgit.com/service-area/vernon-county-wi/</loc></url>
+  <url><loc>https://sitandgit.com/service-area/richland-county-wi/</loc></url>
+  <url><loc>https://sitandgit.com/service-area/crawford-county-wi/</loc></url>
+  <url><loc>https://sitandgit.com/services/portable-restrooms/</loc></url>
+  <url><loc>https://sitandgit.com/services/ada-restrooms/</loc></url>
+  <url><loc>https://sitandgit.com/services/handwashing-stations/</loc></url>
+  <url><loc>https://sitandgit.com/services/event-rentals/</loc></url>
+  <url><loc>https://sitandgit.com/services/construction-rentals/</loc></url>
+  <url><loc>https://sitandgit.com/services/toilet-servicing/</loc></url>
 </urlset>

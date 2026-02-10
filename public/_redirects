@@ -1,0 +1,9 @@
+/about        /about/        301
+/contact      /contact/      301
+/faq          /faq/          301
+/get-a-quote  /get-a-quote/  301
+/thank-you    /thank-you/    301
+/services     /services/     301
+/service-area /service-area/ 301
+/services/*   /services/:splat/   301
+/service-area/* /service-area/:splat/ 301

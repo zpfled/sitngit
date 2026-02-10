@@ -111,7 +111,7 @@ const serviceSchema = buildServiceSchema({
         </div>
       </div>
       <div class="mt-6 flex flex-wrap gap-4 text-sm text-ink/70">
-        <a href="/service-area" class="underline underline-offset-4 hover:text-ink">View service area</a>
+        <a href="/service-area/" class="underline underline-offset-4 hover:text-ink">View service area</a>
         {[
           { slug: "portable-restrooms", label: "Portable restrooms" },
           { slug: "ada-restrooms", label: "ADA units" },
@@ -121,7 +121,7 @@ const serviceSchema = buildServiceSchema({
         ]
           .filter((item) => item.slug !== service.slug)
           .map((item) => (
-            <a href={`/services/${item.slug}`} class="underline underline-offset-4 hover:text-ink">
+            <a href={`/services/${item.slug}/`} class="underline underline-offset-4 hover:text-ink">
               {item.label}
             </a>
           ))}

@@ -17,7 +17,7 @@ const { business, services, service_area, navigation, pages, labels } = site;
         <p class="text-sm font-semibold text-ink mb-3">{labels.footer_services}</p>
         <ul class="space-y-2 text-sm">
           {services.map((service) => (
-            <li><a href={`/services/${service.slug}`} class="text-ink/70 hover:text-ink">{service.name}</a></li>
+            <li><a href={`/services/${service.slug}/`} class="text-ink/70 hover:text-ink">{service.name}</a></li>
           ))}
         </ul>
       </div>
@@ -25,7 +25,7 @@ const { business, services, service_area, navigation, pages, labels } = site;
         <p class="text-sm font-semibold text-ink mb-3">{labels.footer_service_area}</p>
         <ul class="space-y-2 text-sm">
           {service_area.counties.map((county) => (
-            <li><a href={`/service-area/${county.slug}`} class="text-ink/70 hover:text-ink">{county.name}</a></li>
+            <li><a href={`/service-area/${county.slug}/`} class="text-ink/70 hover:text-ink">{county.name}</a></li>
           ))}
         </ul>
       </div>

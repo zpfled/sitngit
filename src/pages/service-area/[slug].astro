@@ -30,6 +30,26 @@ const townSlugs = new Set(
 const indexableTownSlugs = new Set(["viroqua-wi", "richland-center-wi"]);
 const isTownPage = townSlugs.has(slug);
 const allowIndex = !isTownPage || indexableTownSlugs.has(slug);
+const countyName = !isTownPage && page?.h1
+  ? page.h1.replace(/^Portable Restroom Rentals in\s+/i, "").replace(/,\s*Wisconsin$/i, "")
+  : null;
+const serviceLinks = [
+  { href: "/services/portable-restrooms/", label: "Portable restroom rentals" },
+  { href: "/services/ada-restrooms/", label: "ADA accessible restrooms" },
+  { href: "/services/handwashing-stations/", label: "Handwashing stations" },
+  { href: "/services/event-rentals/", label: "Event rentals" },
+  { href: "/services/construction-rentals/", label: "Construction & long-term rentals" }
+];
+const normalizeHref = (href) => {
+  if (typeof href !== "string") return href;
+  if (href.startsWith("http") || href.startsWith("mailto:") || href.startsWith("tel:")) return href;
+  if (!href.startsWith("/")) return href;
+  if (href.includes("?")) {
+    const [base, query] = href.split("?");
+    return base.endsWith("/") ? `${base}?${query}` : `${base}/?${query}`;
+  }
+  return href.endsWith("/") ? href : `${href}/`;
+};
 ---
 <BaseLayout
   title={page?.title_tag ?? site.pages.service_area.meta_title}
@@ -72,6 +92,21 @@ const allowIndex = !isTownPage || indexableTownSlugs.has(slug);
     </div>
   </section>
 
+  {!isTownPage && countyName && (
+    <section class="py-6 sm:py-10">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl sm:text-3xl font-display text-ink">Services in {countyName}</h2>
+        <div class="mt-4 flex flex-wrap gap-3 text-sm font-semibold text-ink/80">
+          {serviceLinks.map((link) => (
+            <a href={link.href} class="underline underline-offset-4 hover:text-ink">
+              {link.label} in {countyName}
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
   <section class="py-8 sm:py-12">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-2xl sm:text-3xl font-display text-ink">{page?.use_cases_title}</h2>
@@ -112,7 +147,7 @@ const allowIndex = !isTownPage || indexableTownSlugs.has(slug);
         <p class="font-semibold text-ink">Also serving:</p>
         <div class="mt-2 flex flex-wrap gap-2">
           {page.also_serving.map((link, index) => (
-            <a href={link.href} class="hover:text-ink">
+            <a href={normalizeHref(link.href)} class="hover:text-ink">
               {link.label}{index < page.also_serving.length - 1 ? " · " : ""}
             </a>
           ))}

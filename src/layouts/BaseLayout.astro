@@ -13,7 +13,8 @@ const pageTitle = title
   : `${siteName} | ${site.business.tagline}`;
 const pageDescription = description ?? site.business.tagline;
 const canonicalBase = "https://sitandgit.com";
-const canonicalUrl = canonical ?? new URL(Astro.url.pathname, canonicalBase).toString();
+const normalizedPath = Astro.url.pathname.endsWith("/") ? Astro.url.pathname : `${Astro.url.pathname}/`;
+const canonicalUrl = canonical ?? new URL(normalizedPath, canonicalBase).toString();
 const ogImage = `${canonicalBase}/images/og-default.svg`;
 const { localBusinessId, websiteId } = buildSchemaIds(canonicalBase);
 const businessSchema = buildLocalBusinessSchema(site, canonicalBase);

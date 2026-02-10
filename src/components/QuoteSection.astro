@@ -27,13 +27,13 @@ const quoteBackground = pages.quote?.background_image ?? "/images/quote-bg.jpg";
         </p>
         <div class="mt-6 flex flex-wrap gap-3">
           <a
-            href={pages.quote.cta_event?.href ?? "/get-a-quote?type=event"}
+            href={pages.quote.cta_event?.href ?? "/get-a-quote/?type=event"}
             class="inline-flex items-center justify-center rounded-full bg-ember text-ink px-6 py-2 text-sm font-semibold shadow-soft"
           >
             {pages.quote.cta_event?.label ?? "Event Rental Quote"}
           </a>
           <a
-            href={pages.quote.cta_long_term?.href ?? "/get-a-quote?type=long-term"}
+            href={pages.quote.cta_long_term?.href ?? "/get-a-quote/?type=long-term"}
             class="inline-flex items-center justify-center rounded-full border border-fog/60 text-fog px-6 py-2 text-sm font-semibold hover:border-fog"
           >
             {pages.quote.cta_long_term?.label ?? "Long-Term Rental Quote"}

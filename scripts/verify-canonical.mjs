@@ -28,7 +28,7 @@ const expectedForFile = (filePath) => {
   if (rel === "index.html") return `${canonicalBase}/`;
   if (!rel.endsWith("/index.html")) return null;
   const pathPart = rel.replace(/\/index\.html$/, "");
-  return `${canonicalBase}/${pathPart}`;
+  return `${canonicalBase}/${pathPart}/`;
 };
 
 const main = async () => {

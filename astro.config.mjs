@@ -5,5 +5,5 @@ export default defineConfig({
   site: "https://sitandgit.com",
   integrations: [tailwind()],
   output: "static",
-  trailingSlash: "never"
+  trailingSlash: "always"
 });

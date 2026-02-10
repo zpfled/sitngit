@@ -29,28 +29,28 @@
     "primary": [
       {
         "label": "Services",
-        "href": "/services"
+        "href": "/services/"
       },
       {
         "label": "Service Area",
-        "href": "/service-area"
+        "href": "/service-area/"
       },
       {
         "label": "FAQ",
-        "href": "/faq"
+        "href": "/faq/"
       },
       {
         "label": "About",
-        "href": "/about"
+        "href": "/about/"
       },
       {
         "label": "Contact",
-        "href": "/contact"
+        "href": "/contact/"
       }
     ],
     "cta_primary": {
       "label": "Get a Quote",
-      "href": "/get-a-quote"
+      "href": "/get-a-quote/"
     },
     "cta_secondary": {
       "label": "Call/Text",
@@ -526,8 +526,8 @@
       "meta_description": "Portable restroom rentals in Vernon County for events and job sites, serving Vernon, Richland, and Crawford counties. Call or request a quote today.",
       "h1": "Portable Restroom Rentals in Vernon County, Wisconsin",
       "intro_paragraphs": [
-        "Sit & Git Portables provides portable toilet rentals throughout Vernon County with dependable local delivery and scheduled servicing. We serve job sites, events, and rural properties across Vernon County with clean units and clear scheduling.",
-        "Our routes cover Vernon, Richland, and Crawford counties, and Vernon County is part of our regular service area. Whether you need short-term coverage for an event or longer placement for a job site, we coordinate delivery, placement, and servicing to fit your schedule."
+        "Sit & Git Portables serves Vernon County from our local base, with regular deliveries in Viola, La Farge, Westby, and Viroqua. We provide portable restrooms for Wild West Days in Viroqua, the Viroqua Farmers Market, Live in Viroqua concerts, and Pierce Hill Performing Arts Center events.",
+        "We support construction sites, school athletic events, and festivals throughout the county. Booking ahead is best, but we can often deliver within 24 hours depending on the schedule."
       ],
       "services_title": "Portable Restroom Options Available in Vernon County",
       "services_list": [
@@ -537,12 +537,12 @@
         "Short-term and long-term rentals",
         "Scheduled servicing and maintenance"
       ],
-      "services_note": "In Vernon County, deliveries and service visits are planned locally to keep schedules consistent and access handled correctly.",
+      "services_note": "We can handle rural driveways in Vernon County and have even delivered off-road when access allows.",
       "use_cases_title": "Common Uses for Portable Toilets in Vernon County",
       "use_cases": [
-        "Construction and remodeling projects across Vernon County rely on steady weekly service to keep crews productive.",
-        "Festivals and community gatherings in Vernon County benefit from clean, short-term restroom setups with clear delivery and pickup windows.",
-        "Small businesses and seasonal operations in Vernon County use portable restrooms and handwashing stations to support staff and visitors."
+        "Wild West Days, the Viroqua Farmers Market, and Live in Viroqua concerts rely on clean, short-term restroom setups with clear delivery and pickup windows.",
+        "Construction projects and job sites across Vernon County depend on steady weekly service to keep crews productive.",
+        "School athletic events, festivals, and community gatherings benefit from dependable units and flexible scheduling."
       ],
       "logistics_title": "Serving Vernon County and Nearby Areas",
       "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we\u2019ll work with you to confirm a safe access route or adjust service timing as needed. If you\u2019re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
@@ -563,19 +563,33 @@
         {
           "q": "What should I consider for unit placement in Vernon County?",
           "a": "Choose level ground with clear access for the service truck. If access is tight or remote, we will coordinate placement details in advance."
+        },
+        {
+          "q": "How quickly can you deliver in Vernon County?",
+          "a": "Booking ahead is best, but we can often deliver within 24 hours in Vernon County depending on schedule and access."
         }
       ],
-      "cta_title": "Request Portable Toilet Rental in Vernon County",
-      "cta_body": "If you need portable toilets in Vernon County, we will confirm availability, delivery timing, and service cadence based on your dates and location.",
+      "cta_title": "Request Portable Restroom Rental in Vernon County",
+      "cta_body": "If you need portable restrooms in Vernon County, we will confirm availability, delivery timing, and service cadence based on your dates and location.",
       "cta_button": "Request a Quote",
       "also_serving": [
         {
           "label": "Richland County, WI",
-          "href": "/service-area/richland-county-wi"
+          "href": "/service-area/richland-county-wi/"
         },
         {
           "label": "Crawford County, WI",
-          "href": "/service-area/crawford-county-wi"
+          "href": "/service-area/crawford-county-wi/"
+        }
+      ],
+      "images": [
+        {
+          "src": "/images/vernon-county-1.jpeg",
+          "alt": "Portable restroom delivery in Vernon County, Wisconsin"
+        },
+        {
+          "src": "/images/liv.jpeg",
+          "alt": "Portable restrooms at a Live in Viroqua concert"
         }
       ]
     },
@@ -584,8 +598,8 @@
       "meta_description": "Portable restroom rentals in Richland County for events and job sites, serving Vernon, Richland, and Crawford counties. Call or request a quote today.",
       "h1": "Portable Restroom Rentals in Richland County, Wisconsin",
       "intro_paragraphs": [
-        "Sit & Git Portables provides portable toilet rentals throughout Richland County with dependable local delivery and scheduled servicing. We serve job sites, events, and rural properties across Richland County with clean units and clear scheduling.",
-        "Our routes cover Vernon, Richland, and Crawford counties, and Richland County is part of our regular service area. Whether you need short-term coverage for an event or longer placement for a job site, we coordinate delivery, placement, and servicing to fit your schedule."
+        "Sit & Git Portables is headquartered in Richland County, so deliveries across the county are fast and straightforward. We serve schools in Richland Center, the Fire in the Hills Car Show in Yuba, Driftless Curiosity events near Viola, and other gatherings throughout the county.",
+        "We also keep multiple units out for local house construction sites and rural properties. Ordering ahead is best to lock in availability, but we have provided same-day service in Richland County when schedules allow."
       ],
       "services_title": "Portable Restroom Options Available in Richland County",
       "services_list": [
@@ -595,12 +609,12 @@
         "Short-term and long-term rentals",
         "Scheduled servicing and maintenance"
       ],
-      "services_note": "In Richland County, deliveries and service visits are planned locally to keep schedules consistent and access handled correctly.",
+      "services_note": "Because our base is in Richland County, we can schedule deliveries quickly and respond on short notice when availability allows.",
       "use_cases_title": "Common Uses for Portable Toilets in Richland County",
       "use_cases": [
-        "Construction and remodeling projects across Richland County rely on steady weekly service to keep crews productive.",
-        "Festivals and community gatherings in Richland County benefit from clean, short-term restroom setups with clear delivery and pickup windows.",
-        "Small businesses and seasonal operations in Richland County use portable restrooms and handwashing stations to support staff and visitors."
+        "Schools and school events in Richland Center rely on clean, dependable units for practices, games, and seasonal activities.",
+        "Community events like the Fire in the Hills Car Show in Yuba and Driftless Curiosity gatherings near Viola need short-term restroom setups with clear delivery and pickup windows.",
+        "Farms, parks, weddings, and rural properties across Richland County use portable restrooms and handwashing stations for guests and staff."
       ],
       "logistics_title": "Serving Richland County and Nearby Areas",
       "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we\u2019ll work with you to confirm a safe access route or adjust service timing as needed. If you\u2019re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
@@ -621,10 +635,14 @@
         {
           "q": "What should I consider for unit placement in Richland County?",
           "a": "Choose level ground with clear access for the service truck. If access is tight or remote, we will coordinate placement details in advance."
+        },
+        {
+          "q": "How quickly can you deliver in Richland County?",
+          "a": "Because we are based in Richland County, we can often deliver quickly. Same-day service is sometimes available when schedules allow, but booking ahead is best."
         }
       ],
-      "cta_title": "Request Portable Toilet Rental in Richland County",
-      "cta_body": "If you need portable toilets in Richland County, we will confirm availability, delivery timing, and service cadence based on your dates and location.",
+      "cta_title": "Request Portable Restroom Rental in Richland County",
+      "cta_body": "If you need portable restrooms in Richland County, we will confirm availability, delivery timing, and service cadence based on your dates and location.",
       "cta_button": "Request a Quote",
       "images": [
         {
@@ -639,11 +657,11 @@
       "also_serving": [
         {
           "label": "Vernon County, WI",
-          "href": "/service-area/vernon-county-wi"
+          "href": "/service-area/vernon-county-wi/"
         },
         {
           "label": "Crawford County, WI",
-          "href": "/service-area/crawford-county-wi"
+          "href": "/service-area/crawford-county-wi/"
         }
       ]
     },
@@ -652,8 +670,8 @@
       "meta_description": "Portable restroom rentals in Crawford County for events and job sites, serving Vernon, Richland, and Crawford counties. Call or request a quote today.",
       "h1": "Portable Restroom Rentals in Crawford County, Wisconsin",
       "intro_paragraphs": [
-        "Sit & Git Portables provides portable toilet rentals throughout Crawford County with dependable local delivery and scheduled servicing. We serve job sites, events, and rural properties across Crawford County with clean units and clear scheduling.",
-        "Our routes cover Vernon, Richland, and Crawford counties, and Crawford County is part of our regular service area. Whether you need short-term coverage for an event or longer placement for a job site, we coordinate delivery, placement, and servicing to fit your schedule."
+        "Sit & Git Portables serves Crawford County with regular deliveries in Soldiers Grove and Gays Mills. We provide portable restrooms for the Driftless Area Art Festival and for rod & gun club events throughout the county.",
+        "We also place units at hunting cabins and seasonal properties. Booking ahead is best, but we can typically offer service within 24 hours depending on the schedule."
       ],
       "services_title": "Portable Restroom Options Available in Crawford County",
       "services_list": [
@@ -663,12 +681,12 @@
         "Short-term and long-term rentals",
         "Scheduled servicing and maintenance"
       ],
-      "services_note": "In Crawford County, deliveries and service visits are planned locally to keep schedules consistent and access handled correctly.",
+      "services_note": "Our team covers Crawford County routinely, so we can coordinate delivery and servicing quickly when availability allows.",
       "use_cases_title": "Common Uses for Portable Toilets in Crawford County",
       "use_cases": [
-        "Construction and remodeling projects across Crawford County rely on steady weekly service to keep crews productive.",
-        "Festivals and community gatherings in Crawford County benefit from clean, short-term restroom setups with clear delivery and pickup windows.",
-        "Small businesses and seasonal operations in Crawford County use portable restrooms and handwashing stations to support staff and visitors."
+        "The Driftless Area Art Festival and other community events rely on clean, short-term restroom setups with clear delivery and pickup windows.",
+        "Rod & gun clubs and outdoor ranges use portable restrooms to support members during events and seasonal use.",
+        "Hunting cabins and seasonal properties across Crawford County rely on dependable placements and regular service."
       ],
       "logistics_title": "Serving Crawford County and Nearby Areas",
       "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we\u2019ll work with you to confirm a safe access route or adjust service timing as needed. If you\u2019re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
@@ -689,19 +707,23 @@
         {
           "q": "What should I consider for unit placement in Crawford County?",
           "a": "Choose level ground with clear access for the service truck. If access is tight or remote, we will coordinate placement details in advance."
+        },
+        {
+          "q": "How quickly can you deliver in Crawford County?",
+          "a": "Booking ahead is best, but we can typically offer service within 24 hours in Crawford County depending on schedule and access."
         }
       ],
-      "cta_title": "Request Portable Toilet Rental in Crawford County",
-      "cta_body": "If you need portable toilets in Crawford County, we will confirm availability, delivery timing, and service cadence based on your dates and location.",
+      "cta_title": "Request Portable Restroom Rental in Crawford County",
+      "cta_body": "If you need portable restrooms in Crawford County, we will confirm availability, delivery timing, and service cadence based on your dates and location.",
       "cta_button": "Request a Quote",
       "also_serving": [
         {
           "label": "Vernon County, WI",
-          "href": "/service-area/vernon-county-wi"
+          "href": "/service-area/vernon-county-wi/"
         },
         {
           "label": "Richland County, WI",
-          "href": "/service-area/richland-county-wi"
+          "href": "/service-area/richland-county-wi/"
         }
       ]
     },
@@ -755,19 +777,19 @@
       "also_serving": [
         {
           "label": "Westby, WI",
-          "href": "/service-area/westby-wi"
+          "href": "/service-area/westby-wi/"
         },
         {
           "label": "Coon Valley, WI",
-          "href": "/service-area/coon-valley-wi"
+          "href": "/service-area/coon-valley-wi/"
         },
         {
           "label": "Chaseburg, WI",
-          "href": "/service-area/chaseburg-wi"
+          "href": "/service-area/chaseburg-wi/"
         },
         {
           "label": "De Soto, WI",
-          "href": "/service-area/de-soto-wi"
+          "href": "/service-area/de-soto-wi/"
         }
       ]
     },
@@ -821,19 +843,19 @@
       "also_serving": [
         {
           "label": "Viroqua, WI",
-          "href": "/service-area/viroqua-wi"
+          "href": "/service-area/viroqua-wi/"
         },
         {
           "label": "Coon Valley, WI",
-          "href": "/service-area/coon-valley-wi"
+          "href": "/service-area/coon-valley-wi/"
         },
         {
           "label": "Chaseburg, WI",
-          "href": "/service-area/chaseburg-wi"
+          "href": "/service-area/chaseburg-wi/"
         },
         {
           "label": "Readstown, WI",
-          "href": "/service-area/readstown-wi"
+          "href": "/service-area/readstown-wi/"
         }
       ]
     },
@@ -887,19 +909,19 @@
       "also_serving": [
         {
           "label": "Viroqua, WI",
-          "href": "/service-area/viroqua-wi"
+          "href": "/service-area/viroqua-wi/"
         },
         {
           "label": "Westby, WI",
-          "href": "/service-area/westby-wi"
+          "href": "/service-area/westby-wi/"
         },
         {
           "label": "Chaseburg, WI",
-          "href": "/service-area/chaseburg-wi"
+          "href": "/service-area/chaseburg-wi/"
         },
         {
           "label": "Readstown, WI",
-          "href": "/service-area/readstown-wi"
+          "href": "/service-area/readstown-wi/"
         }
       ]
     },
@@ -953,19 +975,19 @@
       "also_serving": [
         {
           "label": "Viroqua, WI",
-          "href": "/service-area/viroqua-wi"
+          "href": "/service-area/viroqua-wi/"
         },
         {
           "label": "Westby, WI",
-          "href": "/service-area/westby-wi"
+          "href": "/service-area/westby-wi/"
         },
         {
           "label": "Coon Valley, WI",
-          "href": "/service-area/coon-valley-wi"
+          "href": "/service-area/coon-valley-wi/"
         },
         {
           "label": "De Soto, WI",
-          "href": "/service-area/de-soto-wi"
+          "href": "/service-area/de-soto-wi/"
         }
       ]
     },
@@ -1019,19 +1041,19 @@
       "also_serving": [
         {
           "label": "Viroqua, WI",
-          "href": "/service-area/viroqua-wi"
+          "href": "/service-area/viroqua-wi/"
         },
         {
           "label": "Westby, WI",
-          "href": "/service-area/westby-wi"
+          "href": "/service-area/westby-wi/"
         },
         {
           "label": "Chaseburg, WI",
-          "href": "/service-area/chaseburg-wi"
+          "href": "/service-area/chaseburg-wi/"
         },
         {
           "label": "Readstown, WI",
-          "href": "/service-area/readstown-wi"
+          "href": "/service-area/readstown-wi/"
         }
       ]
     },
@@ -1085,19 +1107,19 @@
       "also_serving": [
         {
           "label": "Viroqua, WI",
-          "href": "/service-area/viroqua-wi"
+          "href": "/service-area/viroqua-wi/"
         },
         {
           "label": "Westby, WI",
-          "href": "/service-area/westby-wi"
+          "href": "/service-area/westby-wi/"
         },
         {
           "label": "Coon Valley, WI",
-          "href": "/service-area/coon-valley-wi"
+          "href": "/service-area/coon-valley-wi/"
         },
         {
           "label": "La Farge, WI",
-          "href": "/service-area/la-farge-wi"
+          "href": "/service-area/la-farge-wi/"
         }
       ]
     },
@@ -1151,19 +1173,19 @@
       "also_serving": [
         {
           "label": "Readstown, WI",
-          "href": "/service-area/readstown-wi"
+          "href": "/service-area/readstown-wi/"
         },
         {
           "label": "Hillsboro, WI",
-          "href": "/service-area/hillsboro-wi"
+          "href": "/service-area/hillsboro-wi/"
         },
         {
           "label": "Cashton, WI",
-          "href": "/service-area/cashton-wi"
+          "href": "/service-area/cashton-wi/"
         },
         {
           "label": "Viroqua, WI",
-          "href": "/service-area/viroqua-wi"
+          "href": "/service-area/viroqua-wi/"
         }
       ]
     },
@@ -1217,19 +1239,19 @@
       "also_serving": [
         {
           "label": "La Farge, WI",
-          "href": "/service-area/la-farge-wi"
+          "href": "/service-area/la-farge-wi/"
         },
         {
           "label": "Cashton, WI",
-          "href": "/service-area/cashton-wi"
+          "href": "/service-area/cashton-wi/"
         },
         {
           "label": "Readstown, WI",
-          "href": "/service-area/readstown-wi"
+          "href": "/service-area/readstown-wi/"
         },
         {
           "label": "Westby, WI",
-          "href": "/service-area/westby-wi"
+          "href": "/service-area/westby-wi/"
         }
       ]
     },
@@ -1283,19 +1305,19 @@
       "also_serving": [
         {
           "label": "Hillsboro, WI",
-          "href": "/service-area/hillsboro-wi"
+          "href": "/service-area/hillsboro-wi/"
         },
         {
           "label": "La Farge, WI",
-          "href": "/service-area/la-farge-wi"
+          "href": "/service-area/la-farge-wi/"
         },
         {
           "label": "Readstown, WI",
-          "href": "/service-area/readstown-wi"
+          "href": "/service-area/readstown-wi/"
         },
         {
           "label": "Viroqua, WI",
-          "href": "/service-area/viroqua-wi"
+          "href": "/service-area/viroqua-wi/"
         }
       ]
     },
@@ -1349,19 +1371,19 @@
       "also_serving": [
         {
           "label": "Ithaca, WI",
-          "href": "/service-area/ithaca-wi"
+          "href": "/service-area/ithaca-wi/"
         },
         {
           "label": "Boaz, WI",
-          "href": "/service-area/boaz-wi"
+          "href": "/service-area/boaz-wi/"
         },
         {
           "label": "Viola, WI",
-          "href": "/service-area/viola-wi"
+          "href": "/service-area/viola-wi/"
         },
         {
           "label": "Muscoda, WI",
-          "href": "/service-area/muscoda-wi"
+          "href": "/service-area/muscoda-wi/"
         }
       ]
     },
@@ -1415,19 +1437,19 @@
       "also_serving": [
         {
           "label": "Richland Center, WI",
-          "href": "/service-area/richland-center-wi"
+          "href": "/service-area/richland-center-wi/"
         },
         {
           "label": "Boaz, WI",
-          "href": "/service-area/boaz-wi"
+          "href": "/service-area/boaz-wi/"
         },
         {
           "label": "Viola, WI",
-          "href": "/service-area/viola-wi"
+          "href": "/service-area/viola-wi/"
         },
         {
           "label": "Muscoda, WI",
-          "href": "/service-area/muscoda-wi"
+          "href": "/service-area/muscoda-wi/"
         }
       ]
     },
@@ -1481,19 +1503,19 @@
       "also_serving": [
         {
           "label": "Richland Center, WI",
-          "href": "/service-area/richland-center-wi"
+          "href": "/service-area/richland-center-wi/"
         },
         {
           "label": "Ithaca, WI",
-          "href": "/service-area/ithaca-wi"
+          "href": "/service-area/ithaca-wi/"
         },
         {
           "label": "Viola, WI",
-          "href": "/service-area/viola-wi"
+          "href": "/service-area/viola-wi/"
         },
         {
           "label": "Muscoda, WI",
-          "href": "/service-area/muscoda-wi"
+          "href": "/service-area/muscoda-wi/"
         }
       ]
     },
@@ -1547,19 +1569,19 @@
       "also_serving": [
         {
           "label": "Richland Center, WI",
-          "href": "/service-area/richland-center-wi"
+          "href": "/service-area/richland-center-wi/"
         },
         {
           "label": "Ithaca, WI",
-          "href": "/service-area/ithaca-wi"
+          "href": "/service-area/ithaca-wi/"
         },
         {
           "label": "Boaz, WI",
-          "href": "/service-area/boaz-wi"
+          "href": "/service-area/boaz-wi/"
         },
         {
           "label": "Muscoda, WI",
-          "href": "/service-area/muscoda-wi"
+          "href": "/service-area/muscoda-wi/"
         }
       ]
     },
@@ -1613,19 +1635,19 @@
       "also_serving": [
         {
           "label": "Richland Center, WI",
-          "href": "/service-area/richland-center-wi"
+          "href": "/service-area/richland-center-wi/"
         },
         {
           "label": "Ithaca, WI",
-          "href": "/service-area/ithaca-wi"
+          "href": "/service-area/ithaca-wi/"
         },
         {
           "label": "Boaz, WI",
-          "href": "/service-area/boaz-wi"
+          "href": "/service-area/boaz-wi/"
         },
         {
           "label": "Viola, WI",
-          "href": "/service-area/viola-wi"
+          "href": "/service-area/viola-wi/"
         }
       ]
     },
@@ -1679,19 +1701,19 @@
       "also_serving": [
         {
           "label": "Gays Mills, WI",
-          "href": "/service-area/gays-mills-wi"
+          "href": "/service-area/gays-mills-wi/"
         },
         {
           "label": "Muscoda, WI",
-          "href": "/service-area/muscoda-wi"
+          "href": "/service-area/muscoda-wi/"
         },
         {
           "label": "Viola, WI",
-          "href": "/service-area/viola-wi"
+          "href": "/service-area/viola-wi/"
         },
         {
           "label": "Richland Center, WI",
-          "href": "/service-area/richland-center-wi"
+          "href": "/service-area/richland-center-wi/"
         }
       ]
     },
@@ -1745,19 +1767,19 @@
       "also_serving": [
         {
           "label": "Soldiers Grove, WI",
-          "href": "/service-area/soldiers-grove-wi"
+          "href": "/service-area/soldiers-grove-wi/"
         },
         {
           "label": "Muscoda, WI",
-          "href": "/service-area/muscoda-wi"
+          "href": "/service-area/muscoda-wi/"
         },
         {
           "label": "Viola, WI",
-          "href": "/service-area/viola-wi"
+          "href": "/service-area/viola-wi/"
         },
         {
           "label": "Richland Center, WI",
-          "href": "/service-area/richland-center-wi"
+          "href": "/service-area/richland-center-wi/"
         }
       ]
     }
@@ -1820,7 +1842,7 @@
         "trust_strip": "Licensed & insured",
         "primary_cta": "Get a Quote",
         "secondary_cta": "See Service Area",
-        "secondary_href": "/service-area",
+        "secondary_href": "/service-area/",
         "media": {
           "src": "/images/home-hero.jpg",
           "alt": "Portable restroom (portable toilet/porta potty) unit at a tidy outdoor site",
@@ -1837,25 +1859,25 @@
             "title": "Portable Restroom Rental",
             "body": "Clean, standard units with dependable weekly service for events, farms, and job sites (portable toilet rentals).",
             "button_label": "Learn More",
-            "button_href": "/services/portable-restrooms"
+            "button_href": "/services/portable-restrooms/"
           },
           {
             "title": "ADA / Accessible Units",
             "body": "Spacious, wheelchair-accessible units with handrails and ground-level entry.",
             "button_label": "Learn More",
-            "button_href": "/services/ada-restrooms"
+            "button_href": "/services/ada-restrooms/"
           },
           {
             "title": "Handwashing Stations",
             "body": "Standalone stations with fresh water, soap, and paper towels for better hygiene.",
             "button_label": "Learn More",
-            "button_href": "/services/handwashing-stations"
+            "button_href": "/services/handwashing-stations/"
           },
           {
             "title": "Event Rentals",
             "body": "Short-term rentals for weddings, festivals, reunions, and outdoor gatherings.",
             "button_label": "Learn More",
-            "button_href": "/services/event-rentals"
+            "button_href": "/services/event-rentals/"
           }
         ]
       },
@@ -1887,23 +1909,23 @@
         "items": [
           {
             "label": "Services Overview",
-            "href": "/services"
+            "href": "/services/"
           },
           {
             "label": "Event Rentals",
-            "href": "/services/event-rentals"
+            "href": "/services/event-rentals/"
           },
           {
             "label": "Long-Term Rentals",
-            "href": "/services/construction-rentals"
+            "href": "/services/construction-rentals/"
           },
           {
             "label": "Service Area",
-            "href": "/service-area"
+            "href": "/service-area/"
           },
           {
             "label": "Contact",
-            "href": "/contact"
+            "href": "/contact/"
           }
         ]
       },
@@ -1911,7 +1933,7 @@
         "title": "Our Service Area",
         "body": "Sit & Git Portables is based in southwest Wisconsin and serves customers throughout the Driftless Area. We cover nearby towns and rural sites across Richland, Vernon, and Crawford counties. If you are unsure about coverage, call or text and we will confirm service for your address.",
         "cta_label": "Read More",
-        "cta_href": "/service-area"
+        "cta_href": "/service-area/"
       },
       "testimonials": {
         "title": "What customers say"
@@ -2026,11 +2048,11 @@
       "lede": "Want a formal quote for portable sanitation equipment rental? Fill out and submit the form below and a representative will respond soon. You may also give us a call at",
       "cta_event": {
         "label": "Event Rental Quote",
-        "href": "/get-a-quote?type=event"
+        "href": "/get-a-quote/?type=event"
       },
       "cta_long_term": {
         "label": "Long-Term Rental Quote",
-        "href": "/get-a-quote?type=long-term"
+        "href": "/get-a-quote/?type=long-term"
       },
       "success": "Thanks for reaching out! We've received your message and will follow up as soon as possible during normal business hours. If you need immediate assistance, please call (608) 570-9118.",
       "form": {

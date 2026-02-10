@@ -4,11 +4,12 @@ import CardGrid from "../../components/CardGrid.astro";
 import QuoteSection from "../../components/QuoteSection.astro";
 import site from "../../content/site.json";
 
-const { pages, services } = site;
+const { pages, services, service_area: serviceArea } = site;
 const primaryServices = services.filter((service) =>
   ["portable-restrooms", "ada-restrooms", "handwashing-stations", "toilet-servicing"].includes(service.slug)
 );
 const heroImage = pages.services.hero_image ?? pages.home.hero.media?.src ?? "/images/services-hero.jpg";
+const counties = serviceArea?.counties ?? [];
 ---
 <BaseLayout
   title={pages.services.meta_title ?? pages.services.title}
@@ -36,6 +37,27 @@ const heroImage = pages.services.hero_image ?? pages.home.hero.media?.src ?? "/i
       </h2>
       <div class="mt-8">
         <CardGrid items={primaryServices} />
+      </div>
+    </div>
+  </section>
+
+  <section class="py-10 sm:py-14">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-fog border border-clay/70 rounded-2xl p-6 sm:p-8">
+        <h2 class="text-2xl sm:text-3xl font-display text-ink">Counties we serve</h2>
+        <p class="mt-3 text-sm sm:text-base text-ink/75">
+          We provide portable restroom rentals across southwest Wisconsin with consistent routes and dependable service.
+        </p>
+        <div class="mt-4 flex flex-wrap gap-3 text-sm font-semibold text-ink">
+          {counties.map((county) => (
+            <a
+              href={`/service-area/${county.slug}/`}
+              class="underline underline-offset-4 hover:text-ink/80"
+            >
+              Portable restroom rentals in {county.name}
+            </a>
+          ))}
+        </div>
       </div>
     </div>
   </section>

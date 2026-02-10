@@ -27,6 +27,10 @@ const townList = service_area.counties.flatMap((county) =>
     slug: town.slug
   }))
 );
+const countyLinks = service_area.counties.map((county) => ({
+  name: county.name,
+  slug: county.slug
+}));
 ---
 <BaseLayout title={pages.service_area.meta_title} description={pages.service_area.meta_description}>
   <section class="py-12 sm:py-16">
@@ -58,6 +62,13 @@ const townList = service_area.counties.flatMap((county) =>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-2xl sm:text-3xl font-display text-center">{pages.service_area.map_title}</h2>
       <p class="mt-4 max-w-2xl">{pages.service_area.map_body}</p>
+      <div class="mt-6 flex flex-wrap gap-3 text-sm font-semibold text-ink/80">
+        {countyLinks.map((county) => (
+          <a href={`/service-area/${county.slug}/`} class="underline underline-offset-4 hover:text-ink">
+            Portable restroom rentals in {county.name}
+          </a>
+        ))}
+      </div>
       <div class="mt-8 grid gap-8 lg:grid-cols-[1.35fr_0.95fr] items-start">
         <div class="bg-fog border border-clay/70 rounded-2xl overflow-hidden shadow-soft">
           <ServiceAreaMap fullBleed />
@@ -71,7 +82,7 @@ const townList = service_area.counties.flatMap((county) =>
                     <path d="M12 2c-3.31 0-6 2.69-6 6 0 4.25 6 12 6 12s6-7.75 6-12c0-3.31-2.69-6-6-6zm0 8.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 5.5 12 5.5s2.5 1.12 2.5 2.5S13.38 10.5 12 10.5z" />
                   </svg>
                 </span>
-                <a href={`/service-area/${town.slug}`} class="hover:text-ink">{town.name}</a>
+                <a href={`/service-area/${town.slug}/`} class="hover:text-ink">{town.name}</a>
               </li>
             ))}
             {service_area.town_list_note && (
