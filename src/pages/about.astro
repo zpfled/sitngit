@@ -8,7 +8,10 @@ import googleReviews from "../content/google-reviews.json";
 const { pages } = site;
 const heroImage = "/images/about-hero.jpg";
 ---
-<BaseLayout title="About Sit & Git Portables" description={pages.about.body}>
+<BaseLayout
+  title={pages.about.meta_title ?? pages.about.title}
+  description={pages.about.meta_description ?? pages.about.body}
+>
   <section
     class="relative min-h-[320px] sm:min-h-[420px] flex items-center text-fog"
     style={`background-image: url('${heroImage}'); background-size: cover; background-position: center;`}

@@ -13,7 +13,10 @@ import googleReviews from "../content/google-reviews.json";
 const { pages, service_area, global_faq, navigation } = site;
 
 ---
-<BaseLayout title="Portable Restroom Rentals in Southwest Wisconsin" description={site.business.tagline}>
+<BaseLayout
+  title="Portable Restroom Rentals in Southwest WI | Sit & Git Portables"
+  description="Portable restroom rentals in Southwest WI for events and job sites across Vernon, Richland, and Crawford counties. Call or request a quote today."
+>
   <Hero
     eyebrow={pages.home.hero.eyebrow}
     headline={pages.home.hero.headline}
@@ -37,6 +40,24 @@ const { pages, service_area, global_faq, navigation } = site;
     items={pages.home.service_showcase.items}
   />
 
+  <section class="py-8 sm:py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-xl sm:text-2xl font-display text-ink text-center">
+        {pages.home.sitelink_quick_links.title}
+      </h2>
+      <div class="mt-5 flex flex-wrap items-center justify-center gap-3">
+        {pages.home.sitelink_quick_links.items.map((item) => (
+          <a
+            href={item.href}
+            class="inline-flex items-center justify-center rounded-full border border-ink/15 bg-white px-4 py-2 text-sm font-semibold text-ink hover:border-ink/30 hover:bg-ink/5"
+          >
+            {item.label}
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
   <section class="py-12 sm:py-16 overflow-x-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid gap-8 lg:gap-0 lg:grid-cols-[1.15fr_0.85fr] items-stretch">
@@ -53,8 +74,10 @@ const { pages, service_area, global_faq, navigation } = site;
             <a
               href={pages.home.service_area.cta_href}
               class="mt-6 inline-flex self-start items-center justify-center rounded-full bg-ink text-fog px-6 py-2 text-sm font-semibold shadow-soft hover:bg-ink/90"
+              aria-label={`Read more about ${pages.home.service_area.title}`}
             >
               {pages.home.service_area.cta_label}
+              <span class="sr-only"> about {pages.home.service_area.title}</span>
             </a>
           </div>
         </div>

@@ -5,7 +5,10 @@ import site from "../content/site.json";
 
 const { pages, business, navigation, labels } = site;
 ---
-<BaseLayout title={pages.contact.title} description={pages.contact.body}>
+<BaseLayout
+  title={pages.contact.meta_title ?? pages.contact.title}
+  description={pages.contact.meta_description ?? pages.contact.body}
+>
   <section class="pt-12 sm:pt-16 pb-6 sm:pb-8">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h1 class="text-3xl sm:text-4xl font-display text-ink">{pages.contact.title}</h1>

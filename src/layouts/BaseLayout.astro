@@ -5,12 +5,23 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 
 const { title, description, canonical, noindex = false } = Astro.props;
-const pageTitle = title ? `${title} | ${site.business.name}` : `${site.business.name} | ${site.business.tagline}`;
+const siteName = site.business.name;
+const titleHasSiteName = typeof title === "string" && title.includes(siteName);
+const pageTitle = title
+  ? (titleHasSiteName ? title : `${title} | ${siteName}`)
+  : `${siteName} | ${site.business.tagline}`;
 const pageDescription = description ?? site.business.tagline;
 const canonicalBase = "https://sitandgit.com";
 const canonicalUrl = canonical ?? new URL(Astro.url.pathname, canonicalBase).toString();
 const ogImage = `${Astro.site ?? ""}/images/og-default.svg`;
 const serviceAreas = (site.service_area?.counties ?? []).map((county) => `${county.name}, WI`);
+const businessAddress = site.business.address ?? {
+  street: "16511 Ash Ridge Drive",
+  city: "Viola",
+  state: "WI",
+  zip: "54664",
+  country: "US"
+};
 const businessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
@@ -18,6 +29,18 @@ const businessSchema = {
   url: site.business.website ?? "https://sitandgit.com",
   telephone: site.business.phone_tel,
   image: `${Astro.site ?? ""}${site.business.logo?.src ?? "/images/logo.png"}`,
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: businessAddress.street,
+    addressLocality: businessAddress.city,
+    addressRegion: businessAddress.state,
+    postalCode: businessAddress.zip,
+    addressCountry: businessAddress.country
+  },
+  sameAs: [
+    "https://www.facebook.com/profile.php?id=61587805803084",
+    "https://www.google.com/maps?cid=15132098919818792858"
+  ],
   priceRange: "$90-$150 per unit",
   areaServed: serviceAreas.map((area) => ({ "@type": "AdministrativeArea", name: area })),
   openingHoursSpecification: [
@@ -29,6 +52,12 @@ const businessSchema = {
     }
   ],
   serviceType: "Portable restroom rentals"
+};
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: siteName,
+  url: site.business.website ?? canonicalBase
 };
 const serviceTypes = [
   "Portable restroom rentals",
@@ -70,11 +99,13 @@ const isNetlifyHost = deployHost.endsWith("netlify.app");
     <link rel="canonical" href={canonicalUrl} />
     <meta property="og:type" content="website" />
     <meta property="og:title" content={pageTitle} />
+    <meta property="og:site_name" content={siteName} />
     <meta property="og:description" content={pageDescription} />
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:image" content={ogImage} />
     <meta name="twitter:card" content="summary_large_image" />
     <script type="application/ld+json" set:html={JSON.stringify(businessSchema)}></script>
+    <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)}></script>
     {serviceSchemas.map((schema) => (
       <script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
     ))}

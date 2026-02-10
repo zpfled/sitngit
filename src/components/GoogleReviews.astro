@@ -61,7 +61,14 @@ const summaryLabel = typeof summary.label === "string" ? summary.label.replace(/
           </div>
           <p class="mt-3 text-sm text-ink/80">{review.text}</p>
           {review.url && (
-            <a href={review.url} class="mt-3 inline-block text-sm font-semibold text-moss hover:text-moss/80">Read more</a>
+            <a
+              href={review.url}
+              class="mt-3 inline-block text-sm font-semibold text-moss hover:text-moss/80"
+              aria-label={`Read more from ${review.name}'s review`}
+            >
+              Read more
+              <span class="sr-only"> from {review.name}'s review</span>
+            </a>
           )}
         </article>
       ))}

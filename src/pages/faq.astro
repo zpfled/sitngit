@@ -7,7 +7,10 @@ import site from "../content/site.json";
 
 const { pages, global_faq } = site;
 ---
-<BaseLayout title={pages.faq.title} description={pages.faq.intro}>
+<BaseLayout
+  title={pages.faq.meta_title ?? pages.faq.title}
+  description={pages.faq.meta_description ?? pages.faq.intro}
+>
   <section class="py-12 sm:py-16">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
       <h1 class="text-3xl sm:text-4xl font-display text-ink">{pages.faq.title}</h1>

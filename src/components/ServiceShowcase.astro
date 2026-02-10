@@ -13,8 +13,10 @@ const { title, items } = Astro.props;
           <a
             href={item.button_href}
             class="mt-auto inline-flex items-center justify-center rounded-full bg-ember text-ink px-6 py-2 text-sm font-semibold shadow-soft hover:bg-ember/90"
+            aria-label={`Learn more about ${item.title}`}
           >
             {item.button_label}
+            <span class="sr-only"> about {item.title}</span>
           </a>
         </article>
       ))}

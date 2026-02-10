@@ -10,7 +10,10 @@ const primaryServices = services.filter((service) =>
 );
 const heroImage = pages.services.hero_image ?? pages.home.hero.media?.src ?? "/images/services-hero.jpg";
 ---
-<BaseLayout title={pages.services.title} description={pages.services.intro}>
+<BaseLayout
+  title={pages.services.meta_title ?? pages.services.title}
+  description={pages.services.meta_description ?? pages.services.intro}
+>
   <section
     class="relative min-h-[320px] sm:min-h-[420px] flex items-center text-fog"
     style={`background-image: url('${heroImage}'); background-size: cover; background-position: center;`}
