@@ -1,0 +1,292 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import site from "../content/site.json";
+
+const { pages, business } = site;
+const privacy = pages.privacy;
+const company = business.name;
+const siteUrl = business.website;
+const contactPhone = business.phone_display;
+const contactPhoneHref = `tel:${business.phone_tel}`;
+const contactEmail = business.email;
+const contactPageHref = "/contact/";
+const tosHref = "/terms-of-service/";
+---
+<BaseLayout
+  title={privacy.meta_title ?? privacy.title}
+  description={privacy.meta_description ?? privacy.intro}
+  noindex={true}
+>
+  <section class="py-12 sm:py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-3xl sm:text-4xl font-display text-ink">{privacy.title}</h1>
+      <p class="mt-3 text-sm text-ink/60">Last updated: {privacy.last_updated}</p>
+
+      <div class="mt-6 space-y-8 text-ink/80">
+        <section class="rounded-xl border border-clay/70 bg-fog p-5">
+          <h2 class="text-xl font-display text-ink">Disclosure</h2>
+          <p class="mt-3">
+            This Privacy Notice template content is provided for informational purposes only and does not
+            constitute legal advice. You should review this notice carefully and modify, delete, or add
+            provisions as necessary to reflect your actual privacy practices. You should consult independent
+            legal counsel before publishing or relying on this notice.
+          </p>
+          <p class="mt-3">
+            Information here may not reflect the most current legal developments and is not guaranteed to
+            be correct or complete. Use of this page does not create an attorney-client relationship.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-display text-ink">{company} Privacy Notice</h2>
+          <p class="mt-3">
+            {company} ("we," "us," or "our") respects your privacy and is committed to protecting it by
+            complying with this Privacy Notice. This Privacy Notice describes the information we may
+            collect, where we collect it, and our practices for collecting, using, maintaining, protecting,
+            and disclosing information when you visit our website at
+            <a href={siteUrl} class="underline hover:no-underline"> {siteUrl}</a>
+            ("Site") or use the services available through the Site (collectively, the "Offerings").
+          </p>
+          <p class="mt-3">
+            By accessing or using our Offerings, you agree to this Privacy Notice and consent to the
+            collection and processing of your information as described here. This Privacy Notice may change
+            from time to time. Continued use after changes are posted constitutes acceptance of those
+            changes.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-display text-ink">When This Privacy Notice Applies</h2>
+          <p class="mt-3">This Privacy Notice applies to information we collect:</p>
+          <ul class="mt-3 list-disc pl-6 space-y-2">
+            <li>On this Site.</li>
+            <li>When you access or use the Offerings.</li>
+            <li>When you interact with our advertising on third-party websites.</li>
+            <li>In email, text, and other electronic messages between you and us.</li>
+            <li>When you interact with our Offerings on third-party websites.</li>
+          </ul>
+          <p class="mt-3">It does not apply to information collected by:</p>
+          <ul class="mt-3 list-disc pl-6 space-y-2">
+            <li>A third party directly.</li>
+            <li>
+              A third party through any application or content that may link to or be accessible from the
+              Site.
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-display text-ink">Information We Collect and How We Collect It</h2>
+          <p class="mt-3">We may collect:</p>
+          <ul class="mt-3 list-disc pl-6 space-y-2">
+            <li>
+              Personal information such as name, email, phone number, physical address, and other
+              identifiers.
+            </li>
+            <li>
+              Technical information about your internet connection and device, including usage details and
+              IP addresses.
+            </li>
+            <li>Details of your visits and usage of our Offerings, including logs and traffic data.</li>
+            <li>Personal information included in communications sent to us.</li>
+          </ul>
+          <p class="mt-3">We collect this information:</p>
+          <ul class="mt-3 list-disc pl-6 space-y-2">
+            <li>Directly from you when you provide it.</li>
+            <li>
+              Automatically as you navigate the Site through cookies and other tracking technologies.
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-display text-ink">Information You Directly Provide to Us</h2>
+          <ul class="mt-3 list-disc pl-6 space-y-2">
+            <li>Information provided through forms on our Site.</li>
+            <li>Records and copies of correspondence if you contact us.</li>
+            <li>Responses to surveys for research purposes.</li>
+          </ul>
+          <p class="mt-4 font-semibold text-ink">
+            No mobile information will be shared with third parties/affiliates for
+            marketing/promotional purposes. All the above categories exclude text messaging originator
+            opt-in data and consent; this information will not be shared with any third parties.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-display text-ink">
+            Information We Collect Through Automatic Data Collection Technologies
+          </h2>
+          <p class="mt-3">
+            As you navigate and interact with our Site, we may use automatic data collection technologies
+            to collect information about your equipment, browsing actions, and patterns.
+          </p>
+          <p class="mt-3">These technologies may include:</p>
+          <ul class="mt-3 list-disc pl-6 space-y-2">
+            <li>
+              Cookies: small files placed on your device to remember preferences and improve experience.
+            </li>
+            <li>
+              Flash Cookies: local stored objects used by certain features to store preferences and
+              navigation information.
+            </li>
+            <li>
+              Web Beacons: small electronic files used for page analytics and system integrity checks.
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-display text-ink">Third-Party Tracking Technologies</h2>
+          <p class="mt-3">
+            Some content or applications on the Site may be served by third parties. These third parties
+            may use cookies, web beacons, or other tracking technologies to collect information about your
+            online activities over time and across websites.
+          </p>
+          <p class="mt-3">
+            We do not control third-party tracking technologies. If you have questions about targeted
+            content, contact the responsible provider directly.
+          </p>
+          <p class="mt-3">
+            We also use Google Analytics to analyze usage and interaction patterns. To learn more about
+            how Google Analytics collects and processes data, visit
+            <a href="http://www.google.com/policies/privacy/partners" target="_blank" rel="noopener noreferrer" class="underline hover:no-underline">
+              {" "}http://www.google.com/policies/privacy/partners
+            </a>.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-display text-ink">How We Use Your Information</h2>
+          <ul class="mt-3 list-disc pl-6 space-y-2">
+            <li>To present our Offerings and their contents.</li>
+            <li>To provide information, products, or services you request.</li>
+            <li>To fulfill purposes for which you provide information.</li>
+            <li>To carry out obligations and enforce rights under contracts, including billing.</li>
+            <li>To notify you about changes to Offerings, products, or services.</li>
+            <li>For other purposes described when information is collected or with your consent.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-display text-ink">How We Share Your Information</h2>
+          <p class="mt-3">We may disclose information:</p>
+          <ul class="mt-3 list-disc pl-6 space-y-2">
+            <li>To service providers and contractors bound by confidentiality obligations.</li>
+            <li>In connection with a merger, sale, restructuring, bankruptcy, or similar event.</li>
+            <li>To fulfill the purpose for which you provide information.</li>
+            <li>For other purposes disclosed when you provide information or with your consent.</li>
+            <li>To comply with legal process or government requests.</li>
+            <li>To enforce agreements and for billing/collection purposes.</li>
+            <li>To protect rights, property, and safety of {company}, users, or others.</li>
+          </ul>
+          <p class="mt-3">
+            We may disclose aggregated or deidentified information without restriction. We will not sell or
+            share your information with third parties for marketing purposes without your explicit consent.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-display text-ink">Protection of Your Information</h2>
+          <p class="mt-3">
+            We use reasonable safeguards to protect personal information from unauthorized access, use,
+            alteration, and disclosure.
+          </p>
+          <p class="mt-3">
+            You are responsible for keeping credentials and passwords confidential where applicable.
+            Transmission over the internet is not completely secure, and we cannot guarantee absolute
+            security of information transmitted through the Offerings.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-display text-ink">Retention</h2>
+          <p class="mt-3">
+            We retain personal information for as long as necessary to provide Offerings and thereafter as
+            needed to:
+          </p>
+          <ul class="mt-3 list-disc pl-6 space-y-2">
+            <li>Respond to questions, complaints, or claims.</li>
+            <li>Demonstrate fair treatment.</li>
+            <li>Maintain records required by law.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-display text-ink">Your Choices</h2>
+          <h3 class="mt-4 text-lg font-display text-ink">Tracking Technologies</h3>
+          <p class="mt-2">
+            You can set your browser to refuse some or all cookies, or alert you when cookies are sent.
+            Disabling cookies may affect functionality.
+          </p>
+          <p class="mt-2">
+            We do not control third-party collection used for interest-based advertising. You may be able
+            to opt out through industry mechanisms, including the Network Advertising Initiative.
+          </p>
+
+          <h3 class="mt-5 text-lg font-display text-ink">Marketing Communications</h3>
+          <p class="mt-2">
+            To stop marketing emails, use the unsubscribe link in messages or contact us using the
+            information below. You may still receive service-related messages.
+          </p>
+
+          <h3 class="mt-5 text-lg font-display text-ink">Do Not Track Signals</h3>
+          <p class="mt-2">
+            Some browsers offer "Do Not Track" settings. Because DNT standards are not uniform, we do not
+            currently recognize or respond to DNT signals.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-display text-ink">Links to Other Websites and Offerings</h2>
+          <p class="mt-3">
+            We are not responsible for privacy practices of third-party websites, applications, or services
+            linked to or from our Site. Review third-party privacy notices before sharing information.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-display text-ink">Children Under the Age of 13</h2>
+          <p class="mt-3">
+            Our Offerings are not directed to children under 13. We do not knowingly collect personal
+            information from children under 13. If we learn that we collected such information without
+            verified parental consent, we will delete it.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-display text-ink">Changes to This Privacy Notice</h2>
+          <p class="mt-3">
+            If you do not agree to this Privacy Notice, do not use the Offerings. We may revise this
+            Privacy Notice from time to time. Unless otherwise required by law, changes are effective 15
+            days after the Last Updated date for current users and immediately for new users. Continued use
+            after changes are posted means you accept the revised notice.
+          </p>
+        </section>
+
+        <section class="rounded-xl border border-clay/70 bg-fog p-5">
+          <h2 class="text-2xl font-display text-ink">Contact Us</h2>
+          <p class="mt-3">If you have questions or comments about this Privacy Notice, contact us:</p>
+          <ul class="mt-3 list-disc pl-6 space-y-2">
+            <li>
+              Contact page:
+              <a href={contactPageHref} class="underline hover:no-underline"> {contactPageHref}</a>
+            </li>
+            <li>
+              Phone:
+              <a href={contactPhoneHref} class="underline hover:no-underline"> {contactPhone}</a>
+            </li>
+            <li>
+              Email:
+              <a href={`mailto:${contactEmail}`} class="underline hover:no-underline"> {contactEmail}</a>
+            </li>
+            <li>
+              Related legal terms:
+              <a href={tosHref} class="underline hover:no-underline"> Terms of Service</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

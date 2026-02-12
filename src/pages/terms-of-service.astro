@@ -1,0 +1,186 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import site from "../content/site.json";
+
+const { pages, business } = site;
+const terms = pages.terms;
+const sender = business.name;
+const contactPhone = business.phone_display;
+const contactPhoneHref = `tel:${business.phone_tel}`;
+const contactEmail = business.email;
+const privacyPolicyHref = "/privacy-policy/";
+const contactPageHref = "/contact/";
+---
+<BaseLayout
+  title={terms.meta_title ?? terms.title}
+  description={terms.meta_description ?? terms.intro}
+  noindex={true}
+>
+  <section class="py-12 sm:py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-3xl sm:text-4xl font-display text-ink">{terms.title}</h1>
+      {terms.last_updated && (
+        <p class="mt-3 text-sm text-ink/60">Last updated: {terms.last_updated}</p>
+      )}
+      <div class="mt-6 space-y-8 text-ink/80">
+        <p>
+          By requesting, joining, agreeing to, enrolling in, signing up for, acknowledging, or otherwise
+          consenting to receive one or more text messages from {sender} ("Sender", "we", "us", "our")
+          through Sender's messaging platform ("Platform"), you accept these Terms and Conditions
+          ("Opt-In").
+        </p>
+
+        <section class="rounded-xl border border-clay/70 bg-fog p-5">
+          <h2 class="text-xl font-display text-ink">Notice Regarding Dispute Resolution</h2>
+          <p class="mt-3">
+            This Agreement contains provisions that govern and limit how claims you and the Sender
+            have against each other are resolved. It also contains an agreement to arbitrate, which will,
+            with limited exception, require you to submit claims you have against us to binding and final
+            arbitration. You will only be permitted to pursue claims against the Sender on an individual
+            basis, not as part of any class or representative action or proceeding, and you will only be
+            permitted to seek relief on an individual basis.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-display text-ink">Opting In</h2>
+          <ul class="mt-3 list-disc pl-6 space-y-3">
+            <li>
+              You authorize Sender to use auto dialer or non-auto dialer technology to send text
+              messages to the cell phone number associated with your Opt-In. You also authorize Sender
+              to include marketing content in any such messages. You do not have to Opt-In as a
+              condition of purchase of any of Sender's offerings.
+            </li>
+            <li>
+              You confirm that you are the subscriber to the relevant phone number, or that you are the
+              customary user of that number on a family or business plan and are authorized to Opt-In.
+            </li>
+            <li>You consent to the use of an electronic record to document your Opt-In.</li>
+            <li>
+              You agree that, in addition to the main messages Sender may provide, you may receive one
+              or more welcome or administrative messages, such as a request to confirm your Opt-In.
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-display text-ink">About the Text Message Services and Opting Out</h2>
+          <ul class="mt-3 list-disc pl-6 space-y-3">
+            <li>
+              Message and data rates may apply. You must have a wireless device of your own, capable
+              of two-way messaging, be using a participating wireless carrier, and be a wireless service
+              subscriber with text messaging service.
+            </li>
+            <li>
+              Unless otherwise noted, Sender may send multiple recurring messages and frequency may
+              vary. Sender may terminate any messaging services or your participation at any time with
+              or without notice. These Terms and Conditions will continue to apply.
+            </li>
+            <li>
+              You consent to the handling of your information as described in our
+              <a href={privacyPolicyHref} class="underline hover:no-underline"> Privacy Policy</a>.
+              For customer service, contact us at <a href={contactPageHref} class="underline hover:no-underline">our contact page</a>,
+              call <a href={contactPhoneHref} class="underline hover:no-underline">{contactPhone}</a>,
+              or email <a href={`mailto:${contactEmail}`} class="underline hover:no-underline">{contactEmail}</a>.
+            </li>
+            <li>
+              You may text STOP, END, CANCEL, UNSUBSCRIBE, or QUIT to opt out of messages. For help,
+              text HELP. You understand and agree that any other method of opting out may not be
+              treated as a valid opt-out request.
+            </li>
+            <li>
+              To request a free paper or email copy of the Opt-In, to update records, or to receive help
+              with messages, contact us using the methods above. Minimum technology requirements may
+              apply for electronic records.
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-display text-ink">Dispute Resolution</h2>
+          <ul class="mt-3 list-disc pl-6 space-y-3">
+            <li>
+              Any dispute or claim arising out of or relating in any way to the Platform will be resolved
+              by binding arbitration, rather than in court, except that you may assert claims in small
+              claims court if your claims qualify. The Federal Arbitration Act and federal arbitration law
+              apply to these Terms and Conditions.
+            </li>
+            <li>
+              By agreeing to arbitration, you waive your right to maintain other available resolution
+              processes, such as a court action or administrative proceeding, to settle disputes or claims.
+            </li>
+            <li>
+              To begin an arbitration proceeding, you must send a demand to the American Arbitration
+              Association describing your claim and serve a copy of the demand to {sender} at
+              <a href={contactPageHref} class="underline hover:no-underline"> {contactPageHref}</a>.
+              AAA rules and filing forms are available at
+              <a href="https://www.adr.org" target="_blank" rel="noopener noreferrer" class="underline hover:no-underline"> www.adr.org</a>.
+            </li>
+            <li>
+              You and Sender agree that any dispute resolution proceeding will be conducted only on an
+              individual basis and not in a class, consolidated, or representative action.
+            </li>
+            <li>
+              If any claim proceeds in court rather than arbitration, you and Sender each waive any
+              right to a jury trial, unless such waiver is unenforceable.
+            </li>
+            <li>
+              You and Sender may bring suit in court to seek to enjoin infringement or other misuse of
+              intellectual property rights.
+            </li>
+            <li>
+              If any term of this section is invalid, illegal, or unenforceable in any jurisdiction, that
+              does not affect any other term or provision in any other jurisdiction. These dispute
+              resolution provisions survive cancellation or termination of your agreement to engage with
+              the Platform.
+            </li>
+            <li>
+              Sender's third-party service providers are third-party beneficiaries of these Terms and
+              Conditions, including with respect to the dispute resolution procedures.
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-display text-ink">Limitations, Restrictions, and Miscellaneous</h2>
+          <ul class="mt-3 list-disc pl-6 space-y-3">
+            <li>
+              This Platform and all content provided in connection with it is provided "as is" and "with
+              all faults" and without warranties of any kind, either express or implied, to the fullest
+              extent permissible under applicable law.
+            </li>
+            <li>
+              If you stop using a mobile telephone number that was used to subscribe to the Platform,
+              you agree to opt out before ending use of that number. If you do not, you agree you may
+              be responsible for costs and liabilities resulting from reassignment-related claims.
+            </li>
+            <li>
+              You agree to indemnify, defend, and hold us harmless from claims or liabilities resulting
+              from your failure to notify us of changes in your provided contact information, including
+              claims under the Telephone Consumer Protection Act and similar laws.
+            </li>
+            <li>
+              You may not use or engage with the Platform if you are under 13 years of age. If you are
+              between 13 and 18 years of age, you must have your parent or legal guardian's permission.
+            </li>
+            <li>
+              You agree not to send prohibited content over the Platform, including fraudulent,
+              defamatory, threatening, harassing, discriminatory, unlawful, malware-related, or otherwise
+              prohibited material, or protected personal information restricted by applicable law.
+            </li>
+            <li>
+              You represent and warrant that you have all rights, power, and authority to agree to these
+              Terms and perform your obligations. If any provision is unenforceable, it will be limited or
+              eliminated to the minimum extent necessary, and the remaining provisions stay in full force.
+            </li>
+            <li>
+              New Platform features, changes, updates, or improvements are subject to these Terms unless
+              explicitly stated otherwise in writing. We may update these Terms from time to time, and
+              your continued participation after updates constitutes acceptance of the updated Terms.
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

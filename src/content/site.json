@@ -66,6 +66,9 @@
     "email": "Email",
     "footer_services": "Services",
     "footer_service_area": "Service Area",
+    "footer_legal": "Legal",
+    "footer_terms": "Terms of Service",
+    "footer_privacy": "Privacy Policy",
     "rights_reserved": "All rights reserved.",
     "superheader_call": "Call us"
   },
@@ -2040,6 +2043,22 @@
       },
       "meta_title": "Contact | Sit & Git Portables",
       "meta_description": "Contact Sit & Git Portables for portable restroom rentals for events and jobsites across Vernon, Richland, and Crawford counties. Call or request a quote today."
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "last_updated": "February 12, 2026",
+      "meta_title": "Terms of Service | Sit & Git Portables",
+      "meta_description": "Terms of Service for Sit & Git Portables.",
+      "intro": "Review the terms that govern use of our website and services.",
+      "sections": []
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "last_updated": "February 12, 2026",
+      "meta_title": "Privacy Policy | Sit & Git Portables",
+      "meta_description": "Privacy Policy for Sit & Git Portables.",
+      "intro": "Review how Sit & Git Portables collects, uses, and protects information.",
+      "sections": []
     },
     "quote": {
       "title": "Get a Quote",
