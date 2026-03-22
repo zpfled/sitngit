@@ -18,7 +18,10 @@ export const buildLocalBusinessSchema = (site: any, canonicalBase: string) => {
     zip: "54664",
     country: "US"
   };
-  const serviceAreas = (site.service_area?.counties ?? []).map((county: any) => `${county.name}, WI`);
+  const serviceAreas = [
+    ...(site.service_area?.counties ?? []).map((county: any) => `${county.name}, WI`),
+    ...(site.service_area?.additional_areas ?? [])
+  ];
 
   return {
     "@context": "https://schema.org",
@@ -54,6 +57,7 @@ export const buildLocalBusinessSchema = (site: any, canonicalBase: string) => {
       "Portable restroom rentals",
       "ADA accessible portable restrooms",
       "Handwashing station rentals",
+      "Luxury restroom trailer rentals",
       "Portable toilet servicing"
     ]
   };
@@ -89,6 +93,7 @@ export const buildServiceSchema = ({
     "portable-restrooms": "Portable restroom rentals",
     "ada-restrooms": "Wheelchair-accessible portable restroom rentals",
     "handwashing-stations": "Handwash station rentals",
+    "luxury-restroom-trailers": "Luxury restroom trailer rentals",
     "toilet-servicing": "Portable toilet servicing"
   };
   const serviceType = serviceTypeMap[serviceSlug];

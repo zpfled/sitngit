@@ -2,7 +2,7 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import FAQList from "../../components/FAQList.astro";
 import CTABlock from "../../components/CTABlock.astro";
-import site from "../../content/site.json";
+import site from "../../data/site.json";
 
 export function getStaticPaths() {
   const counties = site.service_area.counties;
@@ -37,6 +37,7 @@ const serviceLinks = [
   { href: "/services/portable-restrooms/", label: "Portable restroom rentals" },
   { href: "/services/ada-restrooms/", label: "ADA accessible restrooms" },
   { href: "/services/handwashing-stations/", label: "Handwashing stations" },
+  { href: "/services/luxury-restroom-trailers/", label: "Luxury restroom trailers" },
   { href: "/services/event-rentals/", label: "Event rentals" },
   { href: "/services/construction-rentals/", label: "Construction & long-term rentals" }
 ];

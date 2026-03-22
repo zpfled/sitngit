@@ -2,7 +2,7 @@
 import { Image } from "astro:assets";
 import logoImage from "../assets/logo.png";
 import badgeImage from "../assets/locally-owned.webp";
-import site from "../content/site.json";
+import site from "../data/site.json";
 const { navigation, business, labels } = site;
 const logoSrc = business.logo?.src;
 const isDefaultLogo = logoSrc === "/images/logo.png";

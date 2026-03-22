@@ -5,7 +5,7 @@ import { readFile } from "node:fs/promises";
 
 const siteUrl = config.site ?? "https://sitandgit.com";
 const site = JSON.parse(
-  await readFile(new URL("../src/content/site.json", import.meta.url), "utf-8")
+  await readFile(new URL("../src/data/site.json", import.meta.url), "utf-8")
 );
 const outputPath = path.join(process.cwd(), "public", "sitemap.xml");
 

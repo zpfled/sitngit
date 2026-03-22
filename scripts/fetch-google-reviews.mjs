@@ -3,7 +3,7 @@ import path from "node:path";
 
 const apiKey = process.env.GOOGLE_PLACES_API_KEY;
 const placeId = process.env.GOOGLE_PLACE_ID;
-const outputPath = path.join(process.cwd(), "src", "content", "google-reviews.json");
+const outputPath = path.join(process.cwd(), "src", "data", "google-reviews.json");
 
 function initialsFromName(name = "") {
   return name

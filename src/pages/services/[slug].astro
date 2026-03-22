@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import FAQList from "../../components/FAQList.astro";
-import site from "../../content/site.json";
+import site from "../../data/site.json";
 import { buildServiceSchema, buildSchemaIds } from "../../lib/schema";
 
 export function getStaticPaths() {
@@ -116,6 +116,7 @@ const serviceSchema = buildServiceSchema({
           { slug: "portable-restrooms", label: "Portable restrooms" },
           { slug: "ada-restrooms", label: "ADA units" },
           { slug: "handwashing-stations", label: "Handwashing stations" },
+          { slug: "luxury-restroom-trailers", label: "Luxury restroom trailers" },
           { slug: "event-rentals", label: "Event rentals" },
           { slug: "construction-rentals", label: "Construction rentals" }
         ]

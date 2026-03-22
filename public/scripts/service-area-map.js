@@ -97,11 +97,10 @@ function initServiceAreaMap() {
     }).addTo(map);
 
     const bounds = layer.getBounds();
-    map.fitBounds(bounds, { padding: [20, 20], maxZoom: 12 });
+    map.fitBounds(bounds, { padding: [14, 14], maxZoom: 12 });
     const centroid = getCentroid(geojson);
     const baseCenter = centroid ? L.latLng(centroid[0], centroid[1]) : bounds.getCenter();
-    const lngShift = (bounds.getEast() - bounds.getWest()) * 0.4;
-    map.setView([baseCenter.lat, baseCenter.lng - lngShift], map.getZoom(), { animate: false });
+    map.setView([baseCenter.lat - 0.05, baseCenter.lng], map.getZoom(), { animate: false });
     mapElement.dataset.mapInitialized = "true";
   });
 }

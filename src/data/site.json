@@ -1,7 +1,7 @@
 {
   "business": {
     "name": "Sit & Git Portables",
-    "tagline": "Portable restroom rentals and weekly service across southwest Wisconsin.",
+    "tagline": "Portable restroom rentals and weekly service across southwest Wisconsin, including parts of Sauk County.",
     "phone_display": "(608) 570-9118",
     "phone_tel": "+16085709118",
     "email": "quotes@sitandgit.com",
@@ -13,7 +13,7 @@
       "zip": "54664",
       "country": "US"
     },
-    "service_radius_statement": "Sit & Git Portables proudly serves customers throughout the Driftless Area.",
+    "service_radius_statement": "Sit & Git Portables proudly serves customers throughout the Driftless Area, including parts of Sauk County.",
     "logo": {
       "src": "/images/logo.png",
       "alt": "Sit & Git Portables logo",
@@ -77,7 +77,7 @@
       "slug": "portable-restrooms",
       "name": "Portable Restrooms",
       "meta_title": "Portable Restrooms | Sit & Git Portables",
-      "meta_description": "Clean portable restroom rentals with weekly service for events and job sites across Vernon, Richland, and Crawford counties. Call or request a quote today.",
+      "meta_description": "Clean portable restroom rentals with weekly service for events and job sites across Vernon, Richland, and Crawford counties plus parts of Sauk County. Call or request a quote today.",
       "hero_subhead": "Clean, dependable rentals for events, construction sites, and residential needs.",
       "short": "Clean, affordable units with reliable weekly or biweekly service for events, farms, and job sites.",
       "overview": [
@@ -131,7 +131,7 @@
       "slug": "ada-restrooms",
       "name": "ADA Portable Restroom Rentals",
       "meta_title": "ADA Accessible Restrooms | Sit & Git Portables",
-      "meta_description": "ADA portable restroom rentals with roll-in access for events and job sites across Vernon, Richland, and Crawford counties. Call or request a quote today.",
+      "meta_description": "ADA portable restroom rentals with roll-in access for events and job sites across Vernon, Richland, and Crawford counties plus parts of Sauk County. Call or request a quote today.",
       "hero_subhead": "Wheelchair-accessible units with roll-in access and extra interior space for events and job sites.",
       "short": "Spacious, accessible units with roll-in entry and handrails for inclusive events and compliant job sites.",
       "overview": [
@@ -196,7 +196,7 @@
       "slug": "handwashing-stations",
       "name": "Portable Restroom & Handwashing Stations",
       "meta_title": "Handwashing Stations | Sit & Git Portables",
-      "meta_description": "Portable restroom and handwashing station rentals for events and job sites across Vernon, Richland, and Crawford counties. Call or request a quote today.",
+      "meta_description": "Portable restroom and handwashing station rentals for events and job sites across Vernon, Richland, and Crawford counties plus parts of Sauk County. Call or request a quote today.",
       "hero_subhead": "Portable sinks for job sites, events, and vendors when reliable handwashing is required.",
       "short": "Portable sinks with fresh water and stocked supplies for events, job sites, and vendors.",
       "overview": [
@@ -256,10 +256,71 @@
       ]
     },
     {
+      "slug": "luxury-restroom-trailers",
+      "name": "Luxury Restroom Trailer Rentals",
+      "meta_title": "Luxury Restroom Trailer Rentals | Sit & Git Portables",
+      "meta_description": "Luxury restroom trailer rentals for weddings, private events, and upscale gatherings across Vernon, Richland, and Crawford counties plus parts of Sauk County. Request a quote today.",
+      "hero_subhead": "Upscale restroom trailers for weddings, private events, and VIP gatherings that need a more polished guest experience.",
+      "short": "Luxury restroom trailers with flushable fixtures, sinks, interior lighting, and an elevated look for weddings and premium events.",
+      "overview": [
+        "Luxury restroom trailers are the right fit when a standard portable restroom is not the experience you want to offer. They provide a cleaner, more polished setup for weddings, private parties, corporate events, and other gatherings where guest comfort matters.",
+        "These trailers are designed to feel more like an indoor restroom than a jobsite unit. Depending on the trailer selected, features may include flushing toilets, running water, private stalls, mirrors, interior lighting, and a more refined exterior appearance.",
+        "Luxury restroom trailers are especially popular for weddings, barn venues, outdoor receptions, tented events, family celebrations, and VIP areas. We will walk through the guest count, access, and site layout so the trailer fits the event and arrival schedule.",
+        "Because trailers have different setup needs than standard units, we confirm placement requirements ahead of delivery, including towing access, level ground, and utility expectations if needed. That avoids day-of surprises and keeps setup straightforward.",
+        "If you are planning an event where appearance, guest comfort, and convenience matter, a restroom trailer is usually the better choice than several standard units."
+      ],
+      "transition": "Luxury trailer details",
+      "product": {
+        "title": "Luxury Restroom Trailer",
+        "description": "An upscale restroom solution for weddings, private events, and premium outdoor gatherings where comfort and appearance matter.",
+        "image": {
+          "src": "/images/events.jpeg",
+          "alt": "Luxury restroom trailer rental setup for an outdoor event"
+        },
+        "features": [
+          "Flushable restroom fixtures",
+          "Interior sinks with running water",
+          "Private stalls and mirrors",
+          "Interior lighting for evening events",
+          "Upgraded appearance suited for weddings and private venues"
+        ]
+      },
+      "highlight": "Luxury restroom trailers give guests a noticeably better experience than standard portable units at weddings and upscale events.",
+      "image": {
+        "src": "/images/events.jpeg",
+        "alt": "Luxury restroom trailer rental for a wedding or private event"
+      },
+      "bullets": [
+        "Best suited for weddings, receptions, and upscale private events",
+        "A more polished appearance than standard portable restrooms",
+        "Guest-focused features such as flushable fixtures and sinks",
+        "Planned around trailer access, placement, and event timing",
+        "Ideal when comfort and presentation are priorities"
+      ],
+      "faqs": [
+        {
+          "q": "When should I choose a luxury restroom trailer instead of standard units?",
+          "a": "A luxury restroom trailer is the better fit when guest experience and appearance matter, especially for weddings, private parties, and premium events."
+        },
+        {
+          "q": "What features are included with a luxury restroom trailer?",
+          "a": "Features vary by trailer, but they often include flushable toilets, sinks with running water, mirrors, private stalls, and interior lighting."
+        },
+        {
+          "q": "Can luxury restroom trailers be used at weddings and barn venues?",
+          "a": "Yes. They are a common choice for weddings, barn venues, tented receptions, and other outdoor events where a more upscale restroom option is preferred."
+        },
+        {
+          "q": "What does the setup site need for a restroom trailer?",
+          "a": "We confirm access, level placement, and any utility requirements before delivery so setup goes smoothly on event day."
+        }
+      ]
+    },
+    {
       "slug": "event-rentals",
       "name": "Event Portable Restroom Rentals",
       "meta_title": "Event Rentals | Sit & Git Portables",
-      "meta_description": "Local event portable restroom rentals for weddings and festivals across Vernon, Richland, and Crawford counties. Call or request a quote today.",
+      "meta_description": "Local event portable restroom rentals for weddings and festivals across Vernon, Richland, and Crawford counties plus parts of Sauk County. Call or request a quote today.",
       "hero_subhead": "Short-term restroom rentals for weddings, festivals, reunions, and outdoor gatherings.",
       "short": "Short-term rentals for weddings, festivals, reunions, and outdoor gatherings.",
       "overview": [
@@ -318,7 +379,7 @@
       "slug": "construction-rentals",
       "name": "Construction Portable Restroom Rentals",
       "meta_title": "Construction & Long-Term | Sit & Git Portables",
-      "meta_description": "Local construction portable restroom rentals with weekly service across Vernon, Richland, and Crawford counties. Call or request a quote today.",
+      "meta_description": "Local construction portable restroom rentals with weekly service across Vernon, Richland, and Crawford counties plus parts of Sauk County. Call or request a quote today.",
       "hero_subhead": "Long-term restroom rentals for job sites with dependable service and clear scheduling.",
       "short": "Reliable, consistent service for job sites and long-term placements.",
       "overview": [
@@ -375,7 +436,7 @@
       "slug": "toilet-servicing",
       "name": "Portable Restroom Servicing",
       "meta_title": "Restroom Servicing | Sit & Git Portables",
-      "meta_description": "Scheduled portable restroom servicing for privately owned units across Vernon, Richland, and Crawford counties. Call or request a quote today.",
+      "meta_description": "Scheduled portable restroom servicing for privately owned units across Vernon, Richland, and Crawford counties plus parts of Sauk County. Call or request a quote today.",
       "hero_subhead": "Scheduled pumping, cleaning, and restocking for privately owned portable toilets.",
       "short": "Service for privately owned portable toilets with reliable cleaning and restocking.",
       "overview": [
@@ -431,12 +492,15 @@
     }
   ],
   "service_area": {
-    "description_short": "Sit & Git Portables provides portable restroom rentals and service across southwest Wisconsin with consistent routes and local delivery.",
-    "radius_statement": "We serve customers throughout Vernon, Richland and Crawford counties.",
+    "description_short": "Sit & Git Portables provides portable restroom rentals and service across southwest Wisconsin with consistent routes and local delivery, including parts of Sauk County.",
+    "radius_statement": "We serve customers throughout Vernon, Richland, and Crawford counties, plus parts of Sauk County.",
+    "additional_areas": [
+      "Parts of Sauk County, WI"
+    ],
     "hero_paragraphs": [
-      "Sit & Git Portables serves customers across southwest Wisconsin with a local, dependable approach. With routes centered in the Driftless Area, we deliver portable restrooms and service them on schedule throughout Vernon, Richland, and Crawford counties. Local routes shorten delivery time, keep service windows predictable, and make it easier to respond when plans change.",
+      "Sit & Git Portables serves customers across southwest Wisconsin with a local, dependable approach. With routes centered in the Driftless Area, we deliver portable restrooms, luxury restroom trailers, and service them on schedule throughout Vernon, Richland, and Crawford counties, plus parts of Sauk County. Local routes shorten delivery time, keep service windows predictable, and make it easier to respond when plans change.",
       "We support both busy job sites and smaller rural events, offering the same level of care whether you need a short-term rental or a longer placement.",
-      "If you need portable restrooms, ADA units, or handwashing stations in this region, reach out for a fast quote and a clear answer on coverage."
+      "If you need portable restrooms, ADA units, handwashing stations, or luxury restroom trailers in this region, reach out for a fast quote and a clear answer on coverage."
     ],
     "counties": [
       {
@@ -1877,17 +1941,17 @@
             "button_href": "/services/handwashing-stations/"
           },
           {
-            "title": "Event Rentals",
-            "body": "Short-term rentals for weddings, festivals, reunions, and outdoor gatherings.",
+            "title": "Luxury Restroom Trailers",
+            "body": "Upscale restroom trailer rentals for weddings, private events, and VIP guest areas.",
             "button_label": "Learn More",
-            "button_href": "/services/event-rentals/"
+            "button_href": "/services/luxury-restroom-trailers/"
           }
         ]
       },
       "intro": {
         "eyebrow": "Local, responsive service",
         "title": "Simple rentals with clear expectations",
-        "body": "We deliver standard, ADA, and handwashing units with consistent servicing and easy communication. Whether you need a short-term event rental or a long-term placement, we keep it tidy and on schedule."
+        "body": "We deliver standard units, ADA units, handwashing stations, and luxury restroom trailers with consistent servicing and easy communication. Whether you need a short-term event rental or a long-term placement, we keep it tidy and on schedule."
       },
       "service_teaser": {
         "title": "Services built for real sites",
@@ -1915,6 +1979,10 @@
             "href": "/services/"
           },
           {
+            "label": "Luxury Restroom Trailers",
+            "href": "/services/luxury-restroom-trailers/"
+          },
+          {
             "label": "Event Rentals",
             "href": "/services/event-rentals/"
           },
@@ -1934,7 +2002,7 @@
       },
       "service_area": {
         "title": "Our Service Area",
-        "body": "Sit & Git Portables is based in southwest Wisconsin and serves customers throughout the Driftless Area. We cover nearby towns and rural sites across Richland, Vernon, and Crawford counties. If you are unsure about coverage, call or text and we will confirm service for your address.",
+        "body": "Sit & Git Portables is based in southwest Wisconsin and serves customers throughout the Driftless Area. We cover nearby towns and rural sites across Richland, Vernon, and Crawford counties, as well as parts of Sauk County. If you are unsure about coverage, call or text and we will confirm service for your address.",
         "cta_label": "Read More",
         "cta_href": "/service-area/"
       },
@@ -1944,14 +2012,14 @@
     },
     "services": {
       "title": "Portable Restroom Services",
-      "intro": "From backyard gatherings to multi-month builds, our portable restroom options are designed around reliable delivery and consistent service.",
+      "intro": "From backyard gatherings and weddings to multi-month builds, our portable restroom options and luxury trailer rentals are designed around reliable delivery and consistent service.",
       "cta": {
         "title": "Not sure what you need?",
         "body": "Tell us a few details and we will recommend the right mix of units.",
         "button": "Request a Quote"
       },
       "meta_title": "Portable Restroom Services | Sit & Git Portables",
-      "meta_description": "Portable restroom rentals for events, job sites, and long-term needs across Vernon, Richland, and Crawford counties. Call or request a quote today."
+      "meta_description": "Portable restroom and luxury restroom trailer rentals for events, job sites, weddings, and long-term needs across Vernon, Richland, and Crawford counties plus parts of Sauk County. Call or request a quote today."
     },
     "service_detail": {
       "cta": {
@@ -1963,7 +2031,7 @@
     "service_area": {
       "title": "Portable Restroom Service Area in Southwest Wisconsin",
       "meta_title": "Service Area | Sit & Git Portables",
-      "meta_description": "View the portable restroom delivery service area across Vernon, Richland, and Crawford counties in Southwest WI. Call or request a quote today.",
+      "meta_description": "View the portable restroom delivery service area across Vernon, Richland, and Crawford counties plus parts of Sauk County in Southwest WI. Call or request a quote today.",
       "map_title": "Service Area Map",
       "map_body": "",
       "counties_title": "Counties We Serve",
@@ -2019,18 +2087,18 @@
       "title": "Portable Restroom Rental FAQs",
       "intro": "Answers to the most common portable restroom (portable toilet or porta potty) rental questions, delivery details, and service expectations.",
       "meta_title": "FAQ | Sit & Git Portables",
-      "meta_description": "Portable restroom rental FAQs covering common questions for events and job sites across Vernon, Richland, and Crawford counties. Call or request a quote today."
+      "meta_description": "Portable restroom rental FAQs covering common questions for events and job sites across Vernon, Richland, and Crawford counties plus parts of Sauk County. Call or request a quote today."
     },
     "about": {
       "title": "About Sit & Git Portables",
-      "body": "We are a local, owner-operated portable restroom company serving southwest Wisconsin, providing portable toilets or porta potties with clean units, dependable routes, and clear communication so you know what to expect from delivery through pickup.",
+      "body": "We are a local, owner-operated portable restroom company serving southwest Wisconsin, including parts of Sauk County, providing portable toilets or porta potties with clean units, dependable routes, and clear communication so you know what to expect from delivery through pickup.",
       "values": [
         "On-time delivery with clear scheduling",
         "Thorough service and clean restrooms",
         "Straightforward pricing and easy contact"
       ],
       "meta_title": "About | Sit & Git Portables",
-      "meta_description": "Local portable restroom rentals serving Vernon, Richland, and Crawford counties with clean units and dependable service. Call or request a quote today."
+      "meta_description": "Local portable restroom rentals serving Vernon, Richland, and Crawford counties plus parts of Sauk County with clean units and dependable service. Call or request a quote today."
     },
     "contact": {
       "title": "Contact Sit & Git Portables",
@@ -2042,7 +2110,7 @@
         "button": "Get a Quote"
       },
       "meta_title": "Contact | Sit & Git Portables",
-      "meta_description": "Contact Sit & Git Portables for portable restroom rentals for events and jobsites across Vernon, Richland, and Crawford counties. Call or request a quote today."
+      "meta_description": "Contact Sit & Git Portables for portable restroom rentals for events and jobsites across Vernon, Richland, and Crawford counties plus parts of Sauk County. Call or request a quote today."
     },
     "terms": {
       "title": "Terms of Service",
@@ -2116,6 +2184,7 @@
           "Portable restrooms",
           "ADA / accessible units",
           "Handwashing stations",
+          "Luxury restroom trailers",
           "Event rentals",
           "Long-term rentals",
           "Service only"
@@ -2129,7 +2198,7 @@
         "submit": "Submit"
       },
       "meta_title": "Get a Quote | Sit & Git Portables",
-      "meta_description": "Request a portable restroom rental quote for events and job sites across Vernon, Richland, and Crawford counties. Call or request a quote today."
+      "meta_description": "Request a portable restroom rental quote for events and job sites across Vernon, Richland, and Crawford counties plus parts of Sauk County. Call or request a quote today."
     }
   }
 }

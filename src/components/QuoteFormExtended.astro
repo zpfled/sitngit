@@ -1,5 +1,5 @@
 ---
-import site from "../content/site.json";
+import site from "../data/site.json";
 
 const { form_extended: form } = site.pages.quote;
 const { buttonFullWidth = true } = Astro.props;
@@ -77,6 +77,7 @@ const buttonClass = buttonFullWidth
   const type = params.get("type");
   const map = {
     event: "Event rentals",
+    luxury: "Luxury restroom trailers",
     "long-term": "Long-term rentals",
     longterm: "Long-term rentals"
   };
