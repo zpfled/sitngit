@@ -275,7 +275,7 @@
         "title": "Luxury Restroom Trailer",
         "description": "An upscale restroom solution for weddings, private events, and premium outdoor gatherings where comfort and appearance matter.",
         "image": {
-          "src": "/images/events.jpeg",
+          "src": "/images/trailer.png",
           "alt": "Luxury restroom trailer rental setup for an outdoor event"
         },
         "features": [
@@ -288,7 +288,7 @@
       },
       "highlight": "Luxury restroom trailers give guests a noticeably better experience than standard portable units at weddings and upscale events.",
       "image": {
-        "src": "/images/events.jpeg",
+        "src": "/images/trailer.png",
         "alt": "Luxury restroom trailer rental for a wedding or private event"
       },
       "bullets": [
