@@ -2,46 +2,60 @@
   "summary": {
     "label": "Google Reviews",
     "rating": 5,
-    "count": 10,
+    "count": 21,
     "cta_label": "Review us on Google",
-    "cta_href": "https://search.google.com/local/writereview?placeid=ChIJrU-osv6Ki6URmg_fVcsDANI"
+    "cta_href": "https://maps.google.com/?cid=15132098919818792858&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
   },
   "reviews": [
     {
-      "name": "Garry Myers",
-      "initials": "GM",
-      "time": "7 months ago",
+      "name": "Brittany Pitzer",
+      "initials": "BP",
+      "time": "2 months ago",
       "rating": 5,
-      "text": "Excellent prices and customer service. Portajohns were also very clean and well maintained. Great business",
-      "url": "https://www.google.com/maps/contrib/111769245655939157148/reviews",
-      "avatar": "https://lh3.googleusercontent.com/a/ACg8ocJm93i-ABlsdjuxQPPiZYEwgEjx8s9u_MUYg01FCyIufN25Mw=s128-c0x00000000-cc-rp-mo"
-    },
-    {
-      "name": "Philip Marty",
-      "initials": "PM",
-      "time": "10 months ago",
-      "rating": 5,
-      "text": "Zach is very responsive and friendly, portable toilets are clean and work well. Highly recommend",
-      "url": "https://www.google.com/maps/contrib/108205907177058101938/reviews",
-      "avatar": "https://lh3.googleusercontent.com/a/ACg8ocKV9WM1mKWq4iu5bHMftmCqKtwsg2or-NFASNMZ2QGu000UMQ=s128-c0x00000000-cc-rp-mo"
-    },
-    {
-      "name": "Andy Pflederer",
-      "initials": "AP",
-      "time": "in the last week",
-      "rating": 5,
-      "text": "I’ve used Sit & Git toilets and have found them consistently clean and well maintained… a big contrast to other experiences!",
-      "url": "https://www.google.com/maps/contrib/109058625647155624537/reviews",
-      "avatar": "https://lh3.googleusercontent.com/a/ACg8ocItLLfqYhZbUVRh-PZIwYTmcvNJFEg2WsUgNIeIeM_6OMOgfw=s128-c0x00000000-cc-rp-mo"
+      "text": "Great customer service! Very responsive, reasonable pricing, and clean toilets. We will definitely use Sit & Git Portables for our next event. Thank you Zach!",
+      "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xGNE0zcHFTVTV1ZUhWR1RHVlVTVGw2ZG1STmEzYxAB!2m1!1s0xa58b8afeb2a84fad:0xd20003cb55df0f9a",
+      "avatar": "https://lh3.googleusercontent.com/a-/ALV-UjW8bMs7qNcgfWkUolAXsxRp5FwdrcZ5IWYqfpBEtIAPedO7eUgufw=s128-c0x00000000-cc-rp-mo-ba4",
+      "publishTime": "2026-04-26T15:45:03.636822299Z"
     },
     {
       "name": "Kira Kennedy",
       "initials": "KK",
-      "time": "in the last week",
+      "time": "5 months ago",
       "rating": 5,
-      "text": "Zach is great and so professional to work with! We were in immediate need of a portable toilet for our soccer field, and he dropped one off promptly. The toilets are always clean and well stocked with toilet paper and hand sanitizer. Highly recommend!",
-      "url": "https://www.google.com/maps/contrib/100692768707125657926/reviews",
-      "avatar": "https://lh3.googleusercontent.com/a-/ALV-UjXl_-XXCCpENeJesj87h6bTr_XKe7rq0EOFwYVJYTYCE0U25Cs=s128-c0x00000000-cc-rp-mo"
+      "text": "Zach is great and so professional to work with! We were in immediate need of a porta-potty for our soccer field, and he dropped one off promptly. The toilets are always clean and well stocked with toilet paper and hand sanitizer. Highly recommend!",
+      "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2s1MmVqRlJXa0pWZGtOWFp6WkJTMmd0T1hCblZIYxAB!2m1!1s0xa58b8afeb2a84fad:0xd20003cb55df0f9a",
+      "avatar": "https://lh3.googleusercontent.com/a-/ALV-UjXl_-XXCCpENeJesj87h6bTr_XKe7rq0EOFwYVJYTYCE0U25Cs=s128-c0x00000000-cc-rp-mo",
+      "publishTime": "2026-01-23T17:10:15.930773579Z"
+    },
+    {
+      "name": "Andrea Haugo",
+      "initials": "AH",
+      "time": "5 months ago",
+      "rating": 5,
+      "text": "As a middle school cross country coach, I love having Sit and Git Portables near our training. They are clean and useful.",
+      "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25KdU1WQTBhRzE2VG5KdlQzRkhUVE5YZW5GSU4wRRAB!2m1!1s0xa58b8afeb2a84fad:0xd20003cb55df0f9a",
+      "avatar": "https://lh3.googleusercontent.com/a-/ALV-UjXvrLWSGA3oiOcKD2O63eVy8YzY2X49JWcasMsPv8aGDfLEQEETyw=s128-c0x00000000-cc-rp-mo",
+      "publishTime": "2026-01-22T03:52:00.116162981Z"
+    },
+    {
+      "name": "Barbara",
+      "initials": "B",
+      "time": "5 months ago",
+      "rating": 5,
+      "text": "I am so very impressed with the service I receive from Sit & Git Portables.  Zach is very efficient at his job, always there when service is needed and an all around really nice person.  I will gladly continue working with this company.",
+      "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xWRE9FRllORFozTW5JM1pYZDFjMjh6Y3paR09XYxAB!2m1!1s0xa58b8afeb2a84fad:0xd20003cb55df0f9a",
+      "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLxQ9Fxjyov-eHYOnDU_CAGlEBL68otG6B1IHJMWPu_-9DGlg=s128-c0x00000000-cc-rp-mo",
+      "publishTime": "2026-01-22T02:46:32.468657807Z"
+    },
+    {
+      "name": "Kyla Burkum",
+      "initials": "KB",
+      "time": "5 months ago",
+      "rating": 5,
+      "text": "Very professional. Has given us some good tips on keeping the porta potty from freezing so when pumping isn’t necessary is not an issue. Always wipe and inside clean and refills the toilet paper if necessary and anything else that may need to be done. Highly recommend for your porta potty services!",
+      "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21Gd1NGTkpialYwZEROVlkxaE9aRU5vVHpWa01tYxAB!2m1!1s0xa58b8afeb2a84fad:0xd20003cb55df0f9a",
+      "avatar": "https://lh3.googleusercontent.com/a-/ALV-UjXsi03FuvYLa_JQ7oAXbXtHOsspz8adWLZXsWNi1fcgNAFPt-1d=s128-c0x00000000-cc-rp-mo",
+      "publishTime": "2026-01-21T13:57:48.241432976Z"
     }
   ]
 }

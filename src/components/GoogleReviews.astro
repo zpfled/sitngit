@@ -1,6 +1,7 @@
 ---
 const { title, summary, reviews } = Astro.props;
 const stars = Array.from({ length: 5 });
+const starsFor = (rating = 5) => Array.from({ length: Math.max(0, Math.min(5, Math.round(rating))) });
 const displayRating = typeof summary.rating === "number" ? summary.rating.toFixed(1) : summary.rating;
 const summaryLabel = typeof summary.label === "string" ? summary.label.replace(/^Google\s+/i, "").trim() : "";
 ---
@@ -31,7 +32,7 @@ const summaryLabel = typeof summary.label === "string" ? summary.label.replace(/
       </a>
     </div>
 
-    <div class="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+    <div class="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-5">
       {reviews.map((review) => (
         <article class="bg-fog border border-clay/70 rounded-2xl p-6 shadow-soft">
           <div class="flex items-center gap-3">
@@ -53,7 +54,7 @@ const summaryLabel = typeof summary.label === "string" ? summary.label.replace(/
             </div>
           </div>
           <div class="mt-4 flex items-center gap-1 text-amber-400" aria-hidden="true">
-            {stars.map(() => (
+            {starsFor(review.rating).map(() => (
               <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
                 <path d="M10 15.27l-5.18 3.03 1.39-5.9L1 7.97l6.06-.52L10 2l2.94 5.45 6.06.52-5.21 4.43 1.39 5.9z" />
               </svg>
