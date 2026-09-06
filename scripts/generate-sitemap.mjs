@@ -39,7 +39,23 @@ Object.keys(site.service_area_pages ?? {}).forEach((slug) => {
 const urls = Array.from(paths)
   .filter(Boolean)
   .sort()
-  .map((pathname) => new URL(pathname, siteUrl).toString());
+  .map((pathname) => {
+    const canonicalPath = pathname === "/" ? "/" : `${pathname.replace(/\/+$/, "")}/`;
+    return new URL(canonicalPath, siteUrl).toString();
+  });
+
+if (!urls.includes("https://sitandgit.com/")) {
+  throw new Error("Invalid sitemap: canonical homepage https://sitandgit.com/ is missing.");
+}
+if (new Set(urls).size !== urls.length) {
+  throw new Error("Invalid sitemap: duplicate canonical URLs.");
+}
+for (const url of urls) {
+  const parsed = new URL(url);
+  if (parsed.origin !== "https://sitandgit.com" || !url.endsWith("/") || parsed.search || parsed.hash) {
+    throw new Error(`Invalid sitemap URL: ${url}. Expected https://sitandgit.com with a trailing slash and no query or fragment.`);
+  }
+}
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>\n` +
   `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
