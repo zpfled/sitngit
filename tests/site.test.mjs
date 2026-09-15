@@ -33,7 +33,7 @@ const link = href => ({ closest: () => ({ getAttribute: () => href, textContent:
 test('telephone, email and internal quote links including queries are tracked once', () => {
   const b = browser();
   b.run();
-  for (const href of ['tel:+16085550123', 'mailto:info@example.test?body=private', '/get-a-quote/?type=luxury', '/get-a-quote', 'https://elsewhere.test/get-a-quote/', '/about/']) b.emit('click', link(href));
+  for (const href of ['tel:+16085550123', 'mailto:info@example.test?body=private', '/get-a-quote/?type=event', '/get-a-quote', 'https://elsewhere.test/get-a-quote/', '/about/']) b.emit('click', link(href));
   assert.deepEqual(b.events.map(e => e[1]), ['click_to_call', 'click_to_email', 'quote_cta_click', 'quote_cta_click']);
   assert.equal(b.events[1][2].link_url, 'mailto:info@example.test');
   assert.equal(b.events[2][2].link_text, 'Get a quote');

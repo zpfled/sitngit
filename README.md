@@ -60,10 +60,13 @@ Set these environment variables for the fetch script:
 - Add env vars in Netlify site settings
 - Enable Netlify Forms notifications for the `quote` form
 
-## Trailer availability
-`src/data/site.json` owns the shared `trailer_availability` sentence. Availability-bearing
-copy uses `{{trailer_availability}}`, resolved by `src/data/site.ts` for the relevant pages
-and cards. Keep availability neutral unless confirmed by the business.
+## Service catalog
+
+Offerings and related copy live in `src/data/site.json`. The owner confirmed on
+2026-09-15 that luxury restroom trailers are not owned or offered; the demand experiment
+has ended. Do not restore that offering or availability language without new confirmation.
+The retired service URL redirects to event rentals through `public/_redirects`.
+See [Netlify redirect rules](https://docs.netlify.com/manage/routing/redirects/overview/).
 
 ## Weekly review refresh setup
 1. In Netlify, open this project's **Project configuration → Build & deploy → Continuous

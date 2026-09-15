@@ -7,9 +7,10 @@ import QuoteSection from "../../components/QuoteSection.astro";
 import site from "../../data/site";
 
 const { pages, services, service_area: serviceArea } = site;
-const primaryServices = services.filter((service) =>
-  ["portable-restrooms", "ada-restrooms", "handwashing-stations", "luxury-restroom-trailers", "toilet-servicing"].includes(service.slug)
+const rentalEquipment = services.filter((service) =>
+  ["portable-restrooms", "ada-restrooms", "handwashing-stations"].includes(service.slug)
 );
+const servicing = services.find((service) => service.slug === "toilet-servicing");
 const heroImage = pages.services.hero_image ?? pages.home.hero.media?.src ?? "/images/services-hero.jpg";
 const counties = serviceArea?.counties ?? [];
 ---
@@ -37,13 +38,29 @@ const counties = serviceArea?.counties ?? [];
   <section class="py-12 sm:py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-2xl sm:text-3xl font-display text-ink text-center">
-        Explore our rental options
+        Rental equipment
       </h2>
       <div class="mt-8">
-        <CardGrid items={primaryServices} />
+        <CardGrid items={rentalEquipment} />
       </div>
     </div>
   </section>
+
+  {servicing && (
+    <section class="pb-10 sm:pb-14">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-sand border border-clay/60 rounded-2xl p-6 sm:p-8 flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <h2 class="text-2xl sm:text-3xl font-display text-ink">{servicing.name}</h2>
+            <p class="mt-3 max-w-2xl text-ink/75">{servicing.short}</p>
+          </div>
+          <a href={`/services/${servicing.slug}/`} class="inline-flex min-h-11 shrink-0 items-center justify-center self-start sm:self-auto rounded-full border border-ink/30 px-5 py-3 text-sm font-semibold text-ink hover:bg-ink/5">
+            View servicing options
+          </a>
+        </div>
+      </div>
+    </section>
+  )}
 
   <section class="py-10 sm:py-14">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">

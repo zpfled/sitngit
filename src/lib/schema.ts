@@ -56,7 +56,6 @@ export const buildLocalBusinessSchema = (site: any, canonicalBase: string) => {
       "Portable restroom rentals",
       "ADA accessible portable restrooms",
       "Handwashing station rentals",
-      "Luxury restroom trailer rentals",
       "Portable toilet servicing"
     ]
   };
@@ -92,7 +91,6 @@ export const buildServiceSchema = ({
     "portable-restrooms": "Portable restroom rentals",
     "ada-restrooms": "Wheelchair-accessible portable restroom rentals",
     "handwashing-stations": "Handwash station rentals",
-    "luxury-restroom-trailers": "Luxury restroom trailer rentals",
     "toilet-servicing": "Portable toilet servicing",
     "event-rentals": "Event portable restroom rentals",
     "construction-rentals": "Construction and long-term portable restroom rentals"

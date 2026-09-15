@@ -3,6 +3,7 @@ import site from "../data/site.json";
 const { form } = site.pages.quote;
 ---
 <form name="quote" method="post" action="/thank-you/" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="bot-field" class="grid gap-6">
+  <p class="text-sm text-ink/75">For event rentals, construction and long-term rentals, or servicing, share your dates, location, and what you need below.</p>
   <input type="hidden" name="form-name" value="quote" />
   <input type="text" name="bot-field" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true" />
   <div class="grid gap-4 sm:grid-cols-2">

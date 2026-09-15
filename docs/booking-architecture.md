@@ -12,8 +12,10 @@ services hub and service-area hub, independently of any future booking JavaScrip
 
 At launch, set the primary destination to `/book/` and label to “Check Price & Availability”
 only when a usable flow exists. Keep
-explicit quote forms, footer quote links and QuoteSection's event/long-term quote links as
-human-assisted alternatives. Those should retain quote wording and `/get-a-quote/` URLs.
+explicit quote forms, footer quote links and QuoteSection's call/text actions as
+human-assisted alternatives. Quote links should retain quote wording and `/get-a-quote/` URLs.
+QuoteSection accepts event, construction/long-term and servicing inquiries in one form;
+avoid adding competing links to another quote form beside it.
 Review nearby CTA headings and body copy when switching their destination.
 Do not blindly relabel form submission buttons as booking actions.
 

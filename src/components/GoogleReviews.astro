@@ -1,13 +1,13 @@
 ---
 import { reviewAge } from "../lib/review-age.mjs";
 const buildTime = Date.now();
-const { title, summary, reviews } = Astro.props;
+const { id, title, summary, reviews } = Astro.props;
 const stars = Array.from({ length: 5 });
 const starsFor = (rating = 5) => Array.from({ length: Math.max(0, Math.min(5, Math.round(rating))) });
 const displayRating = typeof summary.rating === "number" ? summary.rating.toFixed(1) : summary.rating;
 const summaryLabel = typeof summary.label === "string" ? summary.label.replace(/^Google\s+/i, "").trim() : "";
 ---
-<section class="py-12 sm:py-16">
+<section id={id} class="py-12 sm:py-16 scroll-mt-36 sm:scroll-mt-52">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <h2 class="text-2xl sm:text-3xl font-display text-center">{title}</h2>
 

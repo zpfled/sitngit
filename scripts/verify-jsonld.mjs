@@ -10,7 +10,6 @@ const serviceSlugs = new Set([
   "portable-restrooms",
   "ada-restrooms",
   "handwashing-stations",
-  "luxury-restroom-trailers",
   "toilet-servicing",
   "event-rentals",
   "construction-rentals"

@@ -272,8 +272,12 @@ current review/social proof
 stronger navigation to core counties
 clearer Tier 1 geographic positioning
 
-D. Stale copy
-Remove outdated references to restroom trailers being “planned for July 2026.”
+D. Service offering accuracy
+Owner clarification recorded 2026-09-15: luxury restroom trailers were advertised only
+to gauge demand. Sit & Git does not own or offer one, and the experiment has ended.
+Remove that offering and its availability language from the website. Do not reintroduce
+it without explicit owner confirmation. Promote the available standard restrooms,
+wheelchair-accessible units, handwashing stations and servicing instead.
 
 13. Technical SEO rules
 

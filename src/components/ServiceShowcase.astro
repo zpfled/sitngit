@@ -5,7 +5,7 @@ const { title, items } = Astro.props;
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <h2 class="text-2xl sm:text-3xl font-display text-center">{title}</h2>
 
-    <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+    <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {items.map((item) => (
         <article class="bg-sage text-fog rounded-2xl p-8 shadow-soft flex flex-col gap-6 min-h-[360px]">
           <h3 class="text-2xl font-display text-ember leading-tight">{item.title}</h3>

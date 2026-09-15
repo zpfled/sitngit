@@ -5,13 +5,13 @@ import Hero from "../components/Hero.astro";
 import GoogleReviews from "../components/GoogleReviews.astro";
 import ServiceShowcase from "../components/ServiceShowcase.astro";
 import ServiceAreaMap from "../components/ServiceAreaMap.astro";
-import Section from "../components/Section.astro";
 import QuoteSection from "../components/QuoteSection.astro";
 import WhyChooseGrid from "../components/WhyChooseGrid.astro";
 import site from "../data/site";
 import googleReviews from "../data/google-reviews.json";
 
-const { pages, service_area, global_faq, navigation } = site;
+const { pages } = site;
+const reviewRating = Number(googleReviews.summary.rating).toFixed(1);
 
 ---
 <BaseLayout
@@ -30,17 +30,27 @@ const { pages, service_area, global_faq, navigation } = site;
     panel={pages.home.hero.panel}
   />
 
-  <GoogleReviews
-    title={pages.home.google_reviews.title}
-    summary={googleReviews.summary}
-    reviews={googleReviews.reviews}
-  />
+  <div class="pt-16 sm:pt-20 lg:pt-24 pb-2 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-sm text-ink">
+      <span class="font-semibold">{reviewRating} out of 5 · {googleReviews.summary.count} Google reviews</span>
+      <a href="#customer-reviews" class="inline-flex min-h-11 items-center underline underline-offset-4">
+        Read customer feedback
+      </a>
+    </div>
+  </div>
 
   <RentalPaths />
 
   <ServiceShowcase
     title={pages.home.service_showcase.title}
     items={pages.home.service_showcase.items}
+  />
+
+  <GoogleReviews
+    id="customer-reviews"
+    title={pages.home.google_reviews.title}
+    summary={googleReviews.summary}
+    reviews={googleReviews.reviews}
   />
 
   <section class="py-8 sm:py-10">

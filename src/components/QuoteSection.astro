@@ -3,7 +3,7 @@ import QuoteForm from "./QuoteForm.astro";
 import SiteImage from "./SiteImage.astro";
 import site from "../data/site.json";
 
-const { pages } = site;
+const { pages, business } = site;
 const quoteBackground = pages.quote?.background_image ?? "/images/quote-bg.jpg";
 ---
 <section
@@ -14,30 +14,30 @@ const quoteBackground = pages.quote?.background_image ?? "/images/quote-bg.jpg";
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] items-center">
       <div class="bg-fog/95 rounded-2xl shadow-lift p-6 sm:p-8">
-        <h3 class="text-2xl font-display text-ink text-center">Get a Quote</h3>
+        <h2 class="text-2xl font-display text-ink text-center">Request a Quote</h2>
         <div class="mt-6">
           <QuoteForm />
         </div>
       </div>
       <div class="text-fog">
-        <h2 class="text-4xl sm:text-5xl font-display font-bold text-fog">
-          Contact Us
+        <h2 class="text-3xl sm:text-4xl font-display font-bold text-fog">
+          Prefer to call or text?
         </h2>
         <p class="mt-4 text-base sm:text-lg text-fog/85 max-w-xl">
-          Request a quote today for portable restroom rental or service!
+          Reach our local team at {business.phone_display} to discuss your rental.
         </p>
         <div class="mt-6 flex flex-wrap gap-3">
           <a
-            href={pages.quote.cta_event?.href ?? "/get-a-quote/?type=event"}
-            class="inline-flex items-center justify-center rounded-full bg-ember text-ink px-6 py-2 text-sm font-semibold shadow-soft"
+            href={`tel:${business.phone_tel}`}
+            class="inline-flex min-h-11 items-center justify-center rounded-full border border-fog/60 text-fog px-6 py-2 text-sm font-semibold hover:border-fog"
           >
-            {pages.quote.cta_event?.label ?? "Event Rental Quote"}
+            Call us
           </a>
           <a
-            href={pages.quote.cta_long_term?.href ?? "/get-a-quote/?type=long-term"}
-            class="inline-flex items-center justify-center rounded-full border border-fog/60 text-fog px-6 py-2 text-sm font-semibold hover:border-fog"
+            href={`sms:${business.phone_tel}`}
+            class="inline-flex min-h-11 items-center justify-center rounded-full border border-fog/60 text-fog px-6 py-2 text-sm font-semibold hover:border-fog"
           >
-            {pages.quote.cta_long_term?.label ?? "Long-Term Rental Quote"}
+            Text us
           </a>
         </div>
       </div>

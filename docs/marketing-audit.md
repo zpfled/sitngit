@@ -1,5 +1,11 @@
 # Marketing audit and implementation plan — September 15, 2026
 
+**Subsequent owner clarification, 2026-09-15:** the trailer advertisement was a demand
+experiment; Sit & Git has no trailer and does not offer trailer rentals. This supersedes
+this audit's earlier recommendation to retain neutral availability language. The offering,
+related website copy, schema, form option and public images are removed; the former
+service URL redirects to event rentals. Earlier audit findings below are historical.
+
 ## Audit before changes
 
 Inspected all requested routes, shared components, content, metadata, schema, asset sizes,
