@@ -30,6 +30,11 @@ section {
   @apply scroll-mt-28;
 }
 
+:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 4px;
+}
+
 #service-area-map {
   position: relative;
   z-index: 0;

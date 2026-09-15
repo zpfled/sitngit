@@ -6,6 +6,7 @@ const wrapperClass = fullBleed
   ? "overflow-hidden"
   : "bg-fog border border-clay/70 rounded-2xl overflow-hidden shadow-soft";
 ---
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <div class={wrapperClass}>
   <div
     id="service-area-map"
@@ -14,7 +15,7 @@ const wrapperClass = fullBleed
   ></div>
   <noscript>
     <p class="px-6 py-4 text-sm text-ink/70">
-      Map loading requires JavaScript. Use the county list below to confirm coverage.
+      Map loading requires JavaScript. <a href="/service-area/" class="underline">View our service counties</a> to check coverage.
     </p>
   </noscript>
 </div>

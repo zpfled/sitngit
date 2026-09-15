@@ -11,7 +11,9 @@ const serviceSlugs = new Set([
   "ada-restrooms",
   "handwashing-stations",
   "luxury-restroom-trailers",
-  "toilet-servicing"
+  "toilet-servicing",
+  "event-rentals",
+  "construction-rentals"
 ]);
 
 const walk = async (dir) => {

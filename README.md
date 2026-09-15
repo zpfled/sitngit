@@ -124,3 +124,20 @@ output locally, supply a temporary valid-format test value through the environme
 build, then run `node scripts/verify-site-build.mjs --analytics`. Repeat with an
 invalid value and run the verifier without `--analytics`. These are static checks;
 they do not send events or submit forms to external services.
+
+## Marketing content and future booking
+
+Use the [SEO operating brief](docs/seo-operating-brief.md) for strategy and the
+[SEO performance scorecard](docs/seo-performance-scorecard.md) for dated baselines,
+KPI definitions and historical comparisons. Add new measurements to the scorecard;
+analytics setup remains documented above and booking instrumentation below.
+
+See [the September marketing audit](docs/marketing-audit.md) for the ranked plan,
+changes, preservation decisions and validation. [Booking architecture](docs/booking-architecture.md)
+describes the future same-domain Honeywagon boundary; no booking workflow exists yet.
+
+Event and construction planning sections live with their service entries in
+`src/data/site.json`. `RentalActions.astro` uses the shared primary CTA and preserves
+event/long-term intent; `RentalPaths.astro` links to the two rental guides.
+`SiteImage.astro` imports existing local photos for Astro's build-time responsive WebP
+output, while preserving original assets.

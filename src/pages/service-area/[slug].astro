@@ -1,5 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import SiteImage from "../../components/SiteImage.astro";
 import FAQList from "../../components/FAQList.astro";
 import CTABlock from "../../components/CTABlock.astro";
 import site from "../../data/site.json";
@@ -59,7 +61,8 @@ const normalizeHref = (href) => {
 >
   <section class="py-12 sm:py-16">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h1 class="text-3xl sm:text-4xl font-display text-ink">{page?.h1 ?? "Service Area"}</h1>
+      <Breadcrumbs items={[{ label: "Service Area", href: "/service-area/" }, { label: page?.h1 ?? "Local service", href: `/service-area/${slug}/` }]} />
+      <h1 class="mt-4 text-3xl sm:text-4xl font-display text-ink">{page?.h1 ?? "Service Area"}</h1>
       <div class="mt-4 space-y-4 text-ink/75">
         {page?.intro_paragraphs?.map((paragraph) => (
           <p>{paragraph}</p>
@@ -73,7 +76,7 @@ const normalizeHref = (href) => {
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid gap-6 md:grid-cols-2">
         {page.images.map((image) => (
           <figure class="bg-fog border border-clay/70 rounded-2xl overflow-hidden shadow-soft">
-            <img src={image.src} alt={image.alt ?? ""} class="w-full h-64 object-cover" loading="lazy" />
+            <SiteImage src={image.src} alt={image.alt ?? ""} class="w-full h-64 object-cover" />
             {image.note && <figcaption class="px-4 py-3 text-xs text-ink/60">{image.note}</figcaption>}
           </figure>
         ))}
@@ -138,7 +141,7 @@ const normalizeHref = (href) => {
   <CTABlock
     title={page?.cta_title ?? "Request a Quote"}
     body={page?.cta_body ?? "Tell us your dates and location, and we will confirm availability."}
-    button={page?.cta_button ?? "Request a Quote"}
+    button={navigation.cta_primary.label}
     href={navigation.cta_primary.href}
   />
 

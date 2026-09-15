@@ -1,19 +1,23 @@
 ---
-import site from "../data/site.json";
+interface Props { items: { label: string; href: string }[] }
 const { items } = Astro.props;
-const { labels } = site;
-const base = [
-  { label: labels.home, href: "/" },
-  { label: labels.service_area, href: "/service-area" }
-];
-const crumbs = items ? base.concat(items) : base;
+const crumbs = [{ label: "Home", href: "/" }, ...items];
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: crumbs.map((item, index) => ({
+    "@type": "ListItem", position: index + 1, name: item.label,
+    item: new URL(item.href, "https://sitandgit.com").href
+  }))
+};
 ---
+<script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
 <nav aria-label="Breadcrumb" class="text-sm text-ink/70">
   <ol class="flex flex-wrap gap-2">
     {crumbs.map((item, index) => (
       <li class="flex items-center gap-2">
         {index > 0 && <span class="text-ink/40">/</span>}
-        <a href={item.href} class="hover:text-ink">{item.label}</a>
+        <a href={item.href} aria-current={index === crumbs.length - 1 ? "page" : undefined} class="inline-flex min-h-11 items-center hover:text-ink">{item.label}</a>
       </li>
     ))}
   </ol>

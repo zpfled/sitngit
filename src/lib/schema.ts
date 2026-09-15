@@ -43,7 +43,6 @@ export const buildLocalBusinessSchema = (site: any, canonicalBase: string) => {
       "https://www.facebook.com/profile.php?id=61587805803084",
       "https://www.google.com/maps?cid=15132098919818792858"
     ],
-    priceRange: "$90-$150 per unit",
     areaServed: serviceAreas.map((area: string) => ({ "@type": "AdministrativeArea", name: area })),
     openingHoursSpecification: [
       {
@@ -94,7 +93,9 @@ export const buildServiceSchema = ({
     "ada-restrooms": "Wheelchair-accessible portable restroom rentals",
     "handwashing-stations": "Handwash station rentals",
     "luxury-restroom-trailers": "Luxury restroom trailer rentals",
-    "toilet-servicing": "Portable toilet servicing"
+    "toilet-servicing": "Portable toilet servicing",
+    "event-rentals": "Event portable restroom rentals",
+    "construction-rentals": "Construction and long-term portable restroom rentals"
   };
   const serviceType = serviceTypeMap[serviceSlug];
   if (!serviceType) return null;

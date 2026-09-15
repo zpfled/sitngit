@@ -1,14 +1,15 @@
 ---
 import site from "../data/site.json";
-const { eyebrow, headline, subhead, trustStrip, primaryCta, secondaryCta, secondaryHref, media } = Astro.props;
+import SiteImage from "./SiteImage.astro";
+const { eyebrow, headline, subhead, trustStrip, secondaryCta, secondaryHref, media } = Astro.props;
 const { navigation, labels } = site;
-const primaryLabel = primaryCta ?? navigation.cta_primary.label;
+const primaryLabel = navigation.cta_primary.label;
 const secondaryLabel = secondaryCta ?? labels.view_service_area;
 ---
 <section class="relative overflow-visible">
   {media?.src && (
     <div class="absolute inset-0 h-full">
-      <img src={media.src} alt={media.alt ?? ""} class="h-full w-full object-cover" loading="eager" />
+      <SiteImage src={media.src} alt={media.alt ?? ""} class="h-full w-full object-cover" sizes="100vw" loading="eager" priority />
     </div>
   )}
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10 lg:py-12">

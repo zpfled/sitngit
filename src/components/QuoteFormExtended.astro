@@ -16,44 +16,44 @@ const buttonClass = buttonFullWidth
     <div class="grid gap-3 sm:grid-cols-2">
       <label class="text-sm font-semibold text-ink">
         {form.labels.name}
-        <input name="name" required placeholder={form.placeholders.name} class="mt-2 w-full rounded-lg border border-clay bg-fog px-3 py-2" />
+        <input name="name" autocomplete="name" required placeholder={form.placeholders.name} class="mt-2 min-w-0 w-full min-h-11 text-base rounded-lg border border-clay bg-fog px-3 py-2" />
       </label>
       <label class="text-sm font-semibold text-ink">
         {form.labels.phone}
-        <input name="phone" required placeholder={form.placeholders.phone} class="mt-2 w-full rounded-lg border border-clay bg-fog px-3 py-2" />
+        <input type="tel" name="phone" autocomplete="tel" required placeholder={form.placeholders.phone} class="mt-2 min-w-0 w-full min-h-11 text-base rounded-lg border border-clay bg-fog px-3 py-2" />
       </label>
       <label class="text-sm font-semibold text-ink">
         {form.labels.email}
-        <input type="email" name="email" required placeholder={form.placeholders.email} class="mt-2 w-full rounded-lg border border-clay bg-fog px-3 py-2" />
+        <input type="email" name="email" autocomplete="email" placeholder={form.placeholders.email} class="mt-2 min-w-0 w-full min-h-11 text-base rounded-lg border border-clay bg-fog px-3 py-2" />
       </label>
       <label class="text-sm font-semibold text-ink">
         {form.labels.zip}
-        <input name="zip" placeholder={form.placeholders.zip} class="mt-2 w-full rounded-lg border border-clay bg-fog px-3 py-2" />
+        <input name="zip" autocomplete="postal-code" inputmode="numeric" placeholder={form.placeholders.zip} class="mt-2 min-w-0 w-full min-h-11 text-base rounded-lg border border-clay bg-fog px-3 py-2" />
       </label>
     </div>
   </div>
 
   <div class="space-y-3">
     <p class="text-sm font-semibold text-ink">{form.section_project}</p>
-    <div>
-      <p class="text-xs uppercase tracking-[0.2em] text-moss mb-3">{form.labels.services}</p>
+    <fieldset>
+      <legend class="text-xs uppercase tracking-[0.2em] text-moss mb-3">{form.labels.services}</legend>
       <div class="grid gap-2 sm:grid-cols-2">
         {form.services_options.map((service) => (
-          <label class="flex items-start gap-2 text-sm text-ink/80">
-            <input type="checkbox" name="services[]" value={service} class="mt-1" />
+          <label class="flex min-h-11 items-center gap-3 text-sm text-ink/80">
+            <input type="checkbox" name="services[]" value={service} class="h-5 w-5 shrink-0" />
             <span>{service}</span>
           </label>
         ))}
       </div>
-    </div>
+    </fieldset>
     <div class="grid gap-3 sm:grid-cols-2">
       <label class="text-sm font-semibold text-ink">
         {form.labels.start_date}
-        <input type="date" name="start-date" class="mt-2 w-full rounded-lg border border-clay bg-fog px-3 py-2" />
+        <input type="date" name="start-date" class="mt-2 min-w-0 w-full min-h-11 text-base rounded-lg border border-clay bg-fog px-3 py-2" />
       </label>
       <label class="text-sm font-semibold text-ink">
         {form.labels.duration}
-        <select name="rental-duration" class="mt-2 w-full rounded-lg border border-clay bg-fog px-3 py-2">
+        <select name="rental-duration" class="mt-2 min-w-0 w-full min-h-11 text-base rounded-lg border border-clay bg-fog px-3 py-2">
           <option value="">Please select</option>
           {form.duration_options.map((duration) => (
             <option value={duration}>{duration}</option>
@@ -63,7 +63,7 @@ const buttonClass = buttonFullWidth
     </div>
     <label class="text-sm font-semibold text-ink">
       {form.labels.notes}
-      <textarea name="notes" rows="5" placeholder={form.placeholders.notes} class="mt-2 w-full rounded-lg border border-clay bg-fog px-3 py-2"></textarea>
+      <textarea name="notes" rows="5" placeholder={form.placeholders.notes} class="mt-2 min-w-0 w-full min-h-11 text-base rounded-lg border border-clay bg-fog px-3 py-2"></textarea>
     </label>
   </div>
 

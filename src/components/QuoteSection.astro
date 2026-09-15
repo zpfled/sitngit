@@ -1,5 +1,6 @@
 ---
 import QuoteForm from "./QuoteForm.astro";
+import SiteImage from "./SiteImage.astro";
 import site from "../data/site.json";
 
 const { pages } = site;
@@ -7,8 +8,8 @@ const quoteBackground = pages.quote?.background_image ?? "/images/quote-bg.jpg";
 ---
 <section
   class="relative overflow-hidden py-16 sm:py-20"
-  style={`background-image: url('${quoteBackground}'); background-size: 100% auto; background-repeat: no-repeat; background-position: center top;`}
 >
+  <SiteImage src={quoteBackground} alt="" sizes="100vw" class="absolute inset-0 h-full w-full object-cover" />
   <div class="absolute inset-0 bg-ink/55"></div>
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] items-center">

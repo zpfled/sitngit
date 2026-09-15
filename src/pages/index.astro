@@ -1,4 +1,5 @@
 ---
+import RentalPaths from "../components/RentalPaths.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/Hero.astro";
 import GoogleReviews from "../components/GoogleReviews.astro";
@@ -23,7 +24,6 @@ const { pages, service_area, global_faq, navigation } = site;
     headline={pages.home.hero.headline}
     subhead={pages.home.hero.subhead}
     trustStrip={pages.home.hero.trust_strip}
-    primaryCta={pages.home.hero.primary_cta}
     secondaryCta={pages.home.hero.secondary_cta}
     secondaryHref={pages.home.hero.secondary_href}
     media={pages.home.hero.media}
@@ -35,6 +35,8 @@ const { pages, service_area, global_faq, navigation } = site;
     summary={googleReviews.summary}
     reviews={googleReviews.reviews}
   />
+
+  <RentalPaths />
 
   <ServiceShowcase
     title={pages.home.service_showcase.title}

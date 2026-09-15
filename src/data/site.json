@@ -50,7 +50,7 @@
       }
     ],
     "cta_primary": {
-      "label": "Get a Quote",
+      "label": "Request a Quote",
       "href": "/get-a-quote/"
     },
     "cta_secondary": {
@@ -321,15 +321,13 @@
     {
       "slug": "event-rentals",
       "name": "Event Portable Restroom Rentals",
-      "meta_title": "Event Rentals | Sit & Git Portables",
-      "meta_description": "Local event portable restroom rentals for weddings and festivals across Vernon, Richland, and Crawford counties plus parts of Sauk County. Call or request a quote today.",
-      "hero_subhead": "Short-term restroom rentals for weddings, festivals, reunions, and outdoor gatherings.",
-      "short": "Short-term rentals for weddings, festivals, reunions, and outdoor gatherings.",
+      "meta_title": "Event Portable Restroom Rentals in Southwest WI",
+      "meta_description": "Clean portable restrooms for weddings, festivals and private events in Vernon, Richland and Crawford counties. Get help with quantities, delivery and servicing.",
+      "hero_subhead": "Clean restrooms, dependable delivery, and a local team to help you plan your event in Vernon, Richland, or Crawford County.",
+      "short": "Clean restrooms and coordinated delivery for weddings, festivals, community events, and private gatherings.",
       "overview": [
-        "Event rentals focus on clean units, clear delivery timing, and simple coordination so your guests have reliable access when restrooms are needed. We help plan unit counts and placement based on the event layout and expected attendance.",
-        "Common uses include weddings, festivals, reunions, community events, and private gatherings. We coordinate delivery with your setup schedule and remove units promptly after the event.",
-        "Service includes a clean, stocked unit at delivery. For multi-day events or higher traffic, additional servicing can be scheduled based on your timeline.",
-        "If you are unsure what mix of units you need, we will walk through the details and provide a straightforward recommendation."
+        "Sit & Git Portables is locally owned in Viola, Wisconsin. We help you arrange clean, stocked portable restrooms and handwashing stations, with clear delivery and pickup plans so you can focus on your guests.",
+        "Share your event date, location, expected attendance, and hours of use. We will recommend quantities and a mix of standard and wheelchair-accessible units, then confirm availability and provide a quote."
       ],
       "transition": "Event rental unit details",
       "product": {
@@ -360,35 +358,78 @@
       ],
       "faqs": [
         {
-          "q": "How far in advance should I book?",
-          "a": "A few weeks is best for popular weekends, but we can often accommodate last-minute needs."
+          "q": "Can I rent portable restrooms for just one day?",
+          "a": "Yes. We arrange short-term rentals and coordinate delivery and pickup with your event schedule. Include setup and teardown time when requesting your quote."
         },
         {
-          "q": "Do you handle pickup after the event?",
-          "a": "Yes. We schedule pickup based on your teardown timeline and site access."
+          "q": "What should I include in an event rental quote request?",
+          "a": "Send the event location, date, daily hours, expected attendance, and any existing restrooms. Include accessibility needs, handwashing stations, and access or venue restrictions if you know them. We can help work through the remaining details."
         },
         {
-          "q": "Can you service units during a multi-day event?",
-          "a": "Yes. We can schedule mid-event servicing to keep units clean and stocked."
+          "q": "Can I request a luxury restroom trailer for my event?",
+          "a": "{{trailer_availability}} Share your date, location, and guest count so we can discuss scheduling and site access."
+        }
+      ],
+      "rental_intent": "event",
+      "sections": [
+        {
+          "title": "Restrooms for the way your event works",
+          "items": [
+            {
+              "title": "Weddings and private gatherings",
+              "body": "For outdoor weddings, graduation parties, family reunions, and backyard gatherings, plan around the full time guests will be on site, including the reception or evening celebration. We can help place restrooms where guests can find them while keeping delivery access clear."
+            },
+            {
+              "title": "Festivals, fairs, and sporting events",
+              "body": "Tell us about peak attendance, separate activity areas, and breaks when many people may need a restroom at once. For tournaments or events spanning several days, include daily hours and overnight use when discussing quantities and servicing."
+            },
+            {
+              "title": "Community, church, and municipal events",
+              "body": "From church picnics to community celebrations and municipal gatherings, coordinate restroom placement with the organizer or venue. Include volunteers, vendors, and staff in the headcount, along with guests."
+            }
+          ]
         },
         {
-          "q": "How many units do I need for an event?",
-          "a": "It depends on attendance, duration, and site layout. We can recommend a count based on your details."
+          "title": "Plan your event restroom setup",
+          "items": [
+            {
+              "title": "How many portable restrooms will you need?",
+              "body": "Start with the number of people on site at the busiest time, how many hours they will stay, and any permanent restrooms available to them. Longer events, food and drink service, and concentrated breaks can increase demand. Share those details for a recommendation; headcount alone does not determine the right number."
+            },
+            {
+              "title": "Reserve once your date and venue are set",
+              "body": "For weddings, fairs, and popular summer weekends, contact us several weeks ahead when possible. Earlier planning gives us time to coordinate equipment and access with your venue. For a short-notice event, call with your date and location so we can check the schedule."
+            },
+            {
+              "title": "Coordinate delivery, setup, and pickup",
+              "body": "We confirm a delivery window and placement instructions before arrival. Include your setup and teardown schedule, a site contact, gate information, and any venue restrictions. You do not need to be present if we have agreed on placement and have clear access."
+            },
+            {
+              "title": "Account for every day of use",
+              "body": "A one-day gathering and a weekend festival need different service plans. Tell us when restrooms must be ready and when the last guests will leave. Additional pumping, cleaning, and restocking can be scheduled for multi-day or high-traffic events."
+            },
+            {
+              "title": "Plan accessibility and handwashing together",
+              "body": "Ask about wheelchair-accessible units and handwashing stations early. Consider the route from parking and activity areas to the restrooms, including the ground surface and room around entrances. Discuss accessibility needs with your venue so the unit and its placement work for your guests."
+            },
+            {
+              "title": "Choose a location guests and our truck can reach",
+              "body": "Choose firm, level ground away from moving vehicles, with a clear approach for delivery and service. Let us know about slopes, gravel lanes, gates, soft ground, or tight turns before delivery. Keep the service route open during the event if a cleaning visit is scheduled."
+            }
+          ]
         }
       ]
     },
     {
       "slug": "construction-rentals",
-      "name": "Construction Portable Restroom Rentals",
-      "meta_title": "Construction & Long-Term | Sit & Git Portables",
-      "meta_description": "Local construction portable restroom rentals with weekly service across Vernon, Richland, and Crawford counties plus parts of Sauk County. Call or request a quote today.",
-      "hero_subhead": "Long-term restroom rentals for job sites with dependable service and clear scheduling.",
+      "name": "Construction & Long-Term Portable Restroom Rentals",
+      "meta_title": "Construction & Long-Term Restroom Rentals in Southwest WI",
+      "meta_description": "Dependable portable restroom rentals with recurring service for builders, general contractors and public works in Vernon, Richland and Crawford counties.",
+      "hero_subhead": "Clean, stocked units and dependable recurring service for crews working across Vernon, Richland, and Crawford counties.",
       "short": "Reliable, consistent service for job sites and long-term placements.",
       "overview": [
-        "Construction and long-term rentals are built around consistent service and predictable scheduling. We deliver units locally, confirm placement, and keep service visits on a clear cadence so crews can rely on them every day.",
-        "These rentals are common for construction sites, utility projects, and extended placements where permanent restrooms are not available. We coordinate delivery and pickup around site access and safety requirements.",
-        "Service includes pumping, sanitizing, and restocking essentials. Weekly service is standard, with increased frequency available for higher traffic sites.",
-        "As projects evolve, we can adjust placement and service timing to match changes on site."
+        "Sit & Git Portables provides locally coordinated delivery and recurring service for residential builders, commercial general contractors, municipalities, and public works departments. From a single home build to a long-duration rural jobsite, we establish placement and a service schedule before delivery.",
+        "Weekly service is standard and includes pumping, cleaning, sanitizing, deodorizing, and restocking supplies. We can adjust service frequency to crew size and daily use, and coordinate changes as your project moves forward. You can reach our local team directly by phone or text."
       ],
       "transition": "Construction rental unit details",
       "product": {
@@ -417,20 +458,57 @@
       ],
       "faqs": [
         {
-          "q": "Can you adjust service frequency?",
-          "a": "Yes. We can increase or decrease service based on crew size and use."
+          "q": "How often are construction restrooms serviced?",
+          "a": "Weekly service is standard. Higher-traffic sites may need more frequent visits; we can adjust the schedule based on crew size and use."
         },
         {
-          "q": "Do you provide long-term discounts?",
-          "a": "We offer simple, transparent pricing for ongoing rentals. Ask for a quote based on duration."
+          "q": "What does each service visit include?",
+          "a": "We pump, clean, sanitize, deodorize, and restock the unit. Please keep the service route and unit accessible for scheduled visits."
         },
         {
-          "q": "How often are units serviced?",
-          "a": "Weekly service is standard, with increased frequency available for higher traffic locations."
+          "q": "Can we extend a rental or change pickup timing?",
+          "a": "Yes. Contact us as your project timeline changes so we can coordinate continued service and pickup around site access."
         },
         {
-          "q": "Can we adjust pickup timing?",
-          "a": "Yes. We coordinate pickup based on project timelines and site access."
+          "q": "How is an ongoing rental quoted?",
+          "a": "Share the site location, unit needs, estimated duration, crew size, and preferred service frequency. We provide a clear quote for the rental and service plan."
+        }
+      ],
+      "rental_intent": "long-term",
+      "sections": [
+        {
+          "title": "Support for your crew and project",
+          "items": [
+            {
+              "title": "Residential builders and commercial general contractors",
+              "body": "Coordinate delivery with mobilization and keep restrooms accessible as trades and equipment move around the site. Share your expected crew size, work schedule, and project duration so we can plan units and recurring service."
+            },
+            {
+              "title": "Municipalities, public works, and road construction",
+              "body": "We support utility, road, and infrastructure projects where work areas or access may change. Give us a site contact and describe traffic controls, gates, and the planned service location so delivery and recurring visits can be coordinated with your team."
+            },
+            {
+              "title": "Long-duration rural jobsites",
+              "body": "For remote builds, farm projects, and extended placements, dependable access matters throughout the rental. Tell us about gravel approaches, seasonal roads, soft ground, or winter access. We work with you on a safe route and service timing as conditions change."
+            }
+          ]
+        },
+        {
+          "title": "A service plan you can count on",
+          "items": [
+            {
+              "title": "Agree on delivery and recurring visits",
+              "body": "Start with the site address, delivery date, expected crew size, and rental duration. We confirm placement and service frequency so your team knows what to expect. Clean, stocked units arrive ready for use."
+            },
+            {
+              "title": "Adjust as the job changes",
+              "body": "Contact us when crew numbers grow, the work area shifts, or your completion date changes. We can discuss extra cleaning visits, unit placement, and pickup timing around your current schedule."
+            },
+            {
+              "title": "Keep access clear for reliable service",
+              "body": "Keep the agreed truck approach and the area around each unit clear of parked equipment, materials, and locked gates. Let us know about changing access conditions before a scheduled visit so we can coordinate with your site contact."
+            }
+          ]
         }
       ]
     },
@@ -500,9 +578,8 @@
       "Parts of Sauk County, WI"
     ],
     "hero_paragraphs": [
-      "Sit & Git Portables serves customers across southwest Wisconsin with a local, dependable approach. With routes centered in the Driftless Area, we deliver portable restrooms throughout Vernon, Richland, and Crawford counties, plus parts of Sauk County. For luxury restroom trailer rentals: {{trailer_availability}}",
-      "We support both busy job sites and smaller rural events, offering the same level of care whether you need a short-term rental or a longer placement.",
-      "If you need portable restrooms, ADA units, handwashing stations, or luxury restroom trailers, reach out for a fast quote and a clear answer on coverage. {{trailer_availability}}"
+      "Based in Viola, Sit & Git Portables delivers and services portable restrooms throughout Vernon, Richland, and Crawford counties. These are our primary service areas for one-time events and recurring construction or long-term rentals.",
+      "We serve county seats, smaller communities, and rural properties. Choose your county below for local examples, delivery details, and service information."
     ],
     "counties": [
       {
@@ -614,7 +691,7 @@
         "School athletic events, festivals, and community gatherings benefit from dependable units and flexible scheduling."
       ],
       "logistics_title": "Serving Vernon County and Nearby Areas",
-      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we\u2019ll work with you to confirm a safe access route or adjust service timing as needed. If you\u2019re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
+      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we’ll work with you to confirm a safe access route or adjust service timing as needed. If you’re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
       "faq_title": "Portable Toilet Rental FAQs for Vernon County, WI",
       "faqs": [
         {
@@ -686,7 +763,7 @@
         "Farms, parks, weddings, and rural properties across Richland County use portable restrooms and handwashing stations for guests and staff."
       ],
       "logistics_title": "Serving Richland County and Nearby Areas",
-      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we\u2019ll work with you to confirm a safe access route or adjust service timing as needed. If you\u2019re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
+      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we’ll work with you to confirm a safe access route or adjust service timing as needed. If you’re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
       "faq_title": "Portable Toilet Rental FAQs for Richland County, WI",
       "faqs": [
         {
@@ -758,7 +835,7 @@
         "Hunting cabins and seasonal properties across Crawford County rely on dependable placements and regular service."
       ],
       "logistics_title": "Serving Crawford County and Nearby Areas",
-      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we\u2019ll work with you to confirm a safe access route or adjust service timing as needed. If you\u2019re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
+      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we’ll work with you to confirm a safe access route or adjust service timing as needed. If you’re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
       "faq_title": "Portable Toilet Rental FAQs for Crawford County, WI",
       "faqs": [
         {
@@ -802,7 +879,7 @@
       "h1": "Portable Restroom Rentals in Viroqua, Wisconsin",
       "intro_paragraphs": [
         "Sit & Git Portables provides portable toilet rentals in Viroqua with dependable local delivery and scheduled servicing. We serve Viroqua and nearby rural areas with clean units, clear scheduling, and consistent maintenance.",
-        "Sit & Git units are a familiar sight in Viroqua, including the Farmers Market, Live in Viroqua summer concerts, Wild West Days, and local school athletics. Whether you need short\u2011term event coverage or a longer placement for a job site, we coordinate delivery, placement, and servicing to fit your schedule."
+        "Sit & Git units are a familiar sight in Viroqua, including the Farmers Market, Live in Viroqua summer concerts, Wild West Days, and local school athletics. Whether you need short‑term event coverage or a longer placement for a job site, we coordinate delivery, placement, and servicing to fit your schedule."
       ],
       "services_title": "Portable Restroom Options Available in Viroqua",
       "services_list": [
@@ -820,7 +897,7 @@
         "Schools, parks, and public spaces in Viroqua benefit from reliable units during practices, games, and seasonal traffic."
       ],
       "logistics_title": "Serving Viroqua and Nearby Areas",
-      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we\u2019ll work with you to confirm a safe access route or adjust service timing as needed. If you\u2019re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
+      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we’ll work with you to confirm a safe access route or adjust service timing as needed. If you’re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
       "faq_title": "Portable Toilet Rental FAQs for Viroqua, WI",
       "faqs": [
         {
@@ -886,7 +963,7 @@
         "Schools, parks, and public spaces in Westby benefit from reliable units during practices, games, and seasonal traffic."
       ],
       "logistics_title": "Serving Westby and Nearby Areas",
-      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we\u2019ll work with you to confirm a safe access route or adjust service timing as needed. If you\u2019re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
+      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we’ll work with you to confirm a safe access route or adjust service timing as needed. If you’re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
       "faq_title": "Portable Toilet Rental FAQs for Westby, WI",
       "faqs": [
         {
@@ -952,7 +1029,7 @@
         "Schools, parks, and public spaces in Coon Valley benefit from reliable units during practices, games, and seasonal traffic."
       ],
       "logistics_title": "Serving Coon Valley and Nearby Areas",
-      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we\u2019ll work with you to confirm a safe access route or adjust service timing as needed. If you\u2019re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
+      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we’ll work with you to confirm a safe access route or adjust service timing as needed. If you’re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
       "faq_title": "Portable Toilet Rental FAQs for Coon Valley, WI",
       "faqs": [
         {
@@ -1018,7 +1095,7 @@
         "Schools, parks, and public spaces in Chaseburg benefit from reliable units during practices, games, and seasonal traffic."
       ],
       "logistics_title": "Serving Chaseburg and Nearby Areas",
-      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we\u2019ll work with you to confirm a safe access route or adjust service timing as needed. If you\u2019re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
+      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we’ll work with you to confirm a safe access route or adjust service timing as needed. If you’re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
       "faq_title": "Portable Toilet Rental FAQs for Chaseburg, WI",
       "faqs": [
         {
@@ -1084,7 +1161,7 @@
         "Schools, parks, and public spaces in De Soto benefit from reliable units during practices, games, and seasonal traffic."
       ],
       "logistics_title": "Serving De Soto and Nearby Areas",
-      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we\u2019ll work with you to confirm a safe access route or adjust service timing as needed. If you\u2019re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
+      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we’ll work with you to confirm a safe access route or adjust service timing as needed. If you’re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
       "faq_title": "Portable Toilet Rental FAQs for De Soto, WI",
       "faqs": [
         {
@@ -1150,7 +1227,7 @@
         "Schools, parks, and public spaces in Readstown benefit from reliable units during practices, games, and seasonal traffic."
       ],
       "logistics_title": "Serving Readstown and Nearby Areas",
-      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we\u2019ll work with you to confirm a safe access route or adjust service timing as needed. If you\u2019re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
+      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we’ll work with you to confirm a safe access route or adjust service timing as needed. If you’re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
       "faq_title": "Portable Toilet Rental FAQs for Readstown, WI",
       "faqs": [
         {
@@ -1216,7 +1293,7 @@
         "Schools, parks, and public spaces in La Farge benefit from reliable units during practices, games, and seasonal traffic."
       ],
       "logistics_title": "Serving La Farge and Nearby Areas",
-      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we\u2019ll work with you to confirm a safe access route or adjust service timing as needed. If you\u2019re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
+      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we’ll work with you to confirm a safe access route or adjust service timing as needed. If you’re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
       "faq_title": "Portable Toilet Rental FAQs for La Farge, WI",
       "faqs": [
         {
@@ -1282,7 +1359,7 @@
         "Schools, parks, and public spaces in Hillsboro benefit from reliable units during practices, games, and seasonal traffic."
       ],
       "logistics_title": "Serving Hillsboro and Nearby Areas",
-      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we\u2019ll work with you to confirm a safe access route or adjust service timing as needed. If you\u2019re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
+      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we’ll work with you to confirm a safe access route or adjust service timing as needed. If you’re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
       "faq_title": "Portable Toilet Rental FAQs for Hillsboro, WI",
       "faqs": [
         {
@@ -1348,7 +1425,7 @@
         "Schools, parks, and public spaces in Cashton benefit from reliable units during practices, games, and seasonal traffic."
       ],
       "logistics_title": "Serving Cashton and Nearby Areas",
-      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we\u2019ll work with you to confirm a safe access route or adjust service timing as needed. If you\u2019re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
+      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we’ll work with you to confirm a safe access route or adjust service timing as needed. If you’re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
       "faq_title": "Portable Toilet Rental FAQs for Cashton, WI",
       "faqs": [
         {
@@ -1396,7 +1473,7 @@
       "h1": "Portable Restroom Rentals in Richland Center, Wisconsin",
       "intro_paragraphs": [
         "Sit & Git Portables provides portable toilet rentals in Richland Center with dependable local delivery and scheduled servicing. We serve Richland Center and nearby rural areas with clean units, clear scheduling, and consistent maintenance.",
-        "We regularly support Richland Center with units at school athletics, local construction projects, and park district events. Whether you need short\u2011term event coverage or a longer placement for a job site, we coordinate delivery, placement, and servicing to fit your schedule."
+        "We regularly support Richland Center with units at school athletics, local construction projects, and park district events. Whether you need short‑term event coverage or a longer placement for a job site, we coordinate delivery, placement, and servicing to fit your schedule."
       ],
       "services_title": "Portable Restroom Options Available in Richland Center",
       "services_list": [
@@ -1414,7 +1491,7 @@
         "Schools, parks, and public spaces in Richland Center benefit from reliable units during practices, games, and seasonal traffic."
       ],
       "logistics_title": "Serving Richland Center and Nearby Areas",
-      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we\u2019ll work with you to confirm a safe access route or adjust service timing as needed. If you\u2019re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
+      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we’ll work with you to confirm a safe access route or adjust service timing as needed. If you’re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
       "faq_title": "Portable Toilet Rental FAQs for Richland Center, WI",
       "faqs": [
         {
@@ -1480,7 +1557,7 @@
         "Schools, parks, and public spaces in Ithaca benefit from reliable units during practices, games, and seasonal traffic."
       ],
       "logistics_title": "Serving Ithaca and Nearby Areas",
-      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we\u2019ll work with you to confirm a safe access route or adjust service timing as needed. If you\u2019re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
+      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we’ll work with you to confirm a safe access route or adjust service timing as needed. If you’re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
       "faq_title": "Portable Toilet Rental FAQs for Ithaca, WI",
       "faqs": [
         {
@@ -1546,7 +1623,7 @@
         "Schools, parks, and public spaces in Boaz benefit from reliable units during practices, games, and seasonal traffic."
       ],
       "logistics_title": "Serving Boaz and Nearby Areas",
-      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we\u2019ll work with you to confirm a safe access route or adjust service timing as needed. If you\u2019re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
+      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we’ll work with you to confirm a safe access route or adjust service timing as needed. If you’re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
       "faq_title": "Portable Toilet Rental FAQs for Boaz, WI",
       "faqs": [
         {
@@ -1612,7 +1689,7 @@
         "Schools, parks, and public spaces in Viola benefit from reliable units during practices, games, and seasonal traffic."
       ],
       "logistics_title": "Serving Viola and Nearby Areas",
-      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we\u2019ll work with you to confirm a safe access route or adjust service timing as needed. If you\u2019re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
+      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we’ll work with you to confirm a safe access route or adjust service timing as needed. If you’re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
       "faq_title": "Portable Toilet Rental FAQs for Viola, WI",
       "faqs": [
         {
@@ -1678,7 +1755,7 @@
         "Schools, parks, and public spaces in Muscoda benefit from reliable units during practices, games, and seasonal traffic."
       ],
       "logistics_title": "Serving Muscoda and Nearby Areas",
-      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we\u2019ll work with you to confirm a safe access route or adjust service timing as needed. If you\u2019re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
+      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we’ll work with you to confirm a safe access route or adjust service timing as needed. If you’re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
       "faq_title": "Portable Toilet Rental FAQs for Muscoda, WI",
       "faqs": [
         {
@@ -1744,7 +1821,7 @@
         "Schools, parks, and public spaces in Soldiers Grove benefit from reliable units during practices, games, and seasonal traffic."
       ],
       "logistics_title": "Serving Soldiers Grove and Nearby Areas",
-      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we\u2019ll work with you to confirm a safe access route or adjust service timing as needed. If you\u2019re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
+      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we’ll work with you to confirm a safe access route or adjust service timing as needed. If you’re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
       "faq_title": "Portable Toilet Rental FAQs for Soldiers Grove, WI",
       "faqs": [
         {
@@ -1810,7 +1887,7 @@
         "Schools, parks, and public spaces in Gays Mills benefit from reliable units during practices, games, and seasonal traffic."
       ],
       "logistics_title": "Serving Gays Mills and Nearby Areas",
-      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we\u2019ll work with you to confirm a safe access route or adjust service timing as needed. If you\u2019re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
+      "logistics_body": "We regularly deliver and service portable toilets at rural properties, farm sites, and locations accessed by gravel or seasonal roads. If we can safely reach the placement location with our service truck, we can deliver and service your units. During winter months or periods of thaw, access conditions may affect scheduling. Snow cover, ice, soft ground, or weight-restricted roads can limit where and when service can be performed. In these cases, we’ll work with you to confirm a safe access route or adjust service timing as needed. If you’re unsure about access to your site, let us know when you request a quote. Photos or a brief description of the approach help us plan delivery and ongoing service.",
       "faq_title": "Portable Toilet Rental FAQs for Gays Mills, WI",
       "faqs": [
         {
@@ -1910,10 +1987,10 @@
     "home": {
       "hero": {
         "eyebrow": "Local portable restroom rentals",
-        "headline": "The Driftless Region's top portable restroom provider",
-        "subhead": "For construction sites, events, weddings & more",
+        "headline": "Portable restroom rentals in Southwest Wisconsin",
+        "subhead": "Clean equipment and responsive, locally owned service for events and job sites in Vernon, Richland, and Crawford counties.",
         "trust_strip": "Licensed & insured",
-        "primary_cta": "Get a Quote",
+        "primary_cta": "Request a Quote",
         "secondary_cta": "See Service Area",
         "secondary_href": "/service-area/",
         "media": {
@@ -1926,7 +2003,7 @@
         "title": "What Our Customers Say"
       },
       "service_showcase": {
-        "title": "The Driftless Area's Best Portable Restroom & Sink Rental Provider",
+        "title": "Clean restrooms and handwashing stations for your site",
         "items": [
           {
             "title": "Portable Restroom Rental",
@@ -2025,7 +2102,7 @@
         "button": "Request a Quote"
       },
       "meta_title": "Portable Restroom Services | Sit & Git Portables",
-      "meta_description": "Portable restroom rentals for events, job sites, weddings, and long-term needs across Vernon, Richland, and Crawford counties plus parts of Sauk County, plus luxury restroom trailers. {{trailer_availability}}"
+      "meta_description": "Explore portable restrooms, accessible units, handwashing stations and trailer inquiries for events and jobsites in southwest Wisconsin. Request a quote."
     },
     "service_detail": {
       "cta": {
@@ -2039,7 +2116,7 @@
       "meta_title": "Service Area | Sit & Git Portables",
       "meta_description": "View the portable restroom delivery service area across Vernon, Richland, and Crawford counties plus parts of Sauk County in Southwest WI. Call or request a quote today.",
       "map_title": "Service Area Map",
-      "map_body": "",
+      "map_body": "Use the map as an overview. For rural properties or locations near the edge of our service area, send the exact address so we can confirm delivery and ongoing service access.",
       "counties_title": "Counties We Serve",
       "counties_body": "Major towns are listed below, and we also serve surrounding areas.",
       "flexibility": "",
@@ -2047,7 +2124,7 @@
       "faqs": [
         {
           "q": "How far in advance should I book?",
-          "a": "We recommend booking as soon as you know your dates. Short-term rentals are often available with a few days notice, while peak weekends may require more lead time."
+          "a": "Contact us once you know your dates. For weddings and busy event weekends, several weeks ahead is best when possible. For construction, share your expected start date so we can coordinate delivery with site access. Call about short-notice availability."
         },
         {
           "q": "Do you deliver outside the listed towns?",
@@ -2062,7 +2139,9 @@
         "title": "Not sure if you're in range?",
         "body": "Call or text with your address and dates and we will confirm coverage quickly.",
         "button": "Get a Quote"
-      }
+      },
+      "secondary_title": "Reedsburg and parts of Sauk County",
+      "secondary_body": "We also consider rentals in Reedsburg and parts of Sauk County. Send your exact address, dates, and rental needs so we can confirm coverage and scheduling for your location."
     },
     "county": {
       "heading_template": "Portable restroom rentals in {county}, WI",
@@ -2138,7 +2217,7 @@
       "title": "Get a Quote",
       "background_image": "/images/quote-bg.jpg",
       "intro": "Request a formal quote for portable restroom rentals (portable toilets or porta potties) in southwest Wisconsin.",
-      "lede": "Want a formal quote for portable sanitation equipment rental? Fill out and submit the form below and a representative will respond soon. You may also give us a call at",
+      "lede": "Tell us your dates, location, and rental needs. We will follow up with availability and a clear quote. You can also call us at",
       "cta_event": {
         "label": "Event Rental Quote",
         "href": "/get-a-quote/?type=event"
@@ -2171,7 +2250,7 @@
         "section_project": "Project Information",
         "labels": {
           "name": "Name",
-          "email": "Email",
+          "email": "Email (optional)",
           "phone": "Phone",
           "zip": "Delivery zip code",
           "services": "Products/services needed",
@@ -2184,7 +2263,7 @@
           "email": "you@example.com",
           "phone": "(608) 555-0123",
           "zip": "Zip code",
-          "notes": "Tell us about access, placement, or site details."
+          "notes": "For events: guest count and hours of use. For jobsites: crew size and service needs. Include access or placement details."
         },
         "services_options": [
           "Portable restrooms",
@@ -2197,11 +2276,14 @@
         ],
         "duration_options": [
           "Under 7 days",
+          "1 to 4 weeks",
           "1 to 2 months",
           "3 to 5 months",
-          "6 to 12 months"
+          "6 to 12 months",
+          "More than 12 months",
+          "Not sure yet"
         ],
-        "submit": "Submit"
+        "submit": "Request a Quote"
       },
       "meta_title": "Get a Quote | Sit & Git Portables",
       "meta_description": "Request a portable restroom rental quote for events and job sites across Vernon, Richland, and Crawford counties plus parts of Sauk County. Call or request a quote today."

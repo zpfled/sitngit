@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import SiteImage from "../components/SiteImage.astro";
 import GoogleReviews from "../components/GoogleReviews.astro";
 import site from "../data/site.json";
 import WhyChooseGrid from "../components/WhyChooseGrid.astro";
@@ -14,8 +15,8 @@ const heroImage = "/images/about-hero.jpg";
 >
   <section
     class="relative min-h-[320px] sm:min-h-[420px] flex items-center text-fog"
-    style={`background-image: url('${heroImage}'); background-size: cover; background-position: center;`}
   >
+    <SiteImage src={heroImage} alt="" sizes="100vw" loading="eager" priority class="absolute inset-0 h-full w-full object-cover" />
     <div class="absolute inset-0 bg-ink/55"></div>
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <h1 class="text-4xl sm:text-5xl font-display font-bold text-fog text-left">About Sit & Git Portables</h1>
@@ -26,10 +27,7 @@ const heroImage = "/images/about-hero.jpg";
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid gap-10 lg:grid-cols-[220px_1fr] items-start">
       <div class="flex flex-col gap-8 items-start">
         <div class="flex flex-col items-center text-center gap-3">
-          <img src="/images/google-review-rating.webp" alt="Google 5-star rating" class="w-40 h-auto" loading="lazy" />
-        </div>
-        <div class="flex flex-col items-center text-center gap-3">
-          <img src="/images/locally-owned.webp" alt="Locally owned" class="w-24 h-24" loading="lazy" />
+          <SiteImage src="/images/locally-owned.webp" alt="Locally owned" class="w-24 h-24" sizes="96px" maxWidth={192} />
         </div>
       </div>
       <div class="space-y-6 text-ink/80">

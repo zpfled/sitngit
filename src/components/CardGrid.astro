@@ -1,5 +1,6 @@
 ---
 import site from "../data/site";
+import SiteImage from "./SiteImage.astro";
 const { items } = Astro.props;
 const { labels } = site;
 ---
@@ -8,7 +9,7 @@ const { labels } = site;
     <article class="bg-fog border border-clay/70 rounded-2xl p-6 shadow-soft flex flex-col">
       {item.image?.src && (
         <div class="mb-4">
-          <img src={item.image.src} alt={item.image.alt ?? ""} class="w-full h-60 object-contain rounded-xl border border-clay/60 bg-white" loading="lazy" />
+          <SiteImage src={item.image.src} alt={item.image.alt ?? ""} class="w-full h-60 object-contain rounded-xl border border-clay/60 bg-white" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" />
           {item.image.note && <p class="mt-2 text-xs text-ink/50">{item.image.note}</p>}
         </div>
       )}
