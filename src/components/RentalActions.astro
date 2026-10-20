@@ -1,19 +1,19 @@
 ---
 import site from "../data/site.json";
+import PricingLink from "./PricingLink.astro";
 
 interface Props {
   intent?: "event" | "long-term";
+  placement?: string;
+  serviceOnly?: boolean;
 }
-const { intent } = Astro.props;
-const { cta_primary } = site.navigation;
-// One entry point for rental CTAs; keep intent when the future booking route is ready.
-const href = intent ? `${cta_primary.href}?type=${intent}` : cta_primary.href;
+const { intent, placement = "rental-actions", serviceOnly = false } = Astro.props;
 ---
 <div class="flex flex-wrap gap-3">
-  <a href={href} data-rental-intent={intent} class="inline-flex min-h-11 items-center justify-center px-5 py-3 rounded-full bg-ink text-fog text-sm font-semibold shadow-soft hover:bg-ink/90">
-    {cta_primary.label}
-  </a>
-  <a href={`tel:${site.business.phone_tel}`} class="inline-flex min-h-11 items-center justify-center px-5 py-3 rounded-full border border-ink/30 text-ink text-sm font-semibold hover:bg-ink/5">
-    Call {site.business.phone_display}
+  {serviceOnly ? (
+    <a href={`tel:${site.business.phone_tel}`} class="pricing-button">Call about servicing</a>
+  ) : <PricingLink placement={placement} intent={intent} />}
+  <a href={`${serviceOnly ? "sms" : "tel"}:${site.business.phone_tel}`} class="inline-flex min-h-11 items-center justify-center px-5 py-3 rounded-full border border-ink/30 text-ink text-sm font-semibold hover:bg-ink/5">
+    {serviceOnly ? "Text about servicing" : `Call ${site.business.phone_display}`}
   </a>
 </div>

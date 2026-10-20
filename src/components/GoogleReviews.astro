@@ -27,7 +27,7 @@ const summaryLabel = typeof summary.label === "string" ? summary.label.replace(/
             </svg>
           ))}
         </div>
-        <div class="text-sm text-ink/60">({summary.count})</div>
+        <div class="text-sm text-ink/70">({summary.count})</div>
       </div>
       <a href={summary.cta_href} class="inline-flex items-center justify-center rounded-full bg-ink text-fog px-6 py-2 text-sm font-semibold hover:bg-ink/90">
         {summary.cta_label}
@@ -54,7 +54,7 @@ const summaryLabel = typeof summary.label === "string" ? summary.label.replace(/
             </div>
             <div>
               <p class="font-semibold text-ink">{review.name}</p>
-              <p class="text-xs text-ink/60">{reviewAge(review.publishTime, review.time, buildTime)}</p>
+              <p class="text-xs text-ink/70">{reviewAge(review.publishTime, review.time, buildTime)}</p>
             </div>
           </div>
           <div class="mt-4 flex items-center gap-1 text-amber-400" aria-hidden="true">

@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 import logoImage from "../assets/logo.png";
 import badgeImage from "../assets/locally-owned.webp";
+import PricingLink from "./PricingLink.astro";
 import site from "../data/site.json";
 const { navigation, business, labels } = site;
 const logoSrc = business.logo?.src;
@@ -10,10 +11,10 @@ const badgeSrc = business.badge?.src;
 const isDefaultBadge = badgeSrc === "/images/locally-owned.webp";
 ---
 <header class="sticky top-0 z-40 text-fog">
-  <div class="bg-ember text-sage text-xs sm:text-base font-bold font-sans">
+  <div class="bg-ember text-ink text-xs sm:text-base font-bold font-sans">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sm:py-1 flex items-center justify-center">
       <span class="uppercase tracking-[0.12em] sm:tracking-[0.2em]">{labels.superheader_call}</span>
-      <a href={navigation.cta_secondary.href} class="inline-flex min-h-11 items-center ml-2 sm:ml-3 uppercase tracking-[0.12em] sm:tracking-[0.2em] text-sage hover:text-sage/80">
+      <a href={navigation.cta_secondary.href} class="inline-flex min-h-11 items-center ml-2 sm:ml-3 uppercase tracking-[0.12em] sm:tracking-[0.2em] text-ink hover:text-ink">
         {business.phone_display}
       </a>
     </div>
@@ -24,9 +25,9 @@ const isDefaultBadge = badgeSrc === "/images/locally-owned.webp";
       <a href="/" class="flex min-w-0 items-center gap-4">
         {business.logo?.src ? (
           isDefaultLogo ? (
-            <Image src={logoImage} alt={business.logo.alt ?? business.name} class="h-14 sm:h-20 md:h-24 w-auto" loading="eager" />
+            <Image src={logoImage} alt={business.logo.alt ?? business.name} class="h-12 min-[375px]:h-14 sm:h-20 md:h-24 w-auto" loading="eager" />
           ) : (
-            <img src={business.logo.src} alt={business.logo.alt ?? business.name} class="h-14 sm:h-20 md:h-24 w-auto" loading="eager" />
+            <img src={business.logo.src} alt={business.logo.alt ?? business.name} class="h-12 min-[375px]:h-14 sm:h-20 md:h-24 w-auto" loading="eager" />
           )
         ) : (
           <span class="font-display text-xl text-fog">{business.name}</span>
@@ -53,13 +54,9 @@ const isDefaultBadge = badgeSrc === "/images/locally-owned.webp";
             <img src={business.badge.src} alt={business.badge.alt ?? "Locally owned"} class="h-12 w-12" loading="lazy" />
           )
         )}
-        <a href={navigation.cta_primary.href} class="inline-flex min-h-11 items-center px-5 py-2 rounded-full bg-ember text-ink text-sm font-semibold shadow-soft">
-          {navigation.cta_primary.label}
-        </a>
+        <PricingLink placement="header-desktop" />
       </div>
-      <a href={navigation.cta_primary.href} class="lg:hidden shrink-0 inline-flex min-h-11 items-center px-4 py-2 rounded-full bg-ember text-ink text-sm font-semibold shadow-soft">
-        {navigation.cta_primary.label}
-      </a>
+      <PricingLink placement="header-mobile" class="pricing-button lg:hidden shrink-0 px-3 text-xs sm:text-sm" />
     </div>
   </div>
   </div>

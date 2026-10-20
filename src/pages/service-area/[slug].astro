@@ -138,10 +138,13 @@ const normalizeHref = (href) => {
   </section>
 
   <CTABlock
-    title={page?.cta_title ?? "Request a Quote"}
-    body={page?.cta_body ?? "Tell us your dates and location, and we will confirm availability."}
+    title={page?.cta_title ?? "See your rental price online"}
+    body={page?.cta_body ?? "Enter your delivery address, choose what you need, and pick your dates to see your price. No contact details needed. Some bookings need confirmation from our team."}
     button={navigation.cta_primary.label}
     href={navigation.cta_primary.href}
+    placement="location-bottom"
+    secondaryLabel={`Call ${site.business.phone_display}`}
+    secondaryHref={`tel:${site.business.phone_tel}`}
   />
 
   {page?.also_serving?.length ? (

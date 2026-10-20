@@ -3,7 +3,6 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import Section from "../../components/Section.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import RentalPaths from "../../components/RentalPaths.astro";
-import RentalActions from "../../components/RentalActions.astro";
 import ServiceAreaMap from "../../components/ServiceAreaMap.astro";
 import FAQList from "../../components/FAQList.astro";
 import GoogleReviews from "../../components/GoogleReviews.astro";
@@ -12,25 +11,21 @@ import site from "../../data/site";
 import googleReviews from "../../data/google-reviews.json";
 
 const { pages, service_area } = site;
-const heroParagraphs = service_area.hero_paragraphs;
 ---
 <BaseLayout title={pages.service_area.meta_title} description={pages.service_area.meta_description}>
-  <section class="py-12 sm:py-16">
+  <section class="py-8 sm:py-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <Breadcrumbs items={[{ label: "Service Area", href: "/service-area/" }]} />
       <h1 class="mt-4 text-3xl sm:text-4xl font-display text-ink">{pages.service_area.title}</h1>
-      <div class="mt-4 space-y-4 text-ink/75">
-        {heroParagraphs.map((paragraph) => (
-          <p>{paragraph}</p>
-        ))}
-      </div>
-      <div class="mt-6"><RentalActions /></div>
+      <h2 class="mt-6 text-2xl sm:text-3xl font-display">{pages.service_area.map_title}</h2>
+      <div class="mt-4"><ServiceAreaMap placement="service-area-map" /></div>
     </div>
   </section>
 
   <section class="pb-12 sm:pb-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-2xl sm:text-3xl font-display">Our primary service counties</h2>
+      <p class="mt-4 max-w-3xl text-ink/75">{pages.service_area.map_body}</p>
       <div class="mt-6 grid gap-6 lg:grid-cols-3">
         {service_area.counties.map((county) => (
           <article class="rounded-2xl border border-clay/70 bg-white p-6">
@@ -56,14 +51,6 @@ const heroParagraphs = service_area.hero_paragraphs;
   </section>
 
   <RentalPaths />
-
-  <section class="py-12 sm:py-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-2xl sm:text-3xl font-display">{pages.service_area.map_title}</h2>
-      <p class="mt-4 max-w-3xl">{pages.service_area.map_body}</p>
-      <div class="mt-6"><ServiceAreaMap /></div>
-    </div>
-  </section>
 
   <GoogleReviews
     title={pages.home.google_reviews.title}

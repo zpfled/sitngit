@@ -16,6 +16,7 @@ export function getStaticPaths() {
 
 const { service } = Astro.props;
 const { pages } = site;
+const serviceOnly = service.slug === "toilet-servicing";
 const metaTitle = service.meta_title ?? service.name;
 const metaDescription = service.meta_description ?? service.short;
 const serviceAreas = (site.service_area?.counties ?? []).map((county) => `${county.name}, WI`);
@@ -41,7 +42,7 @@ const serviceSchema = buildServiceSchema({
           {service.hero_subhead}
         </p>
       )}
-      <div class="mt-6"><RentalActions intent={service.rental_intent} /></div>
+      <div class="mt-6"><RentalActions intent={service.rental_intent} serviceOnly={serviceOnly} placement="service-top" /></div>
     </div>
   </section>
 
@@ -78,7 +79,7 @@ const serviceSchema = buildServiceSchema({
             <a href={`/service-area/${county.slug}/`} class="underline underline-offset-4">{county.name}</a>
           ))}
         </div>
-        <p class="mt-4">Also considering a rental in Reedsburg or parts of Sauk County? <a href="/service-area/" class="underline underline-offset-4">Check our service area</a> and contact us with your address and dates.</p>
+        <p class="mt-4">Also considering a rental in Reedsburg or parts of Sauk and Iowa counties? <a href="/service-area/" class="underline underline-offset-4">Check our service area</a> and contact us with your address and dates.</p>
       </div>
     </section>
   )}
@@ -135,10 +136,10 @@ const serviceSchema = buildServiceSchema({
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="bg-sand border border-clay/60 rounded-2xl p-6 sm:p-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
-          <h2 class="text-2xl font-display text-ink">{pages.service_detail.cta.title}</h2>
-          <p class="mt-2 text-sm text-ink/70">{pages.service_detail.cta.body}</p>
+          <h2 class="text-2xl font-display text-ink">{serviceOnly ? "Need service for a portable toilet you own?" : pages.service_detail.cta.title}</h2>
+          <p class="mt-2 text-sm text-ink/70">{serviceOnly ? "Call or text with your location and servicing needs. Our team will help arrange your service; online pricing covers rentals." : pages.service_detail.cta.body}</p>
         </div>
-        <RentalActions intent={service.rental_intent} />
+        <RentalActions intent={service.rental_intent} serviceOnly={serviceOnly} placement="service-bottom" />
       </div>
       <div class="mt-6 flex flex-wrap gap-4 text-sm text-ink/70">
         <a href="/service-area/" class="underline underline-offset-4 hover:text-ink">View service area</a>

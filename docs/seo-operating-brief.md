@@ -29,8 +29,13 @@ Tier 2 geography
 
 Reedsburg
 nearby Sauk County
+parts of Iowa County
 
 Objective: selective expansion where route economics and account quality justify it.
+
+Owner clarification recorded 2026-10-16: Sit & Git now serves parts of Iowa County.
+Describe this as partial-county coverage, alongside parts of Sauk County. Keep
+Vernon, Richland, and Crawford counties first in overall service-area messaging.
 
 Do not pursue La Crosse, Madison, or broad Wisconsin traffic merely to improve SEO metrics.
 
@@ -50,7 +55,7 @@ church events
 municipal events
 private gatherings
 
-Typical order value: about $150.
+Typical order value: about $250.
 
 These are generally the most profitable jobs and the most naturally search-driven.
 
@@ -98,9 +103,9 @@ Primary positioning:
 
 A modern, local portable-restroom company offering clean equipment, reliable service, responsive communication, and an easy customer experience.
 
-Future differentiation:
+Online pricing differentiation (rollout prepared 2026-10-16):
 
-Customers can check pricing and availability and book online without waiting for a salesperson.
+Customers can see calculated rental pricing before providing contact details, then continue to book or request confirmation. Some requests require confirmation; do not promise guaranteed availability.
 
 Price should be discovered during quoting/booking, not used as the brand promise.
 
@@ -135,26 +140,26 @@ Do not imitate competitors merely because they rank. Evaluate what actually caus
 
 6. Conversion hierarchy
 
-Current desired conversions:
+Desired conversions for the online-pricing rollout prepared 2026-10-16:
 
-phone calls
-website quote-form submissions
+confirmed online bookings
+phone/text inquiries and email assistance
 
-Future desired conversion:
+Pricing CTA clicks are useful funnel measurements, not completed bookings.
+Personal assistance remains essential for service-only requests, special arrangements,
+and customers who prefer human contact. Preserve historical quote-form submissions.
 
-completed online booking
-phone calls
-quote-form submissions for exceptions or customers who prefer human contact
+Rollout architecture (supersedes the earlier proposed same-domain API integration):
 
-Online booking is expected within weeks and should become a major website CTA once launched.
+marketing frontend remains Netlify/Astro on sitandgit.com
+rental pricing CTAs link directly, in the same tab, to https://quotes.sitandgit.com/
+Honeywagon owns pricing, availability, terms, and booking records
+no booking iframe, proxy, duplicate calculator, or marketing-site booking form
+private analytics/API access remains separate
 
-Target architecture:
+Production launch status must be verified independently of these implementation notes.
+See [booking architecture](booking-architecture.md) for confirmation and measurement boundaries.
 
-customer stays on sitandgit.com
-marketing frontend remains Netlify/Astro
-Honeywagon remains system of record
-website communicates with Honeywagon through a narrowly scoped public API
-private analytics/API access remains completely separate
 7. Dated performance measurements
 
 The [SEO performance scorecard](seo-performance-scorecard.md) is the measurement

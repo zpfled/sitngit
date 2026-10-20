@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .pricing-button {
+    @apply inline-flex min-h-11 items-center justify-center rounded-full bg-ember px-6 py-3 text-center text-sm font-bold text-ink shadow-soft hover:bg-river hover:text-ink;
+  }
+}
+
 :root {
   color-scheme: light;
 }
@@ -23,7 +29,7 @@ p {
 }
 
 a {
-  @apply text-river hover:text-sage transition-colors;
+  @apply text-sage hover:text-ink transition-colors;
 }
 
 section {
@@ -33,14 +39,4 @@ section {
 :focus-visible {
   outline: 3px solid currentColor;
   outline-offset: 4px;
-}
-
-#service-area-map {
-  position: relative;
-  z-index: 0;
-}
-
-#service-area-map .leaflet-pane,
-#service-area-map .leaflet-control-container {
-  z-index: 0;
 }

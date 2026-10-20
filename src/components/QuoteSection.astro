@@ -1,45 +1,21 @@
 ---
-import QuoteForm from "./QuoteForm.astro";
+import InstantPricing from "./InstantPricing.astro";
 import SiteImage from "./SiteImage.astro";
 import site from "../data/site.json";
 
-const { pages, business } = site;
-const quoteBackground = pages.quote?.background_image ?? "/images/quote-bg.jpg";
+const quoteBackground = site.pages.quote.background_image;
 ---
-<section
-  class="relative overflow-hidden py-16 sm:py-20"
->
+<section id="quote" class="relative overflow-hidden py-16 sm:py-20">
   <SiteImage src={quoteBackground} alt="" sizes="100vw" class="absolute inset-0 h-full w-full object-cover" />
-  <div class="absolute inset-0 bg-ink/55"></div>
+  <div class="absolute inset-0 bg-ink/85"></div>
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] items-center">
-      <div class="bg-fog/95 rounded-2xl shadow-lift p-6 sm:p-8">
-        <h2 class="text-2xl font-display text-ink text-center">Request a Quote</h2>
-        <div class="mt-6">
-          <QuoteForm />
-        </div>
-      </div>
-      <div class="text-fog">
-        <h2 class="text-3xl sm:text-4xl font-display font-bold text-fog">
-          Prefer to call or text?
-        </h2>
-        <p class="mt-4 text-base sm:text-lg text-fog/85 max-w-xl">
-          Reach our local team at {business.phone_display} to discuss your rental.
-        </p>
-        <div class="mt-6 flex flex-wrap gap-3">
-          <a
-            href={`tel:${business.phone_tel}`}
-            class="inline-flex min-h-11 items-center justify-center rounded-full border border-fog/60 text-fog px-6 py-2 text-sm font-semibold hover:border-fog"
-          >
-            Call us
-          </a>
-          <a
-            href={`sms:${business.phone_tel}`}
-            class="inline-flex min-h-11 items-center justify-center rounded-full border border-fog/60 text-fog px-6 py-2 text-sm font-semibold hover:border-fog"
-          >
-            Text us
-          </a>
-        </div>
+      <div id="quote-form"><InstantPricing placement="quote-section" /></div>
+      <div class="text-fog lg:pl-6">
+        <h2 class="text-3xl sm:text-4xl font-display font-bold text-fog">Easy online pricing.<br />A local team when you need us.</h2>
+        <p class="mt-4 text-base sm:text-lg text-fog/90 max-w-xl">Planning a wedding, community event, or construction project? See your price and book online, or call or text us to arrange your rental.</p>
+        <p class="mt-4 text-fog/90 max-w-xl">For servicing a unit you own, special arrangements, or help choosing equipment, call or text our team. We’re happy to help.</p>
+        <a href="/get-a-quote/" class="mt-5 inline-flex min-h-11 items-center text-fog underline underline-offset-4 hover:text-ember">How online pricing and booking work <span aria-hidden="true" class="ml-2">→</span></a>
       </div>
     </div>
   </div>

@@ -1,27 +1,36 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import QuoteFormExtended from "../components/QuoteFormExtended.astro";
+import InstantPricing from "../components/InstantPricing.astro";
+import FAQList from "../components/FAQList.astro";
 import site from "../data/site.json";
 
 const { pages, business } = site;
 ---
-<BaseLayout
-  title={pages.quote.meta_title ?? pages.quote.title}
-  description={pages.quote.meta_description ?? pages.quote.intro}
->
+<BaseLayout title={pages.quote.meta_title} description={pages.quote.meta_description}>
   <section class="py-12 sm:py-16">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h1 class="text-3xl sm:text-4xl font-display text-ink">Request a Quote</h1>
-      <p class="mt-4 text-ink/75">
-        {pages.quote.lede}{" "}
-        <a href={`tel:${business.phone_tel}`} class="text-ink font-semibold hover:text-sage">
-          {business.phone_display}
-        </a>
-        .
-      </p>
-      <div class="mt-8">
-        <QuoteFormExtended buttonFullWidth={false} />
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="max-w-3xl text-3xl sm:text-4xl font-display text-ink">{pages.quote.title}</h1>
+      <p class="mt-4 max-w-3xl text-ink/80">{pages.quote.intro}</p>
+      <div class="mt-8 grid gap-8 lg:grid-cols-[1.2fr_0.8fr] items-start">
+        <div id="quote"><div id="quote-form"><InstantPricing placement="pricing-page" /></div></div>
+        <aside class="rounded-2xl bg-sand border border-clay/70 p-6 sm:p-8">
+          <h2 class="text-2xl font-display">Local help with your plans</h2>
+          <p class="mt-4">Need help deciding what to rent or planning delivery? Call, text, or <a href={`mailto:${business.email}`} class="text-sage underline underline-offset-4">email</a> our local team.</p>
+          <ul class="mt-4 space-y-1">
+            <li><a class="inline-flex min-h-11 items-center text-sage underline underline-offset-4" href="/services/event-rentals/">Plan an event rental</a></li>
+            <li><a class="inline-flex min-h-11 items-center text-sage underline underline-offset-4" href="/services/construction-rentals/">Construction &amp; long-term rentals</a></li>
+            <li><a class="inline-flex min-h-11 items-center text-sage underline underline-offset-4" href="/service-area/">Explore our delivery area</a></li>
+          </ul>
+          <h3 class="mt-6 text-lg font-semibold">Already own a portable toilet?</h3>
+          <p class="mt-3">Online pricing covers rentals. For service-only requests, call or text us to arrange <a href="/services/toilet-servicing/" class="text-sage underline underline-offset-4">portable toilet servicing</a>.</p>
+        </aside>
       </div>
+    </div>
+  </section>
+  <section class="pb-12 sm:pb-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-3xl font-display">Pricing and booking questions</h2>
+      <div class="mt-6"><FAQList items={pages.quote.faqs} /></div>
     </div>
   </section>
 </BaseLayout>

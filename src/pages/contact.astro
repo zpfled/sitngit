@@ -1,9 +1,9 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import QuoteFormExtended from "../components/QuoteFormExtended.astro";
+import InstantPricing from "../components/InstantPricing.astro";
 import site from "../data/site.json";
 
-const { pages, business, navigation, labels } = site;
+const { pages, business } = site;
 ---
 <BaseLayout
   title={pages.contact.meta_title ?? pages.contact.title}
@@ -26,26 +26,20 @@ const { pages, business, navigation, labels } = site;
           </div>
           <div>
             <p class="text-xs uppercase tracking-[0.2em] text-moss mb-2">Phone</p>
-            <a href={`tel:${business.phone_tel}`} class="text-sm font-semibold text-ink hover:text-sage">
+            <a href={`tel:${business.phone_tel}`} class="inline-flex min-h-11 items-center text-sm font-semibold text-ink hover:text-sage">
               {business.phone_display}
             </a>
-            <p class="text-sm text-ink/60">{navigation.cta_secondary.label}</p>
+            <a href={`sms:${business.phone_tel}`} class="flex min-h-11 items-center text-sm font-semibold text-sage underline underline-offset-4">Text our team</a>
           </div>
           <div>
             <p class="text-xs uppercase tracking-[0.2em] text-moss mb-2">Email</p>
-            <a href={`mailto:${business.email}`} class="text-sm font-semibold text-ink hover:text-sage">
+            <a href={`mailto:${business.email}`} class="inline-flex min-h-11 items-center text-sm font-semibold text-ink hover:text-sage">
               {business.email}
             </a>
-            <p class="text-sm text-ink/60">{labels.email}</p>
+            <p class="text-sm text-ink/75">For servicing, special arrangements, or rental questions.</p>
           </div>
         </div>
-        <div class="bg-fog border border-clay/70 rounded-2xl p-6 sm:p-8 shadow-soft">
-          <h2 class="text-2xl font-display text-ink">{pages.contact.cta.title}</h2>
-          <p class="mt-3 text-sm text-ink/70">{pages.contact.cta.body}</p>
-          <div class="mt-6">
-            <QuoteFormExtended buttonFullWidth={false} />
-          </div>
-        </div>
+        <div id="quote"><InstantPricing placement="contact-pricing" /></div>
       </div>
     </div>
   </section>

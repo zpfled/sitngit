@@ -26,56 +26,51 @@ function browser(path = '/', storage = new Map(), gtag = undefined) {
   run();
   return { events, window, run, emit: (type, target, extra = {}) => (listeners[type] ?? []).forEach(fn => fn({ target, ...extra })) };
 }
-const quote = { getAttribute: () => 'quote' };
-const field = (props = {}) => ({ matches: () => true, form: quote, type: 'text', name: 'name', ...props });
-const link = href => ({ closest: () => ({ getAttribute: () => href, textContent: ' Get a quote ' }) });
+const link = (href, attributes = {}) => ({ closest: () => ({
+  getAttribute: name => name === 'href' ? href : (attributes[name] ?? null)
+}) });
 
-test('telephone, email and internal quote links including queries are tracked once', () => {
+test('call, text and email clicks strip query data and initialize once', () => {
   const b = browser();
   b.run();
-  for (const href of ['tel:+16085550123', 'mailto:info@example.test?body=private', '/get-a-quote/?type=event', '/get-a-quote', 'https://elsewhere.test/get-a-quote/', '/about/']) b.emit('click', link(href));
-  assert.deepEqual(b.events.map(e => e[1]), ['click_to_call', 'click_to_email', 'quote_cta_click', 'quote_cta_click']);
-  assert.equal(b.events[1][2].link_url, 'mailto:info@example.test');
-  assert.equal(b.events[2][2].link_text, 'Get a quote');
-  assert.equal(b.events[2][2].page_path, '/');
+  for (const href of ['tel:+16085550123', 'sms:+16085550123?body=private', 'mailto:info@example.test?subject=private', '/about/']) b.emit('click', link(href));
+  assert.deepEqual(b.events.map(e => e[1]), ['click_to_call', 'click_to_text', 'click_to_email']);
+  assert.equal(b.events[1][2].link_url, 'sms:+16085550123');
+  assert.equal(b.events[2][2].link_url, 'mailto:info@example.test');
 });
 
-test('form start ignores non-fields, honeypot, hidden and unrelated fields; fires once', () => {
+test('pricing click records origin, placement and known intent without query or fragment data', () => {
+  const page = browser('/services/event-rentals/');
+  page.emit('click', link('https://quotes.sitandgit.com/?email=private#private', { 'data-pricing-cta': 'service-top', 'data-rental-intent': 'event' }));
+  const event = page.events[0];
+  assert.equal(event[1], 'pricing_cta_click');
+  assert.equal(event[2].page_path, '/services/event-rentals/');
+  assert.equal(event[2].cta_placement, 'service-top');
+  assert.equal(event[2].rental_intent, 'event');
+  assert.equal(event[2].link_url, 'https://quotes.sitandgit.com/');
+  assert(!JSON.stringify(event).includes('private'));
+});
+
+test('explanatory links, unknown intent and retired quote forms cannot create bookings or leads', () => {
   const b = browser();
-  for (const f of [field({ type: 'hidden' }), field({ name: 'bot-field' }), field({ form: null }), field({ disabled: true }), { matches: () => false }]) b.emit('focusin', f);
+  for (const href of ['/get-a-quote/', '/about/', 'https://elsewhere.test/']) b.emit('click', link(href));
+  b.emit('submit', { getAttribute: () => 'quote' });
+  b.emit('focusin', { matches: () => true });
   assert.equal(b.events.length, 0);
-  for (const type of ['focusin', 'input', 'change', 'input']) b.emit(type, field());
-  assert.deepEqual(b.events.map(e => e[1]), ['form_start']);
+  b.emit('click', link('https://quotes.sitandgit.com/', { 'data-pricing-cta': 'footer', 'data-rental-intent': 'private' }));
+  assert.equal(b.events.length, 1);
+  assert(!('rental_intent' in b.events[0][2]));
+  const oldFlag = new Map([['sitandgit:quote-submitted', String(Date.now())]]);
+  assert.equal(browser('/thank-you/', oldFlag).events.length, 0);
 });
 
-test('lead requires submission then thank-you, clears flag and excludes refresh/direct visits', () => {
-  const storage = new Map();
-  const b = browser('/get-a-quote/', storage);
-  b.emit('click', { closest: () => null });
-  assert.equal(storage.size, 0);
-  b.emit('submit', quote, { defaultPrevented: true });
-  assert.equal(storage.size, 0);
-  b.emit('submit', quote);
-  assert.equal(b.events.length, 0);
-  assert.equal(storage.size, 1);
-  assert.deepEqual(browser('/thank-you/', storage).events.map(e => e[1]), ['generate_lead']);
-  assert.equal(storage.size, 0);
-  assert.equal(browser('/thank-you/', storage).events.length, 0);
-});
-
-test('expired, future and malformed flags never count', () => {
-  for (const timestamp of [Date.now() - 11 * 60000, Date.now() + 60000, 'invalid']) {
-    const storage = new Map([['sitandgit:quote-submitted', String(timestamp)]]);
-    assert.equal(browser('/thank-you/', storage).events.length, 0);
-    assert.equal(storage.size, 0);
-  }
-});
-
-test('unavailable analytics and storage never prevent native submission', () => {
+test('missing or throwing analytics never intercepts navigation', () => {
   const b = browser('/', new Map(), () => { throw Error('blocked'); });
-  b.window.sessionStorage = { setItem() { throw Error('blocked'); } };
-  assert.doesNotThrow(() => b.emit('focusin', field()));
-  assert.doesNotThrow(() => b.emit('submit', quote));
+  const cta = link('https://quotes.sitandgit.com/', { 'data-pricing-cta': 'home-hero' });
+  const extra = { preventDefault() { throw Error('Navigation intercepted'); } };
+  assert.doesNotThrow(() => b.emit('click', cta, extra));
   b.window.gtag = undefined;
-  assert.doesNotThrow(() => b.emit('click', link('tel:+16085550123')));
+  assert.doesNotThrow(() => b.emit('click', cta, extra));
+  for (const href of ['https://[invalid', 'javascript:void(0)', '']) assert.doesNotThrow(() => b.emit('click', link(href, { 'data-pricing-cta': 'footer' })));
+  assert.doesNotThrow(() => b.emit('click', { closest: () => null }));
 });

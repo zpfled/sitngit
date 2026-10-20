@@ -1,6 +1,7 @@
 ---
+import PricingLink from "./PricingLink.astro";
 import site from "../data/site.json";
-const { business, services, service_area, navigation, pages, labels } = site;
+const { business, services, service_area, pages, labels } = site;
 ---
 <footer class="bg-sand border-t border-clay/60">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -32,9 +33,8 @@ const { business, services, service_area, navigation, pages, labels } = site;
       <div class="space-y-3">
         <p class="text-sm font-semibold text-ink">{pages.contact.cta.title}</p>
         <p class="text-sm text-ink/70">{pages.contact.cta.body}</p>
-        <a href={navigation.cta_primary.href} class="inline-flex items-center justify-center px-4 py-2 rounded-full bg-ink text-fog text-sm font-semibold">
-          {pages.contact.cta.button}
-        </a>
+        <PricingLink placement="footer" />
+        <a href="/get-a-quote/" class="flex min-h-11 items-center text-sm text-sage underline underline-offset-4">How online pricing works</a>
       </div>
     </div>
     <div class="mt-10 border-t border-clay/70 pt-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between text-xs text-ink/60">

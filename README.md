@@ -20,7 +20,7 @@ npm run preview
 All site copy lives in `src/data/site.json`.
 - Business info, nav labels, services, service area data
 - Page headings, CTAs, FAQ text
-- Quote form labels, placeholders, and Turnstile site key
+- Instant-pricing steps, confirmation notes, and booking FAQs
 - Google reviews layout title
 - Quote section background image via `pages.quote.background_image`
 
@@ -29,12 +29,43 @@ All site copy lives in `src/data/site.json`.
 - Shared UI: `src/components/*`
 - Routes: `src/pages/*`
 
-## Lead form (quote requests)
-- Form route: `/get-a-quote`
-- Netlify Forms handles email notifications
-- Spam protection: Netlify honeypot
-- Optional Turnstile captcha: set `pages.quote.form.turnstile_site_key` in `src/data/site.json`
-  (requires a Cloudflare Turnstile site key)
+## Instant pricing and online booking
+- Shared destination: `navigation.cta_primary` in `src/data/site.json` → `https://quotes.sitandgit.com/`
+- `PricingLink.astro` renders same-tab links with CTA placement tags; `RentalActions.astro` adds call/text help and handles service-only actions.
+- `InstantPricing.astro` replaces rental quote forms; `/get-a-quote/` remains an indexable explanation page.
+- Honeywagon owns the booking form, pricing, availability, and terms. The marketing site collects no booking information.
+- Removed Netlify form/CAPTCHA wiring is no longer needed for new requests. Preserve existing Netlify submission records; do not delete the historical `quote` form in the Netlify dashboard.
+- `/thank-you/` remains available for legacy links and emits no conversion event.
+
+## Public order activity map
+
+`ServiceAreaMap.astro` embeds Honeywagon's complete public map on the homepage and
+`/service-area/`. `order_activity_map` in `src/data/site.json` stores the exact public
+URL, including its public embed token, and the delivery-boundary clarification. No order records,
+map calculator, Google Maps API key, or independent map integration are stored here.
+The old Leaflet script, dependency, and service-boundary GeoJSON have been removed.
+
+The iframe reserves 560px at every width, loads lazily, and retains its descriptive
+title and `strict-origin-when-cross-origin` referrer policy. Honeywagon controls the
+orange activity shading, green outline, Wisconsin boundary, legend, update date,
+and Google attribution. HTML outside the iframe explains that shading represents
+order activity rather than a guaranteed delivery boundary, and provides pricing and
+“Open map” links.
+
+On 2026-10-16 the map returned HTTP 200 and allowed framing only by
+`https://sitandgit.com` and `https://www.sitandgit.com` (plus its own origin).
+Localhost and unapproved Netlify previews are therefore blocked inside the iframe;
+“Open map” still works as a standalone view. Before using a Netlify deploy preview,
+add its exact HTTPS origin to the map's approved website origins in Honeywagon.
+Do not change the embed URL or weaken the map's security policy to work around this.
+The marketing repository and live homepage had no Content Security Policy to update.
+If one is introduced later, allow `https://honeywagon-web.onrender.com` in `frame-src`
+while preserving other protections.
+
+The public map was checked at 1200, 390, and 288px widths with a 560px viewport:
+heading, map, legend, update date, and Google attribution all fit. Recheck the real
+embed on the approved production origin after deployment; no Honeywagon settings
+or production deployment were changed by this integration.
 
 ## Google reviews (build-time fetch)
 Static reviews are stored in `src/data/google-reviews.json` and refreshed during `npm run build`.
@@ -58,7 +89,7 @@ Set these environment variables for the fetch script:
 - Build command: `npm run build`
 - Output directory: `dist`
 - Add env vars in Netlify site settings
-- Enable Netlify Forms notifications for the `quote` form
+- Verify the public booking destination and contact links after deploying; retain historical Netlify form submissions.
 
 ## Service catalog
 
@@ -95,22 +126,16 @@ See [Netlify build hooks](https://docs.netlify.com/build/configure-builds/build-
    value), scoped to the intended build context. Rebuild when ready to enable it.
    Do not put the ID in source control. No tracking code or Google tag is emitted
    when this variable is absent or invalid.
-2. In GA4 **Admin → Data streams → your web stream → Enhanced measurement settings**,
-   disable **Form interactions** if enabled, so automatic `form_start` events do not
-   duplicate the site's explicit once-per-page event.
-3. Open **Reports → Realtime**, visit the site, click telephone/email/quote links,
-   and interact with a quote field. For DebugView, connect the site through Google
-   Tag Assistant and open **Admin → DebugView**.
-4. Submit a real test quote only when ready to create a Netlify form submission.
-   On the successful `/thank-you/` redirect, check `generate_lead`. Refresh the page
-   and visit it directly: neither should add another lead. Mark `generate_lead` as
-   a key event in GA4 if desired.
+2. In GA4, register event-scoped custom dimensions for `cta_placement` and `rental_intent` if you want them in reports. The origin is sent as `page_path`.
+3. With Google Tag Assistant/DebugView, click pricing links from desktop/mobile navigation, the homepage, an event page, and the footer. Verify `pricing_cta_click` with the correct page and placement. Call/text/email links emit their own events. Do not submit a booking for this check.
+4. A pricing click is not a completed booking and should not replace the confirmed-booking key event. Coordinate application-side confirmation and attribution with Honeywagon before reporting booking conversion rates.
 
-Events: `click_to_call`, `click_to_email`, `quote_cta_click`, `form_start`, and
-`generate_lead`. No form field values are sent. A submission flag lasts ten minutes
-in session storage and is consumed on the thank-you page; blocked storage or analytics
-never blocks submission. This measures the redirect following a submission, not a
-server-side verification of Netlify acceptance.
+Events: `pricing_cta_click`, `click_to_call`, `click_to_text`, and `click_to_email`.
+Pricing payloads contain the page path, CTA placement, a query-free link URL, and
+known rental intent only. Contact links discard subject/body parameters. Analytics
+never intercepts navigation or relies on session storage. The retired quote-form
+handlers no longer emit `quote_cta_click`, `form_start`, or `generate_lead`; preserve
+those historical reports and annotate the actual deployment date.
 See [Google's event setup guide](https://developers.google.com/analytics/devguides/collection/ga4/events).
 
 ## Targeted verification
@@ -128,19 +153,15 @@ build, then run `node scripts/verify-site-build.mjs --analytics`. Repeat with an
 invalid value and run the verifier without `--analytics`. These are static checks;
 they do not send events or submit forms to external services.
 
-## Marketing content and future booking
+## Marketing content and booking
 
 Use the [SEO operating brief](docs/seo-operating-brief.md) for strategy and the
-[SEO performance scorecard](docs/seo-performance-scorecard.md) for dated baselines,
-KPI definitions and historical comparisons. Add new measurements to the scorecard;
-analytics setup remains documented above and booking instrumentation below.
-
-See [the September marketing audit](docs/marketing-audit.md) for the ranked plan,
-changes, preservation decisions and validation. [Booking architecture](docs/booking-architecture.md)
-describes the future same-domain Honeywagon boundary; no booking workflow exists yet.
+[SEO performance scorecard](docs/seo-performance-scorecard.md) for dated measurements.
+The [booking architecture](docs/booking-architecture.md) documents the direct Honeywagon
+handoff and analytics boundaries. The [rollout report](docs/instant-pricing-rollout.md)
+contains validation and screenshots; [SEO and conversion opportunities](docs/seo-conversion-opportunities.md)
+records follow-up work identified during this rollout.
 
 Event and construction planning sections live with their service entries in
-`src/data/site.json`. `RentalActions.astro` uses the shared primary CTA and preserves
-event/long-term intent; `RentalPaths.astro` links to the two rental guides.
-`SiteImage.astro` imports existing local photos for Astro's build-time responsive WebP
-output, while preserving original assets.
+`src/data/site.json`. `RentalPaths.astro` keeps rental guides discoverable independently
+of the booking application. `SiteImage.astro` produces responsive WebP images.

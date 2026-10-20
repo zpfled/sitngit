@@ -1,22 +1,27 @@
 ---
-import serviceAreaUrl from "../content/service-area.geojson?url";
+import PricingLink from "./PricingLink.astro";
+import site from "../data/site.json";
 
-const { fullBleed = false } = Astro.props;
-const wrapperClass = fullBleed
-  ? "overflow-hidden"
-  : "bg-fog border border-clay/70 rounded-2xl overflow-hidden shadow-soft";
+interface Props {
+  placement?: string;
+}
+const { placement = "service-area-map" } = Astro.props;
+const map = site.order_activity_map;
 ---
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-<div class={wrapperClass}>
-  <div
-    id="service-area-map"
-    class="w-full h-[320px] sm:h-[360px] lg:h-[400px]"
-    data-geojson-url={serviceAreaUrl}
-  ></div>
-  <noscript>
-    <p class="px-6 py-4 text-sm text-ink/70">
-      Map loading requires JavaScript. <a href="/service-area/" class="underline">View our service counties</a> to check coverage.
-    </p>
-  </noscript>
+<div id="service-area-map" class="space-y-4">
+  <iframe
+    src={map.url}
+    title="Where we work"
+    width="100%"
+    height="560"
+    style="border:0;border-radius:16px"
+    loading="lazy"
+    referrerpolicy="strict-origin-when-cross-origin"
+    class="block h-[560px] w-full bg-fog shadow-soft"
+  ></iframe>
+  <p class="max-w-3xl text-sm text-ink/75">{map.coverage_note}</p>
+  <div class="flex flex-wrap items-center gap-x-6 gap-y-2">
+    <PricingLink placement={placement} />
+    <a href={map.url} class="inline-flex min-h-11 items-center text-sm font-semibold text-sage underline underline-offset-4 hover:text-ink">Open map<span class="sr-only">: Where we work</span></a>
+  </div>
 </div>
-<script src="/scripts/service-area-map.js" defer></script>

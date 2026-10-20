@@ -1,21 +1,22 @@
 ---
-const { title, body, button, href, secondaryLabel, secondaryHref } = Astro.props;
+import site from "../data/site.json";
+const { title, body, button, href, secondaryLabel, secondaryHref, placement = "cta-block" } = Astro.props;
 ---
 <section class="py-10">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="bg-ink text-fog rounded-2xl p-8 sm:p-10 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between shadow-lift">
       <div>
-        <h3 class="text-2xl font-display">{title}</h3>
+        <h2 class="text-2xl font-display text-fog">{title}</h2>
         <p class="text-fog/80 mt-2 max-w-xl">{body}</p>
       </div>
       <div class="flex flex-wrap gap-3">
-        <a href={href} class="inline-flex items-center justify-center px-5 py-3 rounded-full bg-fog text-ink font-semibold">
+        <a href={href} data-pricing-cta={href === site.navigation.cta_primary.href ? placement : undefined} class="inline-flex min-h-11 items-center justify-center px-5 py-3 rounded-full bg-ember text-ink font-semibold hover:text-ink hover:bg-river">
           {button}
         </a>
         {secondaryLabel && secondaryHref && (
           <a
             href={secondaryHref}
-            class="inline-flex items-center justify-center px-5 py-3 rounded-full border border-fog/40 text-fog font-semibold hover:bg-fog/10"
+            class="inline-flex min-h-11 items-center justify-center px-5 py-3 rounded-full border border-fog/40 text-fog font-semibold hover:text-fog hover:bg-fog/10"
           >
             {secondaryLabel}
           </a>

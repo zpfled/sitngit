@@ -31,23 +31,58 @@ for (const county of site.service_area.counties) {
     assert.equal(/<meta name="robots" content="noindex/.test(html), !indexable, `Town indexing policy: ${town.slug}`);
   }
 }
+const renderedPages = new Map();
 async function checkPages(dir) {
   for (const entry of await readdir(dir, { withFileTypes: true })) {
     const path = `${dir}/${entry.name}`;
     if (entry.isDirectory()) await checkPages(path);
     else if (entry.name.endsWith('.html')) {
       const html = await readFile(path, 'utf8');
+      renderedPages.set(path.slice(4).replace(/index\.html$/, ''), html);
       assert(!/luxury|trailer|\{\{[^}]+\}\}/i.test(html), `Removed offering or unresolved content: ${path}`);
       const tags = html.match(/https:\/\/www\.googletagmanager\.com\/gtag\/js\?id=/g) ?? [];
       assert.equal(tags.length, expectedAnalytics ? 1 : 0, `GA tag count: ${path}`);
       assert.equal(html.includes('sitAndGitAnalyticsInitialized'), expectedAnalytics, `Tracking gate: ${path}`);
-      for (const form of html.matchAll(/<form\b[^>]*name="quote"[\s\S]*?<\/form>/g)) {
-        for (const required of ['method="post"', 'action="/thank-you/"', 'data-netlify="true"', 'data-netlify-recaptcha="true"', 'netlify-honeypot="bot-field"', 'name="form-name"', 'value="quote"', 'name="bot-field"', 'required']) {
-          assert(form[0].includes(required), `Missing form contract ${required}: ${path}`);
+      assert(!/<form\b|data-netlify|recaptcha|turnstile/i.test(html), `Retired quote form wiring: ${path}`);
+      assert(!/request a quote|get a quote|free quote|we will follow up with availability and a clear quote/i.test(html), `Stale quote process: ${path}`);
+      const links = [...html.matchAll(/<a\b([^>]*)>([\s\S]*?)<\/a>/g)];
+      const pricingLinks = links.filter(([, attrs]) => /data-pricing-cta="[^"]+"/.test(attrs));
+      assert(pricingLinks.length >= 3, `Missing header/footer pricing links: ${path}`);
+      for (const [, attrs, text] of links) {
+        const href = attrs.match(/href="([^"]+)"/)?.[1];
+        const isPricing = /data-pricing-cta="[^"]+"/.test(attrs);
+        if (isPricing || /Get Instant Pricing/.test(text) || href?.startsWith(site.navigation.cta_primary.href)) {
+          assert(isPricing, `Untracked pricing CTA: ${path}`);
+          assert.equal(href, site.navigation.cta_primary.href, `Indirect pricing CTA: ${path}`);
+          assert(!/target=|onclick=|download(?:=|\s|$)/.test(attrs), `Non-native pricing navigation: ${path}`);
         }
+        if (href?.startsWith('/get-a-quote')) assert(/how .*pricing/i.test(text), `Quote intermediary CTA: ${path}`);
+      }
+      const canonical = `https://sitandgit.com${path.slice(4).replace(/index\.html$/, '')}`;
+      assert(html.includes(`<link rel="canonical" href="${canonical}"`), `Canonical changed: ${path}`);
+      assert(html.includes(`<meta property="og:url" content="${canonical}"`), `Social URL changed: ${path}`);
+      if (path.includes('/services/toilet-servicing/')) {
+        const main = html.match(/<main>([\s\S]*?)<\/main>/)?.[1];
+        assert(!main.includes('data-pricing-cta'), 'Service-only CTA incorrectly offers rental pricing');
+        assert(main.includes('Call about servicing') && main.includes('sms:'), 'Missing service assistance');
       }
     }
   }
 }
 await checkPages('dist');
-console.log(`Build verification passed: ${urls.length} canonical sitemap URLs, town indexing, retired offering/redirects, forms, analytics ${expectedAnalytics ? 'enabled' : 'disabled'}.`);
+for (const [pathname, html] of renderedPages) {
+  for (const [, href] of html.matchAll(/<a\b[^>]*href="([^"]+)"/g)) {
+    const url = new URL(href.replaceAll('&amp;', '&'), `https://sitandgit.com${pathname}`);
+    if (url.origin !== 'https://sitandgit.com') continue;
+    const target = renderedPages.get(url.pathname.replace(/\/?$/, '/'));
+    assert(target, `Missing internal page ${href} on ${pathname}`);
+    if (url.hash && url.hash !== '#') {
+      const id = decodeURIComponent(url.hash.slice(1));
+      assert(target.includes(`id="${id}"`), `Broken anchor ${href} on ${pathname}`);
+    }
+  }
+}
+for (const path of ['/', '/get-a-quote/', '/contact/', '/services/', '/service-area/', '/faq/']) {
+  assert(renderedPages.get(path).includes('id="quote"'), `Missing quote anchor: ${path}`);
+}
+console.log(`Build verification passed: ${renderedPages.size} pages and internal links/anchors, ${urls.length} canonical sitemap URLs, town indexing, retired offering/redirects, direct pricing CTAs, retired forms, analytics ${expectedAnalytics ? 'enabled' : 'disabled'}.`);

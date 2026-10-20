@@ -1,0 +1,13 @@
+---
+import site from "../data/site.json";
+
+interface Props {
+  placement: string;
+  intent?: "event" | "long-term";
+  class?: string;
+}
+const { placement, intent, class: className = "pricing-button" } = Astro.props;
+---
+<a href={site.navigation.cta_primary.href} data-pricing-cta={placement} data-rental-intent={intent} class={className}>
+  {site.navigation.cta_primary.label}
+</a>
