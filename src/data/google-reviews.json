@@ -2,7 +2,7 @@
   "summary": {
     "label": "Google Reviews",
     "rating": 5,
-    "count": 27,
+    "count": 30,
     "cta_label": "Review us on Google",
     "cta_href": "https://maps.google.com/?cid=15132098919818792858&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
   },
@@ -10,7 +10,7 @@
     {
       "name": "Community Congregational Church of Lone Rock",
       "initials": "CC",
-      "time": "2 months ago",
+      "time": "3 months ago",
       "rating": 5,
       "text": "Great service, friendly and showed up as stated. Easy to work with and have already recommended them to others in our community. Thank you.",
       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xSMmFUUk5hR0oxTW1GNFZ6QXplVEpQVDFaVU4wRRAB!2m1!1s0xa58b8afeb2a84fad:0xd20003cb55df0f9a",
@@ -20,7 +20,7 @@
     {
       "name": "Blake Roberts",
       "initials": "BR",
-      "time": "2 months ago",
+      "time": "3 months ago",
       "rating": 5,
       "text": "Zach was very responsive and super easy to work with. He even went above and beyond to accommodate when I needed to change dates on short notice. Will definitely work with Sit & Git again.",
       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2t4MU1IaGlVWFpIYjBjME1qQnhUVVJ3YUZwdVJtYxAB!2m1!1s0xa58b8afeb2a84fad:0xd20003cb55df0f9a",
@@ -28,19 +28,9 @@
       "publishTime": "2026-06-29T14:38:36.538537150Z"
     },
     {
-      "name": "Lorie Gill",
-      "initials": "LG",
-      "time": "2 months ago",
-      "rating": 5,
-      "text": "If you’re looking for excellent service and reasonably priced this is definitely where you want to rent your portable restroom!!  We used this service for our family reunion and it was delivered on time and was super clean!!’   Thank you Zach !!  I’m sure we will be contacting you again next year!!",
-      "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25SelNtSnpNV2RtYW1kS2VUZzRaMlF3VnpNdE0yYxAB!2m1!1s0xa58b8afeb2a84fad:0xd20003cb55df0f9a",
-      "avatar": "https://lh3.googleusercontent.com/a/ACg8ocKT0A2_3f4g9TOgXERrhRpzbEmQNOkFbRW0QiEeGOe2AsAf5g=s128-c0x00000000-cc-rp-mo",
-      "publishTime": "2026-06-23T11:16:21.530725319Z"
-    },
-    {
       "name": "Kjersten Walleser",
       "initials": "KW",
-      "time": "2 months ago",
+      "time": "4 months ago",
       "rating": 5,
       "text": "I have been noticing Sit & Git toilets throughout Viroqua, Farmer’s Market, school events, Pierce Hill, etc. They are consistently clean and tidy. This is especially reassuring when moving about with small children.",
       "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xCM1ZWcG1VbWx3TUZsb1lrTkxOM2RYUmpJMVdtYxAB!2m1!1s0xa58b8afeb2a84fad:0xd20003cb55df0f9a",
@@ -48,14 +38,24 @@
       "publishTime": "2026-06-18T14:03:37.343143803Z"
     },
     {
-      "name": "Kyla Burkum",
-      "initials": "KB",
-      "time": "7 months ago",
+      "name": "Caitlin Wall",
+      "initials": "CW",
+      "time": "4 months ago",
       "rating": 5,
-      "text": "Very professional. Has given us some good tips on keeping the porta potty from freezing so when pumping isn’t necessary is not an issue. Always wipe and inside clean and refills the toilet paper if necessary and anything else that may need to be done. Highly recommend for your porta potty services!",
-      "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21Gd1NGTkpialYwZEROVlkxaE9aRU5vVHpWa01tYxAB!2m1!1s0xa58b8afeb2a84fad:0xd20003cb55df0f9a",
-      "avatar": "https://lh3.googleusercontent.com/a-/ALV-UjXsi03FuvYLa_JQ7oAXbXtHOsspz8adWLZXsWNi1fcgNAFPt-1d=s128-c0x00000000-cc-rp-mo",
-      "publishTime": "2026-01-21T13:57:48.241432976Z"
+      "text": "So clean, spotless actually. Fast response time and prompt drop off and pickup times.  Highly recommend!!",
+      "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2pSaGVGWnRURXhsTjFWa1IwZ3hUak5pZUVkeGNrRRAB!2m1!1s0xa58b8afeb2a84fad:0xd20003cb55df0f9a",
+      "avatar": "https://lh3.googleusercontent.com/a/ACg8ocKjTGBZ2NjHFlaJpehqJ1mSHcBRRGIu1pcW0H2vEYJnIeO8iw=s128-c0x00000000-cc-rp-mo",
+      "publishTime": "2026-06-15T13:04:17.130539113Z"
+    },
+    {
+      "name": "Brittany Pitzer",
+      "initials": "BP",
+      "time": "5 months ago",
+      "rating": 5,
+      "text": "Great customer service! Very responsive, reasonable pricing, and clean toilets. We will definitely use Sit & Git Portables for our next event. Thank you Zach!",
+      "url": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xGNE0zcHFTVTV1ZUhWR1RHVlVTVGw2ZG1STmEzYxAB!2m1!1s0xa58b8afeb2a84fad:0xd20003cb55df0f9a",
+      "avatar": "https://lh3.googleusercontent.com/a-/ALV-UjW8bMs7qNcgfWkUolAXsxRp5FwdrcZ5IWYqfpBEtIAPedO7eUgufw=s128-c0x00000000-cc-rp-mo-ba4",
+      "publishTime": "2026-04-26T15:45:03.636822299Z"
     }
   ]
 }

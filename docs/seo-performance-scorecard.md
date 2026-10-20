@@ -89,6 +89,18 @@ not sufficient to reconstruct an older baseline.
 | --- | --- | --- | --- | --- |
 | 2026-09-15 | Initial owner-supplied baseline recorded; see Current Baseline. | None established; no comparable prior snapshot. | Historical figures with unknown measurement boundaries; no trend or causal conclusion. | Created scorecard; retained county-first/event-priority strategy. The [2026-09-15 site audit](marketing-audit.md) records implementation work, not measured performance gains. |
 
+### Google review refresh — 2026-10-19
+
+- Observed and recorded on **2026-10-19**, reporting timezone America/Chicago.
+- Google Places API (New), fetched through `scripts/fetch-google-reviews.mjs`,
+  returned **30 reviews at 5.0 stars**. The website snapshot is stored in
+  `src/data/google-reviews.json`.
+- The API returned five review excerpts; two differ from the previously stored
+  selection. This is Google's returned selection, not a complete review export.
+- The previous repository snapshot held 27 reviews at 5.0 stars, with an unknown
+  exact observation date. This refresh does not establish a review acquisition rate.
+- Other baseline metrics and their original dates remain unchanged.
+
 ## Update Rules
 
 - Do not overwrite old snapshots. Add a new dated snapshot whenever fresh data is supplied.
