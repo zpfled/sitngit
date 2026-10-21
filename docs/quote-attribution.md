@@ -6,6 +6,6 @@ The owner approved measuring the public quoting funnel and retaining unfinished 
 
 The Honeywagon root redirect must preserve these parameters; deploy both repositories. Analytics failures/storage restrictions do not prevent native navigation. The website alone does not install PostHog or produce its pageview events; Honeywagon sends explicit quote-funnel events through its background worker.
 
-Privacy-policy changes and the quoting footer link are deferred by the owner (October 21, 2026). Capture defaults off in Honeywagon until configured with the company UUID. No new inline disclosure or popup is introduced.
+Privacy-policy changes and the quoting footer link are deferred by the owner (October 21, 2026). Honeywagon captures inquiries for all public booking companies; PostHog export requires its project token and ingestion host. No new inline disclosure or popup is introduced.
 
-Checks: `node --test tests/*.test.mjs` and `npx --no-install astro build`. PostHog project setup and actual production event inspection remain deployment acceptance steps. The full setup guide is `../honeywagon/plans/QUOTE_ANALYTICS_ROLLOUT.md`.
+Checks: `node --test tests/*.test.mjs` and `npx --no-install astro build`. PostHog project setup and actual production event inspection remain deployment acceptance steps.
